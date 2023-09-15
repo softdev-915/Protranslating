@@ -1,0 +1,627 @@
+[
+    {
+        "name": "Algeria",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "ARIPO",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Australia",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Brazil",
+        "frDirectIq": true,
+        "deDirectIq": false
+    },
+    {
+        "name": "Cambodia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Canada",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Chile",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "China",
+        "frDirectIq": false,
+        "deDirectIq": true
+    },
+    {
+        "name": "Colombia",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Dominican Republic",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Ecuador",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Egypt",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Eurasia",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Europe",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Germany",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Guatemala",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Hong Kong",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "India ",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Indonesia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Israel",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Japan",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Korea",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Kuwait",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Laos",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Malaysia",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Mexico",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Morocco",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "New Zealand",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "OAPI",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Oman",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Panama",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Peru",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Philippines",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Qatar",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Russian Federation",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Saudi Arabia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Singapore",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "South Africa",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Thailand",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Tunisia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "United Arab Emirates",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Ukraine",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "United States",
+        "frDirectIq": true,
+        "deDirectIq": true
+    },
+    {
+        "name": "Vietnam",
+        "frDirectIq": true,
+        "deDirectIq": false
+    },
+    {
+        "name": "Albania",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Angola",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Antigua and Barbuda",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Armenia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Austria",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Azerbaijan",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Bahrain",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Barbados",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Belarus",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Belize",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Bosnia & Herzegovina",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Botswana",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Brunei Darussalam",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Bulgaria",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Costa Rica",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Croatia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Cuba",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Czech Republic",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Denmark",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Djibouti",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Dominica",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "El Salvador",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Estonia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Finland",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Gabon",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Georgia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Ghana",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Grenada",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Honduras",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Hungary",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Iran",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Italy",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Jordan",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Kazakhstan",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Kenya",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Kyrgyzstan",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Lesotho",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Liberia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Libya",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Luxembourg",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Macedonia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Madagascar",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Malawi",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Moldova",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Mongolia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Montenegro",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Mozambique",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Namibia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Nicaragua",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Nigeria",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Norway",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Papua New Guinea",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Poland",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Portugal",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Romania",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Rwanda",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Saint Kitts and Nevis",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Saint Lucia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Saint Vincent and the Grenadines",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Samoa",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Sao Tome and Principe",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Serbia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Seychelles",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Sierra Leone",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Slovakia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Spain",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Sri Lanka",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Sudan",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Sweden",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Switzerland",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Syria",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Tajikistan",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Tanzania",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Trinidad and Tobago",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Turkey",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Turkmenistan",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Uganda",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "United Kingdom",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Uzbekistan",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Zambia",
+        "frDirectIq": false,
+        "deDirectIq": false
+    },
+    {
+        "name": "Zimbabwe",
+        "frDirectIq": false,
+        "deDirectIq": false
+    }
+]

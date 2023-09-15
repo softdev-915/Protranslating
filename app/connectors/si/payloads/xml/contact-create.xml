@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+  <control>
+    <senderid>{{senderId}}</senderid>
+    <password>{{senderPassword}}</password>
+    <controlid>{{timestamp}}</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+    <includewhitespace>false</includewhitespace>
+  </control>
+  <operation>
+    <authentication>
+      <sessionid>{{sessionId}}</sessionid>
+    </authentication>
+    <content>
+      <function controlid="{{guid}}">
+        <create>
+          <CONTACT>
+            <CONTACTNAME>{{_id}}</CONTACTNAME>
+            <PRINTAS>{{username this}}</PRINTAS>
+            <FIRSTNAME>{{firstName}}</FIRSTNAME>
+            <LASTNAME>{{lastName}}</LASTNAME>
+            <INITIAL>{{middleName}}</INITIAL>
+            <MAILADDRESS>
+                <ADDRESS1>{{contactDetails.billingAddress.line1}}</ADDRESS1>
+                <ADDRESS2>{{contactDetails.billingAddress.line2}}</ADDRESS2>
+                <CITY>{{contactDetails.billingAddress.city}}</CITY>
+                <STATE>{{contactDetails.billingAddress.state.name}}</STATE>
+                <ZIP>{{contactDetails.billingAddress.zip}}</ZIP>
+                {{#siCountryInfo contactDetails.billingAddress.country.name}}
+                <COUNTRY>{{siCountry}}</COUNTRY>
+                {{#if siCode}}
+                <COUNTRYCODE>{{siCode}}</COUNTRYCODE>
+                {{/if}}
+                {{/siCountryInfo}}
+            </MAILADDRESS>
+            <COMPANYNAME>{{company.name}}</COMPANYNAME>
+            <EMAIL1>{{email}}</EMAIL1>
+            <EMAIL2>{{contactDetails.billingEmail}}</EMAIL2>
+            <STATUS>{{#if terminated}}inactive{{else}}active{{/if}}</STATUS>
+          </CONTACT>
+        </create>
+      </function>
+    </content>
+  </operation>
+</request>

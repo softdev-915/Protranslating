@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+  <control>
+    <senderid>{{senderId}}</senderid>
+    <password>{{senderPassword}}</password>
+    <controlid>{{timestamp}}</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+    <includewhitespace>false</includewhitespace>
+  </control>
+  <operation>
+    <authentication>
+      <sessionid>{{sessionId}}</sessionid>
+    </authentication>
+    <content>
+      <function controlid="{{guid}}">
+        <update>
+		    <APBILL>
+		        <RECORDNO>{{recordNo}}</RECORDNO>
+		        <ONHOLD>{{onHold}}</ONHOLD>
+		    </APBILL>
+		</update>
+      </function>
+    </content>
+  </operation>
+</request>

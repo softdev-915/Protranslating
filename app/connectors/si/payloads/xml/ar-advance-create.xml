@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+  <control>
+    <senderid>{{senderId}}</senderid>
+    <password>{{senderPassword}}</password>
+    <controlid>{{timestamp}}</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+    <includewhitespace>false</includewhitespace>
+  </control>
+  <operation>
+    <authentication>
+      <sessionid>{{sessionId}}</sessionid>
+    </authentication>
+    <content>
+      <function controlid="{{guid}}">
+        <create_arpayment>
+          <customerid>{{customerId}}</customerid>
+          <paymentamount>{{accounting.amount}}</paymentamount>
+          {{#if bankAccount}}
+          <bankaccountid>{{bankAccount.no}}</bankaccountid>
+          {{else}}
+          <undepfundsacct>{{undepositedAccountIdentifier}}</undepfundsacct>
+          {{/if}}
+          <refid>{{_id}}</refid>
+          <overpaylocid>{{lspId.lspAccountingPlatformLocation}}</overpaylocid>
+          <datereceived>
+            <year>{{formatDate receiptDate 'YYYY'}}</year>
+            <month>{{formatDate receiptDate 'M'}}</month>
+            <day>{{formatDate receiptDate 'DD'}}</day>
+          </datereceived>
+          <paymentmethod>{{paymentMethod.name}}</paymentmethod>
+          <basecurr>{{accounting.localCurrency.isoCode}}</basecurr>
+          <currency>{{accounting.currency.isoCode}}</currency>
+          <exchrate>{{reverseExchangeRate accounting.exchangeRate 10}}</exchrate>
+        </create_arpayment>
+      </function>
+    </content>
+  </operation>
+</request>

@@ -1,0 +1,1357 @@
+{
+    "schedulers": [
+    {
+        "_id" : "_id",
+        "name" : "forgotPassword",
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "normal",
+            "additionalSchema" : {},
+            "additionalValues" : {}
+        },
+        "email" : {
+            "from" : "support+test@protranslating.com",
+            "template" : "<p>Hello Portal User,</p><p>To reset your password please click <a href=\"https://lms-test.protranslating.com/reset-password?code={{code}}\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>.</p><p>If you have any questions or encounter any problems signing on, please contact <a href=\"mailto:support@protranslating.com\" target=\"_blank\" rel=\"noopener noreferrer\">support@protranslating.com</a>.</p><p>Thanks,</p><p>Protranslating</p>",
+            "subject" : "Reset your password",
+            "variables" : {
+                "code" : "forgot-password-code",
+                "path" : "https://portal.protranslating.com/reset-password"
+            }
+        },
+
+        "deleted" : false,
+
+        "updatedBy" : "ptzankova@protranslating.com",
+        "executionHistory" : [],
+        "__v" : 2285891,
+
+        "deletedAt" : null,
+        "schedule" : null
+    },
+    {
+        "_id" : "_id",
+        "name" : "request-creation-email",
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {}
+        },
+        "email" : {
+            "from" : "request+test@protranslating.com",
+            "template" : "<p>This email is to notify you that your project has been received and entered into our system in preparation for translation.</p><p>Please see below for some details related to your project:</p><p><strong>Request Number: </strong>{{request.no}}</p><p><strong>Documents:</strong> {{allDocumentsNames request.documents}}</p><p><strong>Request Title:</strong> {{request.title}}</p><p><a href=\"https://lms-test.protranslating.com/requests/{{request._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to request</a></p><p><br /></p>",
+            "subject" : "Your request has been received",
+            "variables" : {
+                "path" : "https://portal.protranslating.com/",
+                "user" : {
+                    "firstName" : "Email",
+                    "lastName" : "Receiver",
+                    "email" : "email-receiver@protranslating.com"
+                },
+                "request" : {
+                    "_id" : "request-id",
+                    "no" : "request-#",
+                    "contact" : {
+                        "firstName" : "John",
+                        "lastName" : "Doe"
+                    },
+                    "otherContact" : {
+                        "firstName" : "Alice",
+                        "lastName" : "Doe"
+                    },
+                    "receptionDate" : "2017-06-29T21:25:11.795Z",
+                    "title" : "New translation request",
+                    "deliveryDate" : "2017-06-29T21:25:11.795Z",
+                    "comments" : "Translation request comment",
+                    "otherCC" : "another_email@lsp.com",
+                    "status" : "Request status",
+                    "documents" : [
+                        {
+                            "name" : "Document's name",
+                            "isReference" : false
+                        }
+                    ],
+                    "srcLang" : {
+                        "name" : "English",
+                        "isoCode" : "ENG"
+                    },
+                    "tgtLangs" : [
+                        {
+                            "name" : "Spanish",
+                            "isoCode" : "SPA"
+                        }
+                    ],
+                    "requireQuotation" : false,
+                    "company" : {
+                        "name" : "Company"
+                    }
+                }
+            }
+        },
+
+        "deleted" : false,
+
+        "updatedBy" : "e2e@sample.com",
+        "executionHistory" : [],
+        "__v" : 2296272,
+
+        "deletedAt" : null,
+        "schedule" : null
+    },
+    {
+        "_id" : "_id",
+        "name" : "request-creation-pm-email",
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {}
+        },
+        "email" : {
+            "from" : "support+test@protranslating.com",
+            "template" : "<p><strong>Company Name:</strong> {{request.company.name}}</p><p><strong>Requested By:</strong> {{username request.contact}}</p><p><strong>Request Number:</strong> {{request.no}}</p><p><strong>Document(s) Name:</strong> {{#each documents}}{{name}},{{/each}}</p><p><strong>Reference Document(s) Name:</strong> {{#each referenceDocuments}}{{name}},{{/each}}</p><p><strong>Requested Delivery Date:</strong> {{toTimezone request.deliveryDate 'America/New_York' 'YYYY-MM-DD hh:mm A z'}}</p><p><a href=\"https://lms-test.protranslating.com/requests/{{request._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to this Request</a></p>",
+            "subject" : "A contact has added a request for {{request.company.name}} using the client module.",
+            "variables" : {
+                "path" : "https://portal.protranslating.com/",
+                "user" : {
+                    "firstName" : "Email",
+                    "lastName" : "Receiver",
+                    "email" : "email-receiver@protranslating.com"
+                },
+                "documents" : [
+                    {
+                        "name" : "Document name"
+                    }
+                ],
+                "referenceDocuments" : [
+                    {
+                        "name" : "Reference document name"
+                    }
+                ],
+                "request" : {
+                    "_id" : "request-id",
+                    "no" : "request-#",
+                    "contact" : {
+                        "firstName" : "John",
+                        "lastName" : "Doe"
+                    },
+                    "otherContact" : {
+                        "firstName" : "Alice",
+                        "lastName" : "Doe"
+                    },
+                    "receptionDate" : "2017-06-29T21:25:11.795Z",
+                    "title" : "New translation request",
+                    "deliveryDate" : "2017-06-29T21:25:11.795Z",
+                    "comments" : "Translation request comment",
+                    "otherCC" : "another_email@lsp.com",
+                    "status" : "Request status",
+                    "srcLang" : {
+                        "name" : "English",
+                        "isoCode" : "ENG"
+                    },
+                    "tgtLangs" : [
+                        {
+                            "name" : "Spanish",
+                            "isoCode" : "SPA"
+                        }
+                    ],
+                    "requireQuotation" : false,
+                    "company" : {
+                        "name" : "Company"
+                    }
+                }
+            }
+        },
+
+        "deleted" : false,
+
+        "updatedBy" : "ptzankova@protranslating.com",
+        "executionHistory" : [],
+        "__v" : 2293829,
+        "deletedAt" : null,
+        "schedule" : null
+    },
+    {
+        "_id" : "_id",
+        "name" : "quoted-request-creation-pm-email",
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest"
+        },
+        "email" : {
+            "from" : "request+test@protranslating.com",
+            "template" : "<p><strong>Request Number:</strong> {{request.no}}</p><p><strong>Company:</strong> {{request.company.name}}</p><p><strong>Requested by:</strong> {{username request.contact}}</p><p><strong>Note from contact:</strong> {{{request.comments}}}</p><p><a href=\"https://lms-test.protranslating.com/requests/{{request._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to this Request</a></p>",
+            "subject" : "A new quote has been requested for {{request.company.name}}",
+            "variables" : {
+                "path" : "https://portal.protranslating.com/",
+                "user" : {
+                    "firstName" : "Email",
+                    "lastName" : "Receiver",
+                    "email" : "email-receiver@protranslating.com"
+                },
+                "request" : {
+                    "_id" : "request-id",
+                    "no" : "request-#",
+                    "contact" : {
+                        "firstName" : "John",
+                        "lastName" : "Doe"
+                    },
+                    "otherContact" : {
+                        "firstName" : "Alice",
+                        "lastName" : "Doe"
+                    },
+                    "receptionDate" : "2017-06-29T21:25:11.795Z",
+                    "title" : "New translation request",
+                    "deliveryDate" : "2017-06-29T21:25:11.795Z",
+                    "comments" : "Translation request comment",
+                    "otherCC" : "another_email@lsp.com",
+                    "status" : "Request status",
+                    "documents" : [
+                        {
+                            "name" : "Document's name",
+                            "isReference" : false
+                        }
+                    ],
+                    "srcLang" : {
+                        "name" : "English",
+                        "isoCode" : "ENG"
+                    },
+                    "tgtLangs" : [
+                        {
+                            "name" : "Spanish",
+                            "isoCode" : "SPA"
+                        }
+                    ],
+                    "requireQuotation" : false,
+                    "company" : {
+                        "name" : "Company"
+                    }
+                }
+            }
+        },
+
+        "deleted" : false,
+
+        "updatedBy" : "ptzankova@protranslating.com",
+        "executionHistory" : [],
+        "__v" : 2294065,
+        "deletedAt" : null,
+        "schedule" : null
+    },
+    {
+        "_id" : "_id",
+        "name" : "request-modified-pm-email",
+        "every" : "1 minutes",
+        "options" : {
+            "notificationDelay" : 5,
+            "lockLifetime" : 10000,
+            "priority" : "highest"
+        },
+        "email" : {
+            "from" : "support+test@protranslating.com",
+            "template" : "\n  <style>\n    .table {\n      display: table;\n      width: 500px;\n      border: 1px solid;\n    }\n    .tr {\n      display: table-row;\n    }\n    .td,\n    .th {\n      text-align: center;\n      display: table-cell;\n      border: 1px solid;\n    }\n    \n    .th {\n      font-weight: bold;\n    }\n  </style>\n  <p>Hello {{username user}},</p>\n  <p>Modified Request</p>\n  <p>A request has been modified. Please kindly note the changes which have been made as they may concern you.</p>\n  <p>Company Name: {{request.company.name}}</p>\n  <p>Requested By: {{username request.contact}}</p>\n  <p>Request Number: {{request.no}}</p>\n  <p>Delivery Date:{{toTimezone request.deliveryDate 'America/New_York' 'YYYY-MM-DD hh:mm A z'}}</p>\n  <p>Documents:</p>\n  <div class=\"table\">\n    <div class=\"tr\">\n        <div class=\"th\">Old Value</div>\n        <div class=\"th\">New Value</div>\n    </div>\n    {{#each documents as |document|}}\n    <div class=\"tr\">\n      <div class=\"td old\"><b>{{document.oldValue}}</b></div>\n      <div class=\"td new\"><b>{{document.value}}</b></div>\n    </div>\n    {{/each}}\n  </div>\n  <p>Modifications:</p>\n  <div class=\"table\">\n    <div class=\"tr\">\n        <div class=\"th\">Element(s)</div>\n        <div class=\"th\">Old Value</div>\n        <div class=\"th\">New Value</div>\n    </div>\n    {{#each modifications as |modification|}}\n    <div class=\"tr\">\n      <div class=\"td\"><b>{{modification.name}}</b></div>\n      <div class=\"td\"><b>{{modification.oldValue}}</b></div>\n      <div class=\"td\"><b>{{modification.value}}</b></div>\n    </div>\n    {{/each}}\n  </div>\n  <p><a href=\"https://lms-test.protranslating.com/requests/{{request._id}}/details\" rel=\"noopener noreferrer\">Go to this Request</a></p>",
+            "subject" : "The request {{request.title}} has been modified",
+            "variables" : {
+                "path" : "https://portal.protranslating.com/",
+                "modifications" : [
+                    {
+                        "name" : "title",
+                        "oldValue" : "Old title",
+                        "newValue" : "New Value"
+                    }
+                ],
+                "user" : {
+                    "firstName" : "Email",
+                    "lastName" : "Receiver",
+                    "email" : "email-receiver@protranslating.com"
+                },
+                "request" : {
+                    "_id" : "request-id",
+                    "no" : "request-#",
+                    "contact" : {
+                        "firstName" : "John",
+                        "lastName" : "Doe"
+                    },
+                    "otherContact" : {
+                        "firstName" : "Alice",
+                        "lastName" : "Doe"
+                    },
+                    "receptionDate" : "2017-06-29T21:25:11.795Z",
+                    "title" : "New translation request",
+                    "deliveryDate" : "2017-06-29T21:25:11.795Z",
+                    "comments" : "Translation request comment",
+                    "otherCC" : "another_email@lsp.com",
+                    "status" : "Request status",
+                    "documents" : [
+                        {
+                            "name" : "Document's name",
+                            "isReference" : false
+                        }
+                    ],
+                    "srcLang" : {
+                        "name" : "English",
+                        "isoCode" : "ENG"
+                    },
+                    "tgtLangs" : [
+                        {
+                            "name" : "Spanish",
+                            "isoCode" : "SPA"
+                        }
+                    ],
+                    "requireQuotation" : false,
+                    "company" : {
+                        "name" : "Company"
+                    }
+                }
+            }
+        },
+
+        "deleted" : false,
+
+        "updatedBy" : "e2e@sample.com",
+        "executionHistory" : [],
+        "__v" : 2296338,
+        "deletedAt" : null,
+        "schedule" : null,
+
+        "deletedBy" : "ptzankova@protranslating.com",
+
+        "restoredBy" : "tdayashanker@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "quote-client-approved-pm-email",
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest"
+        },
+        "email" : {
+            "from" : "noreply+test@protranslating.com",
+            "template" : "<p>Hello {{user.PMName}},</p><p><strong>Quote approved.</strong></p><p>A quote associated to a request for Protranslating has been approved.</p><p>Request Number: {{quote.requestNo}}</p><p>Company: {{quote.companyName}}</p><p>Approved by: {{quote.approvedBy}}</p><p>Quote Number: {{quote.quoteNum}}</p><p><a href=\"https://lms-test.protranslating.com/requests/{{request._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to the request</a></p>",
+            "subject" : "Quote {{quote.quoteNum}} has been approved by client",
+            "variables" : {
+                "path" : "https://system.netsuite.com/pages/customerlogin.jsp?country=US",
+                "user" : {
+                    "PMName" : "John Doe",
+                    "email" : "email-receiver@protranslating.com"
+                },
+                "quote" : {
+                    "requestNo" : "ACME-1234-5",
+                    "approvedBy" : "User Name",
+                    "quoteNum" : "Q1234",
+                    "companyName" : "Mike Tod"
+                }
+            }
+        },
+
+        "deleted" : false,
+
+        "updatedBy" : "ptzankova@protranslating.com",
+        "executionHistory" : [],
+        "__v" : 2294093,
+        "deletedAt" : null,
+        "schedule" : null
+    },
+    {
+        "_id" : "_id",
+        "name" : "service-to-do-provider-notification",
+        "every" : "1 minutes",
+        "options" : {
+            "notificationDelay" : 0,
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "concurrency" : 10
+        },
+        "email" : {
+            "from" : "notify+test@protranslating.com",
+            "template" : "<h1>Service To Do</h1><p>You have a service to do for {{enterprise}}<br /><br /></p><p>Request Title: {{request.title}}</p><p>Request Number: {{request.no}}</p><p>Document Name: {{request.documentNames}}</p><p>{{task.units}}</p><p>Service Name: {{task.ability}}</p><p>Language pair(s): {{task.languagePair}}</p><p>Delivery date: {{toTimezone task.providerTask.taskDueDate 'America/New_York' 'YYYY-MM-DD hh:mm A z'}}</p><p><a href=\"https://lms-test.protranslating.com/tasks/{{request._id}}/{{task._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to this Service</a></p>",
+            "subject" : "Service Summary: {{request.no}}",
+            "variables" : {
+                "path" : "https://www.protranslating.com",
+                "user" : {
+                    "_id" : "456",
+                    "firstName" : "User",
+                    "middleName" : "Middle",
+                    "lastName" : "Receiver"
+                },
+                "request" : {
+                    "no" : "ACME-1234-5",
+                    "title" : "Request title",
+                    "documentNames" : "files",
+                    "comments" : "Request comment",
+                    "internalComments" : "Request internal comment",
+                    "company" : {
+                        "_id" : "5313",
+                        "name" : "Company name"
+                    },
+                    "expectedStartDate" : "2017-06-29T21:25:11.795Z",
+                    "reference" : "Request reference",
+                    "location" : {
+                        "_id" : "101112",
+                        "name" : "Request location"
+                    },
+                    "requestType" : {
+                        "_id" : "9876",
+                        "name" : "Request type"
+                    }
+                },
+                "task" : {
+                    "_id" : "678",
+                    "ability" : "Ability",
+                    "languagePair" : "English - Spanish",
+                    "description" : "task.description",
+                    "providerTask" : {
+                        "provider" : {
+                            "_id" : "123",
+                            "firstName" : "Provider",
+                            "middleName" : "1",
+                            "lastName" : "User"
+                        }
+                    }
+                },
+                "enterprise" : "ProTranslating"
+            }
+        },
+
+        "deleted" : false,
+
+        "updatedBy" : "ptzankova@protranslating.com",
+        "executionHistory" : [],
+        "__v" : 2289747,
+        "deletedAt" : null,
+        "schedule" : null
+    },
+    {
+        "_id" : "_id",
+        "name" : "backup-notifications-monthly",
+        "every" : "0 1 1 * *",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest"
+        },
+
+        "deleted" : false,
+        "email" : null,
+
+        "updatedBy" : "e2e@sample.com",
+        "executionHistory" : [],
+        "__v" : 60,
+
+        "deletedAt" : null,
+        "schedule" : null
+    },
+    {
+        "_id" : "_id",
+        "name" : "request-delivered-email",
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {},
+            "notificationDelay" : 0
+        },
+        "email" : {
+            "from" : "request+test@protranslating.com",
+            "template" : "<h2>Delivery for a completed service</h2><p>Protranslating has completed a service.</p><p>Request Number: {{request.no}}</p><p>Document(s): {{#each finalDocuments}}{{name}}, {{/each}}</p><p>Click on the following link:</p><p><a href=\"https://lms-test.protranslating.com/requests/{{request._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to this Request</a></p>",
+            "subject" : "A service has been completed for {{request.no}}",
+            "variables" : {
+                "path" : "https://portal.protranslating.com/",
+                "user" : {
+                    "firstName" : "Email",
+                    "lastName" : "Receiver",
+                    "email" : "email-receiver@protranslating.com"
+                },
+                "finalDocuments" : [
+                    {
+                        "name" : "Document name",
+                        "final" : true
+                    },
+                    {
+                        "name" : "Other Document name",
+                        "final" : true
+                    }
+                ],
+                "deliveringProvider" : {
+                    "firstName" : "Delivering",
+                    "lastName" : "Provider"
+                },
+                "request" : {
+                    "_id" : "request-id",
+                    "no" : "request-#",
+                    "contact" : {
+                        "firstName" : "John",
+                        "lastName" : "Doe"
+                    },
+                    "otherContact" : {
+                        "firstName" : "Alice",
+                        "lastName" : "Doe"
+                    },
+                    "receptionDate" : "2017-06-29T21:25:11.795Z",
+                    "title" : "New translation request",
+                    "deliveryDate" : "2017-06-29T21:25:11.795Z",
+                    "comments" : "Translation request comment",
+                    "otherCC" : "another_email@lsp.com",
+                    "status" : "Request status",
+                    "srcLang" : {
+                        "name" : "English",
+                        "isoCode" : "ENG"
+                    },
+                    "tgtLangs" : [
+                        {
+                            "name" : "Spanish",
+                            "isoCode" : "SPA"
+                        }
+                    ],
+                    "requireQuotation" : false,
+                    "company" : {
+                        "name" : "Company"
+                    }
+                }
+            }
+        },
+
+        "deleted" : false,
+
+        "updatedBy" : "e2e@sample.com",
+        "executionHistory" : [],
+        "__v" : 2296234,
+        "deletedAt" : null,
+        "schedule" : null,
+
+        "deletedBy" : "ptzankova@protranslating.com",
+
+        "restoredBy" : "e2e@sample.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "EOP",
+        "every" : null,
+        "eopFrom" : "2017-06-29T21:25:11.795Z",
+        "eopTo" : "2017-06-29T21:25:11.795Z",
+        "options" : {
+            "lockLifetime" : 10800000,
+            "priority" : "highest",
+            "lockLimit" : 1,
+            "concurrency" : 1,
+            "additionalSchema" : {
+                "eopFrom" : {
+                    "validation" : "",
+                    "type" : "date"
+                },
+                "eopTo" : {
+                    "validation" : "",
+                    "type" : "date"
+                },
+                "eopLanguages" : {
+                    "validation" : "",
+                    "type" : "text"
+                }
+            },
+            "additionalValues" : {
+                "eopFrom" : null,
+                "eopTo" : null,
+                "eopLanguages" : "en_US, ru_RU, es_CO, pt_BR, fr_CA, zh_CN"
+            }
+        },
+
+        "deleted" : false,
+        "email" : null,
+
+        "updatedBy" : "e2e@sample.com",
+        "deletedAt" : null,
+        "executionHistory" : [],
+        "__v" : 1311,
+        "schedule" : "2017-06-29T21:25:11.795Z"
+    },
+    {
+        "_id" : "_id",
+        "name" : "inactivate-user",
+        "every" : "0 0 * * *",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "low",
+            "additionalSchema" : {
+                "inactivePeriod" : {
+                    "validation" : "",
+                    "type" : "number"
+                },
+                "mock" : {
+                    "validation" : "",
+                    "type" : "number"
+                }
+            },
+            "additionalValues" : {
+                "inactivePeriod" : "75",
+                "mock" : "1"
+            },
+            "notificationDelay" : 0
+        },
+
+        "deleted" : false,
+        "executionHistory" : [],
+
+
+        "__v" : 8572,
+        "deletedAt" : null,
+        "email" : null,
+        "schedule" : null,
+        "updatedBy" : "e2e@sample.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "document-retention-policy",
+        "every" : "36 16 * * *",
+        "options" : {
+            "lockLifetime" : 600000,
+            "lockLimit" : 1,
+            "priority" : "low",
+            "additionalSchema" : {},
+            "additionalValues" : {}
+        },
+
+        "deleted" : false,
+        "executionHistory" : [],
+
+
+        "__v" : 6119,
+        "deletedAt" : null,
+        "email" : null,
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com",
+        "deletedBy" : "ptzankova@protranslating.com",
+        "restoredBy" : "ptzankova@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "provider-availability-email",
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest"
+        },
+        "email" : {
+            "from" : "support+test@protranslating.com",
+            "template" : "<h4 style=\"line-height:1;\"><b><span style=\"font-family:&quot;Helvetica Neue&quot;;\">Available for service</span></b></h4><p><br /></p><p>Are you available to perform a service for Protranslating?</p><p><br /></p><p>Request Number: {{providerPool.requestNo}}</p><p>Request Title: {{providerPool.requestTitle}}</p><p>Service Name: {{providerPoolLine.ability}}</p><p>Language pair: {{providerPool.srcLang.name}} - {{providerPoolLine.tgtLang.name}}</p>{{#if providerPool.requestCatTool}}<p>Cat Tool: {{providerPool.requestCatTool}}</p>{{/if}}{{#if providerPool.requestProjectManagers.length}}<p>Project Manager(s): {{#each providerPool.requestProjectManagers}} {{ username this }} {{/each}}</p>{{/if}}<p>Task Due Date: {{toTimezone providerPoolLine.taskDueDate 'America/New_York' 'YYYY-MM-DD hh:mm A z'}}</p><p><br /></p><p>Let us know by clicking on the link below:</p><p><br /></p><p><a href=\"{{path}}/provider-pools/{{providerPool.request}}\" target=\"_blank\" rel=\"noopener noreferrer\"></a><a href=\"https://lms-test.protranslating.com/provider-pools/{{providerPool.request}}\" target=\"_blank\" rel=\"noopener noreferrer\">Go to task details</a><br /></p>",
+            "subject" : "Service availability: {{providerPool.requestNo}}",
+            "variables" : {
+                "user" : {
+                    "_id" : "projectManagerId",
+                    "email" : "provider-email@sample.com",
+                    "firstName" : "First",
+                    "middleName" : "Middle",
+                    "lastName" : "Last"
+                },
+                "path" : "https://portal.protranslating.com/",
+                "providerPool" : {
+                    "_id" : "providerPoolId",
+                    "request" : "requestId",
+                    "requestNo" : "R180101-1",
+                    "requestTitle" : "A cool document to translate",
+                    "requestCatTool" : "MemoQ",
+                    "requestProjectManagers" : {
+                        "_id" : "projectManagerId",
+                        "firstName" : "First",
+                        "middleName" : "Middle",
+                        "lastName" : "Last"
+                    }
+                },
+                "providerPoolLine" : {
+                    "tgtLang" : "Spanish",
+                    "ability" : "Translation",
+                    "taskDueDate" : "2017-06-29T21:25:11.795Z"
+                }
+            }
+        },
+
+        "__v" : 1408809,
+
+        "deleted" : false,
+        "executionHistory" : [],
+
+
+        "deletedAt" : null,
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "user-feedback-create-for-auditor",
+
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {}
+        },
+        "email" : {
+            "from" : "support+test@protranslating.com",
+            "to" : "{{user.email}}",
+            "template" : "\n    <p>Hello {{user.firstName}} {{user.lastName}},</p><br />\n    <p><strong>FEEDBACK REVIEW REQUIRED</strong></p><p>An Activity-Feedback submission has been created. Please review the information below:<br />\n    </p><p>Users: {{#each activity.users}}{{name}},{{/each}}</p>\n    <p>Created By: {{activity.createdBy}}</p>\n    <p>Status: {{activity.status}}</p>\n    <p>Subject: {{activity.subject}}</p>\n    <p>Comments: {{{activity.comments}}}</p>\n    <p>Tags: {{activity.tags}}</p>\n    <a href=\"https://lms-test.protranslating.com/activities/{{activity._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to the Activity</a><br />\n    ",
+            "subject" : " Activity Created - {{activity.subject}}",
+            "variables" : {
+                "path" : "https://portal.protranslating.com/",
+                "user" : {
+                    "fullName" : "Email Receiver",
+                    "email" : "email-receiver@protranslating.com"
+                },
+                "activity" : {
+                    "_id" : "activity-id",
+                    "users" : [
+                        {
+                            "name" : "User name"
+                        }
+                    ],
+                    "createdBy" : "John Doe",
+                    "status" : "Activity status",
+                    "subject" : "Activity subject",
+                    "comments" : "Activity body",
+                    "tags" : [
+                        "Activity's tag's"
+                    ]
+                }
+            }
+        },
+        "__v" : 1180001,
+
+        "deleted" : false,
+        "executionHistory" : [],
+
+
+        "deletedAt" : null,
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "user-feedback-update-for-auditor",
+
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {}
+        },
+        "email" : {
+            "from" : "support+test@protranslating.com",
+            "to" : "{{user.email}}",
+            "template" : "\n    <p>Hello {{user.firstName}} {{user.lastName}},</p><br />\n    <p><strong>FEEDBACK REVIEW UPDATE</strong></p><p>An Activity-Feedback record has been updated. Please review the information below:<br />\n    </p><p>Users: {{#each activity.users}}{{name}},{{/each}}</p>\n    <p>Created By: {{activity.createdBy}}</p>\n    <p>Status: {{activity.status}}</p>\n    <p>Subject: {{activity.subject}}</p>\n    <p>Comments: {{{activity.comments}}}</p>\n    <p>Tags: {{activity.tags}}</p>\n    <a href=\"https://lms-test.protranslating.com/activities/{{activity._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to the Activity</a><br />\n    ",
+            "subject" : " Activity Updated - {{activity.subject}}",
+            "variables" : {
+                "path" : "https://portal.protranslating.com/",
+                "user" : {
+                    "fullName" : "Email Receiver",
+                    "email" : "email-receiver@protranslating.com"
+                },
+                "activity" : {
+                    "_id" : "activity-id",
+                    "users" : [
+                        {
+                            "name" : "User name"
+                        }
+                    ],
+                    "createdBy" : "John Doe",
+                    "status" : "Activity status",
+                    "subject" : "Activity subject",
+                    "comments" : "Activity body",
+                    "tags" : [
+                        "Activity's tag's"
+                    ]
+                }
+            }
+        },
+        "__v" : 1179383,
+
+        "deleted" : false,
+        "executionHistory" : [],
+
+
+        "deletedAt" : null,
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "competence-audit-create",
+
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {}
+        },
+        "email" : {
+            "from" : "support+test@protranslating.com",
+            "to" : "{{user.email}}",
+            "template" : "\n    <p>Hello {{user.firstName}} {{user.lastName}}, </p><br />\n    <p><strong>COMPETENCE AUDIT REQUIRED</strong></p><p>\n    A Competence Audit record was created, please review the information below:<br />\n    </p><p>Date Created: {{activity.createdAt}}</p>\n    <p>Created By:  {{activity.createdBy}} </p>\n    <p>Vendor:  {{#each activity.users}}{{name}},{{/each}} </p>\n    <p>Subject:  {{activity.subject}} </p>\n    <p>Body:  {{{activity.comments}}} </p>\n    <p>Status:  {{activity.status}} </p>\n    <p>Tags:  {{activity.tags}} </p>\n    <a href=\"https://lms-test.protranslating.com/activities/{{activity._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to the Activity</a><br />\n    ",
+            "subject" : "Activity Created - {{activity.subject}}",
+            "variables" : {
+                "path" : "https://portal.protranslating.com/",
+                "user" : {
+                    "fullName" : "Email Receiver",
+                    "email" : "email-receiver@protranslating.com"
+                },
+                "activity" : {
+                    "_id" : "activity-id",
+                    "users" : [
+                        {
+                            "name" : "User name"
+                        }
+                    ],
+                    "createdBy" : "John Doe",
+
+                    "status" : "Activity status",
+                    "subject" : "Activity subject",
+                    "comments" : "Activity body",
+                    "tags" : "Activity tags"
+                }
+            }
+        },
+        "__v" : 1175834,
+
+        "deleted" : false,
+        "executionHistory" : [],
+
+
+        "deletedAt" : null,
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "competence-audit-update",
+
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {}
+        },
+        "email" : {
+            "from" : "support+test@protranslating.com",
+            "to" : "{{user.email}}",
+            "template" : "\n    <p>Hello {{user.firstName}} {{user.lastName}}, </p><br />\n    <p><strong>COMPETENCE AUDIT UPDATE</strong></p><p>\n    A Competence Audit record was updated, please review the information below:<br />\n    </p><p>Date Created: {{activity.createdAt}}</p>\n    <p>Created By:  {{activity.createdBy}} </p>\n    <p>Vendor:  {{#each activity.users}}{{name}},{{/each}} </p>\n    <p>Subject:  {{activity.subject}} </p>\n    <p>Body:  {{{activity.comments}}}</p>\n    <p>Status:  {{activity.status}} </p>\n    <p>Last Modified:{{activity.updatedAt}} </p>\n    <p>Last Modified By: {{activity.updatedBy}} </p>\n    <p>Tags:  {{activity.tags}} </p>\n    <a href=\"https://lms-test.protranslating.com/activities/{{activity._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to the Activity</a><br />\n    ",
+            "subject" : " Activity Updated - {{activity.subject}}",
+            "variables" : {
+                "path" : "https://portal.protranslating.com/",
+                "user" : {
+                    "fullName" : "Email Receiver",
+                    "email" : "email-receiver@protranslating.com"
+                },
+                "activity" : {
+                    "_id" : "activity-id",
+                    "users" : [
+                        {
+                            "name" : "User name"
+                        }
+                    ],
+                    "createdBy" : "John Doe",
+
+                    "status" : "Activity status",
+                    "subject" : "Activity subject",
+                    "comments" : "Activity body",
+                    "tags" : "Activity tags",
+
+                    "updatedBy" : "Last Modified By"
+                }
+            }
+        },
+        "__v" : 1179549,
+
+        "deleted" : false,
+        "executionHistory" : [],
+
+
+        "deletedAt" : null,
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "quote-pending-approval-contact",
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {},
+            "notificationDelay" : 0
+        },
+        "email" : {
+            "from" : "support+test@protranslating.com",
+            "template" : "<p>\n    Client Module: New Quote <br />\n    A quote on your request has been made by Protranslating and is waiting for your approval.<br />\n    Attached please find a copy of the quote in PDF file format. <br />\n    Request Number: {{request.no}} <br />\n    Document name(s): {{#each documents}}{{name}}, {{/each}} <br />\n    Request title: {{request.title}} <br />\n    Turnaround time: {{request.turnaroundTime}} <br />\n    <br /><a href=\"https://lms-test.protranslating.com/requests/{{request._id}}/details/quote\" target=\"_blank\" rel=\"noopener noreferrer\">Go to Quote Approval</a><br />\n</p>",
+            "subject" : "Quote to approve",
+            "variables" : {
+                "path" : "https://portal.protranslating.com/",
+                "user" : {
+                    "firstName" : "Email",
+                    "lastName" : "Receiver",
+                    "email" : "email-receiver@protranslating.com"
+                },
+                "documents" : [
+                    {
+                        "name" : "Document name"
+                    },
+                    {
+                        "name" : "Other Document name",
+                        "final" : true
+                    }
+                ],
+                "request" : {
+                    "_id" : "request-id",
+                    "no" : "request-#",
+                    "title" : "New translation request",
+                    "turnaroundTime" : "2017-06-29T21:25:11.795Z"
+                }
+            }
+        },
+
+        "__v" : 544890,
+
+        "deleted" : false,
+        "executionHistory" : [],
+
+
+        "deletedAt" : null,
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "service-to-do-provider-consecutive",
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {},
+            "notificationDelay" : 0
+        },
+        "email" : {
+            "from" : "vendorrelations+test@protranslating.com",
+            "template" : "<p>ProTranslating</p><p>Office: 305-371-7887 ext. 445 / Fax: 305-371-8366</p><p>After Hours: 305-371-7887 ext.302</p><p><a href=\"mailto:vendorrelations@protranslating.com\" rel=\"noopener noreferrer\">vendorrelations@protranslating.com</a></p><p><a href=\"https://portal.protranslating.com/task-management/{{request._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to this Service</a></p><p>Dear Interpreter, please be sure to:</p><p></p><ul><li>ARRIVAL: Please arrive 20 - 30 MINUTES BEFORE SCHEDULED TIME</li><li>CHECK IN: Check in with your scheduling coordinator upon arrival via phone call, text or email</li><li>LATE: If you are running late please give at least ONE hour notice to our office - DO NOT call the client directly </li><li>INVOICE: Approve your bill using our Portal at portal.protranslating.com</li><li>TIME RESTRICTIONS: Please advise our office if you have any time restrictions for this setting as early as possible – DO NOT inform the end client directly of any time restrictions</li><li>SCHEDULING: You are specifically being hired for this setting, should you not be able to make it please let the scheduling coordinator know. </li><li>DRESS CODE: Business attire</li></ul><p></p><p>{{task.ability}}</p><p>Assignment #: {{request.no}}</p><p>Assignment Details</p><p>Name of Firm: {{request.company.name}}</p><p>Attorney: {{#if request.alsoDeliverTo}}{{username request.alsoDeliverTo}}{{else}}{{username request.contact}}{{/if}}</p><p>Assignment Date and Time: {{toTimezone request.expectedStartDate 'America/New_York' 'YYYY-MM-DD hh:mm A z'}}</p><p>Location: {{request.location.name}}</p><p>Scheduling Instructions: {{{request.internalComments}}}</p><p>Deponent: {{request.recipient}}</p><p>Case: {{request.title}}</p><p>Case/Claim No.: {{request.reference}}</p><p>Assignment Type: {{request.requestType.name}}</p><p>Language: {{task.languagePair}}</p><p>Special Instructions:</p><p>{{task.description}}</p>",
+            "subject" : "Service Summary: {{task.ability}} for {{toTimezone request.expectedStartDate 'America/New_York' 'YYYY-MM-DD hh:mm A z'}}",
+            "variables" : {
+                "path" : "https://www.protranslating.com",
+                "user" : {
+                    "_id" : "456",
+                    "firstName" : "User",
+                    "middleName" : "Middle",
+                    "lastName" : "Receiver"
+                },
+                "request" : {
+                    "no" : "ACME-1234-5",
+                    "title" : "Request title",
+                    "documentNames" : "files",
+                    "comments" : "Request comment",
+                    "internalComments" : "Request internal comment",
+                    "company" : {
+                        "_id" : "5313",
+                        "name" : "Company name"
+                    },
+                    "contact" : {
+                        "_id" : "123",
+                        "firstName" : "Contact",
+                        "middleName" : "1",
+                        "lastName" : "User"
+                    },
+                    "alsoDeliverTo" : {
+                        "_id" : "123",
+                        "firstName" : "Also",
+                        "middleName" : "Deliver",
+                        "lastName" : "To"
+                    },
+                    "expectedStartDate" : "2017-06-29T21:25:11.795Z",
+                    "reference" : "Request reference",
+                    "location" : {
+                        "_id" : "101112",
+                        "name" : "Request location"
+                    },
+                    "requestType" : {
+                        "_id" : "9876",
+                        "name" : "Request type"
+                    }
+                },
+                "task" : {
+                    "_id" : "678",
+                    "ability" : "Ability",
+                    "languagePair" : "English - Spanish",
+                    "description" : "task description",
+                    "providerTask" : {
+                        "provider" : {
+                            "_id" : "123",
+                            "firstName" : "Provider",
+                            "middleName" : "1",
+                            "lastName" : "User"
+                        }
+                    }
+                },
+                "enterprise" : "ProTranslating"
+            }
+        },
+        "deleted" : true,
+        "createdBy" : "e2e@sample.com",
+        "executionHistory" : [],
+
+        "__v" : 797864,
+
+
+        "deletedAt" : "2017-06-29T21:25:11.795Z",
+        "deletedBy" : "ptzankova@protranslating.com",
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com",
+
+        "restoredBy" : "ptzankova@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "service-to-do-provider-conference",
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {}
+        },
+        "email" : {
+            "from" : "vendorrelations+test@protranslating.com",
+            "template" : "<p><strong>Conference: {{task.ability}}</strong></p><p><strong>Request: {{request.no}}</strong></p><p><strong>Date: {{toTimezone request.expectedStartDate 'America/New_York' 'YYYY-MM-DD hh:mm A z'}}</strong></p><p><strong>Vendor: {{username task.providerTask.provider}}</strong></p><p><a href=\"https://portal.protranslating.com/task-management/{{request._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to this Service</a></p><p>Hello {{username user}},</p><p>Please find below information about the requested service for {{enterprise}}</p><p>Event Title: {{request.title}}</p><p>Event Location: {{request.location.name}}</p><p>Event Schedule: {{{request.comments}}}</p><p>Service Name: {{task.ability}}</p><p>Language pair(s): {{task.languagePair}}</p><p>Special Instructions:</p><p>{{task.description}}</p><p>Disclaimer: {{{request.internalComments}}}</p><p>Payments and Cancellations</p><p>Payments will be processed within 30 days of receipt of invoice. Please note that checks will be issued on Fridays. If the event is cancelled within 7 days of the start of the event, ProTranslating will honor a cancellation fee equal to the amount contracted, unless otherwise specified in the disclaimer notes above.</p><p>Please approve your bill using our Portal at portal.protranslating.com</p><p>General Guidelines</p><p></p><ul><li>Punctuality: Please be in the conference room at least half hour prior to event start time.</li><li>Dress Code: Business attire (i.e. slacks and jacket for men, skirts/slacks and jacket for ladies, conservative colors, no revealing attire).</li><li>Meals: All Meals and refreshments at your own expense, unless otherwise noted.</li></ul><p></p><p>General Conditions</p><p>Anything disclosed or learned in the course of service shall be kept confidential and shall neither be used nor be revealed to outside parties without the permission of ProTranslating, or unless otherwise legally required. The interpreter agrees not to discuss the fees or any other terms and conditions of assignment with other interpreter(s). It is also understood that the client and the interpreter shall not arrange additional assignments nor discuss fees or any other arrangements and that the interpreter may not contact the client directly for a period of two (2) years. The exchange of business cards between interpreters and clients is considered a direct-marketing effort and a breach of contract.</p><p>Liability</p><p>The interpreter shall exercise his/her best efforts to assure the event runs as smoothly as possible. Should s/he become unavailable to serve as indicated, the interpreter accepts the responsibility to exert best efforts to find a qualified substitute on the same terms, with the approval of ProTranslating. The interpreter may not be liable for circumstances beyond his/her control, including illness, family emergencies, disruption of transportation or natural disaster.</p><p>Force Majeure</p><p>The performance of this Agreement is subject to termination without liability for either party upon the occurrence of any circumstance beyond the control of either party such as acts of God, war, terrorism, government regulations, disaster, epidemic, pandemic or the issuance of a restriction order by any authority that impedes to celebrate the convention due to health concerns, strikes (except those involving the employees or agents of the party seeking the protection of this clause), civil disorder, or curtailment of transportation facilities to the extent that such circumstance makes it illegal or impossible to provide or use the venue’s facilities. The ability to terminate this agreement without liability pursuant to this paragraph is conditioned upon delivery of written notice to the other party setting forth the basis for such termination as soon as reasonably practical but in no event longer than (10) days after learning of such basis.</p>",
+            "subject" : "Service Summary: {{task.ability}} for {{toTimezone request.expectedStartDate 'America/New_York' 'YYYY-MM-DD hh:mm A z'}}",
+            "variables" : {
+                "path" : "https://www.protranslating.com",
+                "user" : {
+                    "_id" : "456",
+                    "firstName" : "User",
+                    "middleName" : "Middle",
+                    "lastName" : "Receiver"
+                },
+                "request" : {
+                    "no" : "ACME-1234-5",
+                    "title" : "Request title",
+                    "documentNames" : "files",
+                    "comments" : "Request comment",
+                    "internalComments" : "Request internal comment",
+                    "company" : {
+                        "_id" : "5313",
+                        "name" : "Company name"
+                    },
+                    "expectedStartDate" : "2017-06-29T21:25:11.795Z",
+                    "reference" : "Request reference",
+                    "location" : {
+                        "_id" : "101112",
+                        "name" : "Request location"
+                    },
+                    "requestType" : {
+                        "_id" : "9876",
+                        "name" : "Request type"
+                    }
+                },
+                "task" : {
+                    "_id" : "678",
+                    "ability" : "Ability",
+                    "languagePair" : "English - Spanish",
+                    "description" : "task.description",
+                    "providerTask" : {
+                        "provider" : {
+                            "_id" : "123",
+                            "firstName" : "Provider",
+                            "middleName" : "1",
+                            "lastName" : "User"
+                        }
+                    }
+                },
+                "enterprise" : "ProTranslating"
+            }
+        },
+        "deleted" : false,
+        "createdBy" : "e2e@sample.com",
+        "executionHistory" : [],
+
+        "__v" : 797158,
+
+
+        "deletedAt" : null,
+        "deletedBy" : "ptzankova@protranslating.com",
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com",
+
+        "restoredBy" : "ptzankova@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "bill-pending-approval-provider",
+
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {}
+        },
+        "email" : {
+            "from" : "support+test@protranslating.com",
+            "to" : "{{user.email}}",
+            "template" : "\n    <p><strong>Portal Module: New Bill</strong></p><p>\n    A bill for your task has been made by {{lspName}} and is waiting for your approval.<br />\n    </p><p>Request Number: {{request.no}}</p>\n    <p>transaction Number: {{transaction.no}}</p>\n    <p>Transaction Type:  Bill </p>\n    <p>Language(s):  {{#each languages}}{{this}},{{/each}} </p>\n    <p>Ability(s):  {{#each abilities}}{{this}},{{/each}} </p>\n    <p>Task due date and time(s):  {{taskDueDate}} </p>\n    <a href=\"https://lms-test.protranslating.com/transactions/{{transaction._id}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to Bill Approval</a><br />\n    ",
+            "subject" : "Bill to approve",
+            "variables" : {
+                "lspName" : "",
+                "path" : "https://portal.protranslating.com/",
+                "abilities" : [],
+                "languages" : [],
+                "request" : {
+                    "no" : ""
+                },
+                "transaction" : {
+                    "_id" : "",
+                    "no" : ""
+                },
+                "user" : {
+                    "email" : ""
+                },
+                "taskDueDate" : ""
+            }
+        },
+        "__v" : 662475,
+
+        "deleted" : true,
+        "executionHistory" : [],
+
+
+        "deletedAt" : "2017-06-29T21:25:11.795Z",
+        "deletedBy" : "ptzankova@protranslating.com",
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com",
+        "restoredBy" : "lactesting026@gmail.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "bill-paid-provider",
+
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest"
+        },
+        "email" : {
+            "from" : "notify+test@protranslating.com",
+            "template" : "\n      <p><span><span style=\"font-size:10pt;font-family:Calibri, sans-serif;background-color:transparent;font-weight:700;font-style:italic;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap;\">From: </span><span style=\"text-decoration:none;font-size:10pt;font-family:Calibri, sans-serif;background-color:transparent;font-weight:700;font-style:italic;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap;\"><a href=\"mailto:notify@protranslating.com\" rel=\"noopener noreferrer\">notify@protranslating.com</a></span></span></p>\n      <p><span style=\"font-size:13.3333px;white-space:pre-wrap;\"><i><b>To:</b> {{user.email}}</i></span></p>\n      <p><span style=\"font-size:13.3333px;white-space:pre-wrap;\"><i><b>Subject:</b> Payment Sent</i></span></p>\n      <p><span style=\"font-size:13.3333px;white-space:pre-wrap;\"><i><b>Hello,</b> {{ user.firstName }} {{ user.lastName }},</i></span></p>\n      <p><span style=\"font-size:13.3333px;white-space:pre-wrap;\"><i><b>Portal Module:</b> Bill Paid</i></span></p>\n      <p><span style=\"font-size:13.3333px;white-space:pre-wrap;\"><i><b>A bill for your task has been paid by</b> {{ lsp.name }}.</i></span></p>\n      <p><span style=\"font-size:13.3333px;white-space:pre-wrap;\"><i><b>Request Number:</b> {{requestNo}}</i></span></p>\n      <p><span style=\"font-size:13.3333px;white-space:pre-wrap;\"><i><b>Bill Number:</b> {{billNo}}</i></span></p>\n      <p><span><i><span style=\"background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;font-size:13.3333px;white-space:pre-wrap;\"></span></i></span></p>\n      <p><span style=\"font-size:13.3333px;white-space:pre-wrap;\"><i><b>Amount Paid: </b></i></span><span style=\"font-size:13.3333px;white-space:pre-wrap;\"><i>{{ amountPaid }}</i></span></p>\n      <a href=\"https://lms-test.protranslating.com/bill/{{billId}}/details\" target=\"_blank\" rel=\"noopener noreferrer\">Go to Bill</a><br />\n    ",
+            "subject" : "Payment Sent",
+            "variables" : {
+                "path" : "https://www.protranslating.com",
+                "requestNo" : "ACME-1234-5",
+                "billNo" : "B1234",
+                "billId" : "1234",
+                "amountPaid" : 0,
+                "user" : {
+                    "email" : "johndoe@sample.com",
+                    "firstName" : "John",
+                    "lastName" : "Doe"
+                }
+            }
+        },
+        "__v" : 655513,
+
+        "deleted" : false,
+        "executionHistory" : [],
+
+
+        "deletedAt" : null,
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+
+        "name" : "custom-query-run",
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest"
+        },
+        "executionHistory" : []
+    },
+    {
+        "_id" : "_id",
+
+        "name" : "custom-query-last-result",
+        "email" : {
+            "from" : "support+test@protranslating.com",
+
+            "subject" : "Custom Query result ready",
+            "variables" : {
+                "customQuery" : {
+                    "_id" : "customQueryId",
+
+                    "name" : "customQueryName"
+                },
+                "host" : "host"
+            }
+        },
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest"
+        },
+        "executionHistory" : [],
+
+
+        "deleted" : false,
+        "deletedAt" : null,
+
+        "restoredBy" : "ptzankova@protranslating.com",
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "si-connector",
+        "every" : "0 16 * * *",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {},
+            "notificationDelay" : 0
+        },
+
+        "executionHistory" : [],
+
+
+        "deleted" : false,
+        "deletedAt" : null,
+        "email" : null,
+
+        "restoredBy" : "dsmith@protranslating.com",
+        "schedule" : null,
+        "updatedBy" : "dsmith@protranslating.com",
+        "deletedBy" : "dsmith@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "bill-invoice-per-period",
+        "every" : "0 0 * * *",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {},
+            "notificationDelay" : 0
+        },
+
+        "executionHistory" : [],
+
+
+        "deleted" : false,
+        "deletedAt" : null,
+        "email" : null,
+
+        "restoredBy" : "dsmith@protranslating.com",
+        "schedule" : null,
+        "updatedBy" : "dsmith@protranslating.com",
+        "deletedBy" : "dsmith@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "bill-flat-rate",
+        "every" : "0 0 * * *",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {},
+            "notificationDelay" : 0
+        },
+
+        "executionHistory" : [],
+
+
+        "deleted" : false,
+        "deletedAt" : null,
+        "deletedBy" : "dsmith@protranslating.com",
+        "email" : null,
+        "schedule" : null,
+        "updatedBy" : "dsmith@protranslating.com",
+
+        "restoredBy" : "dsmith@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "bill-variable-rate",
+        "every" : "20 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {},
+            "notificationDelay" : 0
+        },
+
+        "executionHistory" : [],
+
+
+        "deleted" : false,
+        "deletedAt" : null,
+        "email" : null,
+
+        "restoredBy" : "dsmith@protranslating.com",
+        "schedule" : null,
+        "updatedBy" : "dsmith@protranslating.com",
+        "deletedBy" : "dsmith@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "credit-card-payments",
+        "every" : "0 * * * *",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {},
+            "notificationDelay" : 0
+        },
+
+        "executionHistory" : [],
+
+
+        "deleted" : false,
+        "deletedAt" : null,
+        "email" : null,
+
+        "restoredBy" : "dsmith@protranslating.com",
+        "schedule" : null,
+        "updatedBy" : "dsmith@protranslating.com"
+    },
+    {
+        "_id" : "_id",
+        "name" : "invoice-submission-notification",
+        "every" : "1 minutes",
+        "options" : {
+            "lockLifetime" : 10000,
+            "priority" : "highest",
+            "additionalSchema" : {},
+            "additionalValues" : {},
+            "notificationDelay" : 0
+        },
+
+        "executionHistory" : [],
+
+
+        "deleted" : false,
+        "deletedAt" : null,
+        "email" : null,
+
+        "restoredBy" : "ptzankova@protranslating.com",
+        "schedule" : null,
+        "updatedBy" : "ptzankova@protranslating.com"
+    }
+    ]
+}

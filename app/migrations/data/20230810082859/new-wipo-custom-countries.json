@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Dominican Republic",
+        "code": "",
+        "iq": false,
+        "entity": false,
+        "entitySizes": [
+            "N/A"
+        ],
+        "inactive": false
+    },
+    {
+        "name": "Guatemala",
+        "code": "",
+        "iq": false,
+        "entity": false,
+        "entitySizes": [
+            "N/A"
+        ],
+        "inactive": false
+    },
+    {
+        "name": "Hong Kong",
+        "code": "",
+        "iq": false,
+        "entity": false,
+        "entitySizes": [
+            "N/A"
+        ],
+        "inactive": false
+    },
+    {
+        "name": "Tunisia",
+        "code": "",
+        "iq": false,
+        "entity": false,
+        "entitySizes": [
+            "N/A"
+        ],
+        "inactive": false
+    },
+    {
+        "name": "Panama",
+        "code": "",
+        "iq": false,
+        "entity": false,
+        "entitySizes": [
+            "N/A"
+        ],
+        "inactive": false
+    }
+]

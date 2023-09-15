@@ -1,0 +1,23 @@
+{
+  "status": {
+    "type": "success",
+    "code": 200,
+    "message": "Success",
+    "error": false
+  },
+  "data": [
+    {
+      "user": {
+        "username": "test@mail.com",
+        "email": "test@mail.com",
+        "lastname": "Test",
+        "firstname": "Mail",
+        "id": 2
+      },
+      "status": "Authenticated",
+      "session_token": "session_token",
+      "expires_at": "2017/02/13 17:47:08 +0000",
+      "return_to_url": null
+    }
+  ]
+}

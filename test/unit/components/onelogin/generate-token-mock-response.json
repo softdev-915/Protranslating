@@ -1,0 +1,18 @@
+{
+  "status": {
+    "error": false,
+    "code": 200,
+    "type": "success",
+    "message": "Success"
+  },
+  "data": [
+    {
+      "access_token": "access_token",
+      "created_at": "2017-02-13T17:23:05.878Z",
+      "expires_in": 36000,
+      "refresh_token": "refresh_token",
+      "token_type": "bearer",
+      "account_id": 1
+    }
+  ]
+}

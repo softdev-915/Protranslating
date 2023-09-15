@@ -1,0 +1,71 @@
+[
+  {
+    "country": "Vietnam",
+    "translationFormula": "{translationRate}*({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount} + {abstractWordCount}) + (5 * {exchangeRate})*{{drawingsPageCount}}"
+  },
+  {
+    "country": "Bahrain",
+    "translationFormula": "(20 * {exchangeRate}) + (({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount})*{translationRate}) + ((4 * {exchangeRate})*{{drawingsPageCount}})"
+  },
+  {
+    "country": "Saudi Arabia",
+    "translationFormula": "(20 * {exchangeRate}) + (({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount})*{translationRate}) + ((4 * {exchangeRate})*{{drawingsPageCount}})"
+  },
+  {
+    "country": "Morocco",
+    "translationFormula": "(20 * {exchangeRate}) + (({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount})*{translationRate}) + ((4 * {exchangeRate})*{{drawingsPageCount}})"
+  },
+  {
+    "country": "Ukraine",
+    "translationFormula": "{translationRate}*({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount}) + (5 * {exchangeRate})*{{drawingsPageCount}}"
+  },
+  {
+    "country": "Qatar",
+    "translationFormula": "(20 * {exchangeRate}) + (({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount})*{translationRate}) + ((4 * {exchangeRate})*{{drawingsPageCount}})"
+  },
+
+{
+  "country": "Brazil",
+  "translationFormula": "{translationRate}*({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount}) + (4 * {exchangeRate})*{{drawingsPageCount}}"
+},
+{
+  "country": "Egypt",
+  "translationFormula": "(20 * {exchangeRate}) + (({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount})*{translationRate}) + ((4 * {exchangeRate})*{{drawingsPageCount}})"
+},
+{
+  "country": "Russian Federation",
+  "translationFormula": "{translationRate}*({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount}) + (5 * {exchangeRate})*{{drawingsPageCount}}"
+},
+{
+  "country": "China",
+  "translationFormula": "{translationRate}*({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount}) + (4 * {exchangeRate})*{{drawingsPageCount}}"
+},
+{
+  "country": "Laos",
+  "translationFormula": "{translationRate}*({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount}) + (5 * {exchangeRate})*{{drawingsPageCount}}"
+},
+{
+  "country": "Oman",
+  "translationFormula": "(20 * {exchangeRate}) + (({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount})*{translationRate}) + ((4 * {exchangeRate})*{{drawingsPageCount}})"
+},
+{
+  "country": "United Arab Emirates",
+  "translationFormula": "(20 * {exchangeRate}) + (({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount})*{translationRate}) + ((4 * {exchangeRate})*{{drawingsPageCount}})"
+},
+{
+  "country": "Japan",
+  "translationFormula": "{translationRate}*({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount}) + (4 * {exchangeRate})*{numberOfDrawings}"
+},
+{
+  "country": "Eurasia",
+  "translationFormula": "{translationRate}*({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount}) + (5 * {exchangeRate})*{{drawingsPageCount}}"
+},
+{
+  "country": "Kuwait",
+  "translationFormula": "(20 * {exchangeRate}) + (({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount}+{abstractWordCount})*{translationRate}) + ((4 * {exchangeRate})*{{drawingsPageCount}})"
+},
+{
+  "country": "English Translation",
+  "translationFormula": "({descriptionWordCount}+{claimsWordCount}+{drawingsWordCount}+{abstractWordCount})*(1.25 * {exchangeRate})*{translationRate}"
+}
+]

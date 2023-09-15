@@ -1,0 +1,39 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "rules": {
+        "no-restricted-globals": "off",
+        "no-return-await": "off",
+        "no-param-reassign": "off",
+        "no-constructor-return": "off",
+        "consistent-return": "off",
+        "no-underscore-dangle": "off",
+        "class-methods-use-this": "off",
+        "no-plusplus": "off",
+        "max-classes-per-file": "off",
+        "max-len": [
+            "warn",
+            {
+                "code": 120
+            }
+        ],
+        "padding-line-between-statements": [
+            "error",
+            { "blankLine": "never", "prev": ["const", "let"], "next": ["const", "let"] },
+            { "blankLine": "any", "prev": ["multiline-const", "multiline-let"], "next": ["multiline-const", "multiline-let"] },
+            { "blankLine": "any", "prev": ["const", "let"], "next": ["cjs-import"] },
+            { "blankLine": "never", "prev": ["*"], "next": ["return"] },
+            { "blankLine": "always", "prev": ["cjs-import"], "next": ["*"] },
+            { "blankLine": "never", "prev": ["cjs-import"], "next": ["cjs-import"] }
+        ]
+    }
+}

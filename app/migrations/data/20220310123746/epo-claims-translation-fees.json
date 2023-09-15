@@ -1,0 +1,32 @@
+[
+  {
+    "sourceLanguage": "EN",
+    "targetLanguage": "FR",
+    "formula": "0.15*{claimsWordCount}*1.15"
+  },
+  {
+    "sourceLanguage": "EN",
+    "targetLanguage": "DE",
+    "formula": "0.14*{claimsWordCount}"
+  },
+  {
+    "sourceLanguage": "FR",
+    "targetLanguage": "EN",
+    "formula": "0.14*{claimsWordCount}"
+  },
+  {
+    "sourceLanguage": "FR",
+    "targetLanguage": "DE",
+    "formula": "0.15*{claimsWordCount}"
+  },
+  {
+    "sourceLanguage": "DE",
+    "targetLanguage": "EN",
+    "formula": "0.14*{claimsWordCount}*1.2"
+  },
+  {
+    "sourceLanguage": "DE",
+    "targetLanguage": "FR",
+    "formula": "0.15*{claimsWordCount}*1.25"
+  }
+]

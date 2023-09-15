@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+  <control>
+    <senderid>{{senderId}}</senderid>
+    <password>{{senderPassword}}</password>
+    <controlid>{{timestamp}}</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+    <includewhitespace>false</includewhitespace>
+  </control>
+  <operation>
+    <authentication>
+      <sessionid>{{sessionId}}</sessionid>
+    </authentication>
+    <content>
+      <function controlid="{{guid}}">
+        <create_apadjustment>
+          <vendorid>{{vendorId}}</vendorid>
+          <datecreated>
+            <year>{{formatDate date 'YYYY'}}</year>
+            <month>{{formatDate date 'M'}}</month>
+            <day>{{formatDate date 'DD'}}</day>
+          </datecreated>
+          <dateposted>
+            <year>{{formatDate glPostingDate 'YYYY'}}</year>
+            <month>{{formatDate glPostingDate 'M'}}</month>
+            <day>{{formatDate glPostingDate 'DD'}}</day>
+          </dateposted>
+          <adjustmentno>{{adjustmentNo}}</adjustmentno>
+          <action>Submit</action>
+          <billno>{{referenceBillNo}}</billno>
+          <customfields>
+            <customfield>
+              <customfieldname>LSP_TRANSACTIONID</customfieldname>
+              <customfieldvalue>{{_id}}</customfieldvalue>
+            </customfield>
+          </customfields>
+          <apadjustmentitems>{{{apAdjustmentItems}}}</apadjustmentitems>
+        </create_apadjustment>
+      </function>
+    </content>
+  </operation>
+</request>

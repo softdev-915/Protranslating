@@ -1,0 +1,839 @@
+[
+  {
+    "country": "Albania",
+    "officialFilingLanguage": "Albanian",
+    "officialFilingLanguageIsoCode": "SQI",
+    "agencyFeeFixed": "275.00",
+    "translationRate": "0.17",
+    "translationRateFr": "0.17",
+    "translationRateDe": "0.17",
+    "enTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "frEngTranslationOfDescriptionRequired": "{descriptionWordCount}*0.17",
+    "officialFeeFormula": {
+      "fixedFee": 80,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Austria",
+    "officialFilingLanguage": "German",
+    "officialFilingLanguageIsoCode": "GER",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.17",
+    "translationRateFr": "0.17",
+    "translationRateDe": "",
+    "enTranslationFormula": "({descriptionWordCount}+{drawingsWordCount})*{translationRate}",
+    "deTranslationFormula": "",
+    "frTranslationFormula": "({descriptionWordCount}+{drawingsWordCount})*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 186,
+      "formulaProperties": [
+        "descriptionPageCount",
+        "drawingsPageCount",
+        "claimsPageCount"
+      ],
+      "fixedFeeLimit": 15,
+      "overLimitFee": 135,
+      "formula": "ceil((totalPages - fixedFeeLimit)/ fixedFeeLimit) * overLimitFee"
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Belgium",
+    "officialFilingLanguage": "",
+    "officialFilingLanguageIsoCode": "",
+    "agencyFeeFixed": "100.00",
+    "translationRate": "",
+    "translationRateFr": "",
+    "translationRateDe": "",
+    "enTranslationFormula": "",
+    "deTranslationFormula": "",
+    "frTranslationFormula": "",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 0,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Bosnia & Herzegovina",
+    "officialFilingLanguage": "Serbian",
+    "officialFilingLanguageIsoCode": "SER",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.17",
+    "translationRateFr": "0.17",
+    "translationRateDe": "0.17",
+    "enTranslationFormula": "",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 445,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Bulgaria",
+    "officialFilingLanguage": "Bulgarian",
+    "officialFilingLanguageIsoCode": "BUL",
+    "agencyFeeFixed": "200.00",
+    "translationRate": "0.13",
+    "translationRateFr": "0.13",
+    "translationRateDe": "0.13",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 70,
+      "formulaProperties": [
+        "descriptionPageCount",
+        "drawingsPageCount",
+        "claimsPageCount"
+      ],
+      "fixedFeeLimit": 10,
+      "overLimitFee": 6,
+      "formula": "(totalPages - fixedFeeLimit) * overLimitFee"
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Cambodia",
+    "agencyFeeFixed": "500.00",
+    "deEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "deTranslationFormula": "({claimsWordCount}+200) * {translationRate}+ 5.5*{{drawingsPageCount}}",
+    "enTranslationFormula": "({claimsWordCount}+200) * {translationRate}+ 5.5*{{drawingsPageCount}}",
+    "frTranslationFormula": "({claimsWordCount}+200) * {translationRate}+ 5.5*{{drawingsPageCount}}",
+    "frEngTranslationOfDescriptionRequired": "{descriptionWordCount}*0.17",
+    "officialFilingLanguage": "Khmer",
+    "officialFilingLanguageIsoCode": "KHM",
+    "translationRate": "0.16",
+    "translationRateFr": "0.16",
+    "translationRateDe": "0.16",
+    "officialFeeFormula": {
+      "fixedFee": 225,
+      "formulaProperties": [
+        "numberOfClaims"
+      ],
+      "fixedFeeLimit": 10,
+      "overLimitFee": 5,
+      "formula": "(numberOfClaims - fixedFeeLimit) * overLimitFee"
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Croatia",
+    "officialFilingLanguage": "Croatian",
+    "officialFilingLanguageIsoCode": "HRV",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.17",
+    "translationRateFr": "0.17",
+    "translationRateDe": "0.17",
+    "enTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "frEngTranslationOfDescriptionRequired": "{descriptionWordCount}*0.17",
+    "officialFeeFormula": {
+      "fixedFee": 70,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Czech Republic",
+    "officialFilingLanguage": "Czech",
+    "officialFilingLanguageIsoCode": "CZE",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.13",
+    "translationRateFr": "0.13",
+    "translationRateDe": "0.13",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 82,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Denmark",
+    "officialFilingLanguage": "Danish",
+    "officialFilingLanguageIsoCode": "DAN",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.22",
+    "translationRateFr": "0.22",
+    "translationRateDe": "0.22",
+    "enTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "frEngTranslationOfDescriptionRequired": "{descriptionWordCount}*0.17",
+    "officialFeeFormula": {
+      "fixedFee": 283.10,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Finland",
+    "officialFilingLanguage": "Finnish",
+    "officialFilingLanguageIsoCode": "FIN",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.22",
+    "translationRateFr": "0.22",
+    "translationRateDe": "0.22",
+    "enTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "frEngTranslationOfDescriptionRequired": "{descriptionWordCount}*0.17",
+    "officialFeeFormula": {
+      "fixedFee": 400,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "France",
+    "officialFilingLanguage": "",
+    "officialFilingLanguageIsoCode": "",
+    "agencyFeeFixed": "125.00",
+    "translationRate": "",
+    "translationRateFr": "",
+    "translationRateDe": "",
+    "enTranslationFormula": "",
+    "deTranslationFormula": "",
+    "frTranslationFormula": "",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 0,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Germany",
+    "officialFilingLanguage": "",
+    "officialFilingLanguageIsoCode": "",
+    "agencyFeeFixed": "125.00",
+    "translationRate": "",
+    "translationRateFr": "",
+    "translationRateDe": "",
+    "enTranslationFormula": "",
+    "deTranslationFormula": "",
+    "frTranslationFormula": "",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 0,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Hungary",
+    "officialFilingLanguage": "Hungarian",
+    "officialFilingLanguageIsoCode": "HUN",
+    "agencyFeeFixed": "350.00",
+    "translationRate": "0.22",
+    "translationRateFr": "0.22",
+    "translationRateDe": "0.22",
+    "enTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "frEngTranslationOfDescriptionRequired": "{descriptionWordCount}*0.17",
+    "officialFeeFormula": {
+      "fixedFee": 70,
+      "formulaProperties": [
+        "descriptionPageCount",
+        "drawingsPageCount",
+        "claimsPageCount"
+      ],
+      "fixedFeeLimit": 5,
+      "overLimitFee": 10,
+      "formula": "(totalPages - fixedFeeLimit) * overLimitFee"
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Iceland",
+    "officialFilingLanguage": "Icelandic",
+    "officialFilingLanguageIsoCode": "ICE",
+    "agencyFeeFixed": "300.00",
+    "translationRate": "0.26",
+    "translationRateFr": "0.26",
+    "translationRateDe": "0.26",
+    "enTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "frEngTranslationOfDescriptionRequired": "{descriptionWordCount}*0.17",
+    "officialFeeFormula": {
+      "fixedFee": 270,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Ireland",
+    "officialFilingLanguage": "",
+    "officialFilingLanguageIsoCode": "",
+    "agencyFeeFixed": "160.00",
+    "translationRate": "",
+    "translationRateFr": "",
+    "translationRateDe": "",
+    "enTranslationFormula": "",
+    "deTranslationFormula": "",
+    "frTranslationFormula": "",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 0,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Italy",
+    "officialFilingLanguage": "Italian",
+    "officialFilingLanguageIsoCode": "ITA",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.16",
+    "translationRateFr": "0.16",
+    "translationRateDe": "0.16",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 0,
+      "formulaProperties": ["applicantCount"],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 16
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Luxembourg",
+    "officialFilingLanguage": "",
+    "officialFilingLanguageIsoCode": "",
+    "agencyFeeFixed": "160.00",
+    "translationRate": "",
+    "translationRateFr": "",
+    "translationRateDe": "",
+    "enTranslationFormula": "",
+    "deTranslationFormula": "",
+    "frTranslationFormula": "",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 0,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Macedonia",
+    "officialFilingLanguage": "Macedonian",
+    "officialFilingLanguageIsoCode": "MK-MK",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.17",
+    "translationRateFr": "0.17",
+    "translationRateDe": "0.17",
+    "enTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 70,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Malta",
+    "officialFilingLanguage": "",
+    "officialFilingLanguageIsoCode": "",
+    "agencyFeeFixed": "225.00",
+    "translationRate": "",
+    "translationRateFr": "",
+    "translationRateDe": "",
+    "enTranslationFormula": "",
+    "deTranslationFormula": "",
+    "frTranslationFormula": "",
+    "deEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "frEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "officialFeeFormula": {
+      "fixedFee": 0,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Montenegro",
+    "officialFilingLanguage": "Montenegrin",
+    "officialFilingLanguageIsoCode": "MNE",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.17",
+    "translationRateFr": "0.17",
+    "translationRateDe": "0.17",
+    "enTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 100,
+      "formulaProperties": [
+        "descriptionPageCount",
+        "drawingsPageCount",
+        "claimsPageCount"
+      ],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 3,
+      "formula": "(3 * descriptionPageCount) + (5 * claimsPageCount)"
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Morocco",
+    "agencyFeeFixed": "600.00",
+    "agencyFeeFormula": "",
+    "deEngTranslationOfDescriptionRequired": "",
+    "deTranslationFormula": "",
+    "enTranslationFormula": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "frTranslationFormula": "",
+    "officialFilingLanguage": "",
+    "officialFilingLanguageIsoCode": "",
+    "translationRate": "",
+    "translationRateFr": "",
+    "translationRateDe": "",
+    "officialFeeFormula": {
+      "fixedFee": 595,
+      "formulaProperties": [
+        "numberOfClaims"
+      ],
+      "fixedFeeLimit": 10,
+      "overLimitFee": 47
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Netherlands",
+    "officialFilingLanguage": "Dutch",
+    "officialFilingLanguageIsoCode": "DUT",
+    "agencyFeeFixed": "200.00",
+    "translationRate": "0.22",
+    "translationRateFr": "0.23",
+    "translationRateDe": "0.23",
+    "enTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "frEngTranslationOfDescriptionRequired": "{descriptionWordCount}*0.17",
+    "officialFeeFormula": {
+      "fixedFee": 25,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Norway",
+    "officialFilingLanguage": "Norwegian",
+    "officialFilingLanguageIsoCode": "NOB",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.24",
+    "translationRateFr": "0.24",
+    "translationRateDe": "0.24",
+    "enTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "frEngTranslationOfDescriptionRequired": "{descriptionWordCount}*0.17",
+    "officialFeeFormula": {
+      "fixedFee": 600,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Poland",
+    "officialFilingLanguage": "Polish",
+    "officialFilingLanguageIsoCode": "POL",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.13",
+    "translationRateFr": "0.13",
+    "translationRateDe": "0.13",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 25,
+      "formulaProperties": [
+        "descriptionPageCount",
+        "drawingsPageCount",
+        "claimsPageCount"
+      ],
+      "fixedFeeLimit": 10,
+      "overLimitFee": 5,
+      "formula": "(totalPages - fixedFeeLimit) * overLimitFee"
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Portugal",
+    "officialFilingLanguage": "Portuguese",
+    "officialFilingLanguageIsoCode": "POR",
+    "agencyFeeFixed": "200.00",
+    "translationRate": "0.11",
+    "translationRateFr": "0.12",
+    "translationRateDe": "0.12",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate} + 5*{{drawingsPageCount}}",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate} + 5*{{drawingsPageCount}}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate} + 5*{{drawingsPageCount}}",
+    "deEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 55,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Moldova",
+    "agencyFeeFixed": "250.00",
+    "deEngTranslationOfDescriptionRequired": "",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "frEngTranslationOfDescriptionRequired": "",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "officialFilingLanguage": "Romanian",
+    "officialFilingLanguageIsoCode": "RUM",
+    "translationRate": "0.12",
+    "translationRateFr": "0.13",
+    "translationRateDe": "0.13",
+    "officialFeeFormula": {
+      "fixedFee": 120,
+      "formulaProperties": [
+        "descriptionPageCount",
+        "drawingsPageCount",
+        "claimsPageCount"
+      ],
+      "fixedFeeLimit": 20,
+      "overLimitFee": 5,
+      "formula": "(totalPages - fixedFeeLimit) * overLimitFee"
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Romania",
+    "officialFilingLanguage": "Romanian",
+    "officialFilingLanguageIsoCode": "RUM",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.13",
+    "translationRateFr": "0.13",
+    "translationRateDe": "0.13",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 110,
+      "formulaProperties": [
+        "descriptionPageCount",
+        "drawingsPageCount",
+        "claimsPageCount"
+      ],
+      "fixedFeeLimit": 20,
+      "overLimitFee": 5,
+      "formula": "(totalPages - fixedFeeLimit) * overLimitFee"
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "San Marino",
+    "officialFilingLanguage": "Italian",
+    "officialFilingLanguageIsoCode": "ITA",
+    "agencyFeeFixed": "500.00",
+    "agencyFeeFormula": "totalPages < 101 ? 420 : ((totalPages > 100 and totalPages < 301) ? 470 : 520)",
+    "translationRate": "0.16",
+    "translationRateFr": "0.16",
+    "translationRateDe": "0.16",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 100,
+      "formulaProperties": [
+        "descriptionPageCount",
+        "drawingsPageCount",
+        "claimsPageCount"
+      ],
+      "fixedFeeLimit": 20,
+      "overLimitFee": 10,
+      "formula": "(1.6 * totalPages - fixedFeeLimit) * overLimitFee"
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Serbia",
+    "officialFilingLanguage": "Serbian",
+    "officialFilingLanguageIsoCode": "SER",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.17",
+    "translationRateFr": "0.17",
+    "translationRateDe": "0.17",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 5,
+      "formulaProperties": [
+        "descriptionPageCount",
+        "drawingsPageCount",
+        "claimsPageCount"
+      ],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 2,
+      "formula": "2 * totalPages"
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Slovakia",
+    "officialFilingLanguage": "Slovak",
+    "officialFilingLanguageIsoCode": "SLK",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.12",
+    "translationRateFr": "0.12",
+    "translationRateDe": "0.12",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 58,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Slovenia",
+    "officialFilingLanguage": "Slovene",
+    "officialFilingLanguageIsoCode": "SLV",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.26",
+    "translationRateFr": "0.26",
+    "translationRateDe": "0.26",
+    "enTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 100,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Spain",
+    "officialFilingLanguage": "Spanish",
+    "officialFilingLanguageIsoCode": "SPA",
+    "agencyFeeFixed": "220.00",
+    "translationRate": "0.12",
+    "translationRateFr": "0.14",
+    "translationRateDe": "0.14",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 275,
+      "formulaProperties": [
+        "descriptionPageCount",
+        "drawingsPageCount",
+        "claimsPageCount"
+      ],
+      "fixedFeeLimit": 22,
+      "overLimitFee": 11
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Sweden",
+    "officialFilingLanguage": "Swedish",
+    "officialFilingLanguageIsoCode": "SWE",
+    "agencyFeeFixed": "250.00",
+    "translationRate": "0.22",
+    "translationRateFr": "0.28",
+    "translationRateDe": "0.28",
+    "enTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "frTranslationFormula": "{claimsWordCount}*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "{descriptionWordCount}*1.25*0.17",
+    "frEngTranslationOfDescriptionRequired": "{descriptionWordCount}*0.17",
+    "officialFeeFormula": {
+      "fixedFee": 258.26,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Switzerland/Liechtenstein",
+    "officialFilingLanguage": "",
+    "officialFilingLanguageIsoCode": "",
+    "agencyFeeFixed": "160.00",
+    "translationRate": "",
+    "translationRateFr": "",
+    "translationRateDe": "",
+    "enTranslationFormula": "",
+    "deTranslationFormula": "",
+    "frTranslationFormula": "",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 0,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Tunisia",
+    "agencyFeeFixed": "450.00",
+    "agencyFeeFormula": "agencyFeeFixed + (numberOfClaims > 10 ? (numberOfClaims - 10) * 25 : 0)",
+    "deEngTranslationOfDescriptionRequired": "",
+    "deTranslationFormula": "",
+    "enTranslationFormula": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "frTranslationFormula": "",
+    "officialFilingLanguage": "",
+    "officialFilingLanguageIsoCode": "",
+    "translationRate": "",
+    "translationRateFr": "",
+    "translationRateDe": "",
+    "officialFeeFormula": {
+      "fixedFee": 60,
+      "formulaProperties": [
+        "numberOfClaims"
+      ],
+      "fixedFeeLimit": 10,
+      "overLimitFee": 15,
+      "formula": "(totalPages - fixedFeeLimit) * overLimitFee"
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "Turkey",
+    "officialFilingLanguage": "Turkish",
+    "officialFilingLanguageIsoCode": "TUR",
+    "agencyFeeFixed": "200.00",
+    "translationRate": "0.11",
+    "translationRateFr": "0.15",
+    "translationRateDe": "0.15",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 265,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  },
+  {
+    "country": "United Kingdom",
+    "officialFilingLanguage": "",
+    "officialFilingLanguageIsoCode": "",
+    "agencyFeeFixed": "125.00",
+    "translationRate": "",
+    "translationRateFr": "",
+    "translationRateDe": "",
+    "enTranslationFormula": "",
+    "deTranslationFormula": "",
+    "frTranslationFormula": "",
+    "deEngTranslationOfDescriptionRequired": "",
+    "frEngTranslationOfDescriptionRequired": "",
+    "officialFeeFormula": {
+      "fixedFee": 0,
+      "formulaProperties": [],
+      "fixedFeeLimit": 0,
+      "overLimitFee": 0
+    },
+    "currencyCode": "EUR"
+  }
+]

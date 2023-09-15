@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+  <control>
+    <senderid>{{senderId}}</senderid>
+    <password>{{senderPassword}}</password>
+    <controlid>{{timestamp}}</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+    <includewhitespace>false</includewhitespace>
+  </control>
+  <operation>
+    <authentication>
+      <sessionid>{{sessionId}}</sessionid>
+    </authentication>
+    <content>
+      <function controlid="{{guid}}">
+        <create>
+          <APBILL>
+            <WHENCREATED>{{toTimezone createdAt lspId.timezone 'MM/DD/YYYY'}}</WHENCREATED>
+            <WHENPOSTED>{{toTimezone glPostingDate lspId.timezone 'MM/DD/YYYY'}}</WHENPOSTED>
+            <VENDORID>{{vendorId}}</VENDORID>
+            <RECORDID>{{no}}</RECORDID>
+            <TERMNAME>{{termName}}</TERMNAME>
+            <WHENDUE>{{toTimezone dueDate lspId.timezone 'MM/DD/YYYY'}}</WHENDUE>
+            <PAYMENTPRIORITY>{{paymentPriority}}</PAYMENTPRIORITY>
+            <ONHOLD>{{onHold}}</ONHOLD>
+            <APBILLITEMS>{{{billItems}}}</APBILLITEMS>
+          </APBILL>
+        </create>
+      </function>
+    </content>
+  </operation>
+</request>

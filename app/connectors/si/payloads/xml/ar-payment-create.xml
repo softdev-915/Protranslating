@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+  <control>
+    <senderid>{{senderId}}</senderid>
+    <password>{{senderPassword}}</password>
+    <controlid>{{timestamp}}</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+    <includewhitespace>false</includewhitespace>
+  </control>
+  <operation>
+    <authentication>
+      <sessionid>{{sessionId}}</sessionid>
+    </authentication>
+    <content>
+      <function controlid="{{guid}}">
+        <create>
+          <arpymt>
+            <FINANCIALENTITY>{{bankAccount.no}}</FINANCIALENTITY>
+            <UNDEPOSITEDACCOUNTNO>{{undepositedAccountIdentifier}}</UNDEPOSITEDACCOUNTNO>
+            {{#if method.name}}
+            <PAYMENTMETHOD>{{method.name}}</PAYMENTMETHOD>
+            {{/if}}
+            <CUSTOMERID>{{customerId}}</CUSTOMERID>
+            <DOCNUMBER>{{_id}}</DOCNUMBER>
+            {{#if (isMultiCurrencyPayment accounting)}}
+            <EXCHANGE_RATE>{{reverseExchangeRate accounting.exchangeRate 10}}</EXCHANGE_RATE>
+            {{/if}}
+            <RECEIPTDATE>{{formatDate receiptDate 'MM/DD/YYYY'}}</RECEIPTDATE>
+            <PAYMENTDATE>{{formatDate date 'MM/DD/YYYY'}}</PAYMENTDATE>
+            {{#if (isMultiCurrencyPayment accounting)}}
+            <AMOUNTTOPAY>{{accounting.amountInLocal}}</AMOUNTTOPAY>
+            <TRX_AMOUNTTOPAY>{{accounting.amount}}</TRX_AMOUNTTOPAY>
+            <CURRENCY>{{accounting.currency.isoCode}}</CURRENCY>
+            <BASECURR>{{accounting.localCurrency.isoCode}}</BASECURR>
+            {{/if}}
+            <ARPYMTDETAILS>{{{apPaymentDetails}}}</ARPYMTDETAILS>
+          </arpymt>
+        </create>
+      </function>
+    </content>
+  </operation>
+</request>

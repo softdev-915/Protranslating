@@ -1,0 +1,30 @@
+[
+  {
+    "country": "San Marino",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate}",
+    "agencyFeeFormula": "totalPages < 101 ? ((420 / usdExchangeRate) * targetCurrencyUsdExchangeRate) : ((totalPages > 100 and totalPages < 301) ? ((470 / usdExchangeRate) * targetCurrencyUsdExchangeRate) : ((520 / usdExchangeRate) * targetCurrencyUsdExchangeRate))"
+  },
+  {
+    "country": "Cambodia",
+    "deTranslationFormula": "({claimsWordCount}+((200 / {usdExchangeRate}) * {targetCurrencyUsdExchangeRate})) * {translationRate}+ ((5.5 / {usdExchangeRate}) * {targetCurrencyUsdExchangeRate})*{{drawingsPageCount}}",
+    "enTranslationFormula": "({claimsWordCount}+((200 / {usdExchangeRate}) * {targetCurrencyUsdExchangeRate})) * {translationRate}+ ((5.5 / {usdExchangeRate}) * {targetCurrencyUsdExchangeRate})*{{drawingsPageCount}}",
+    "frTranslationFormula": "({claimsWordCount}+((200 / {usdExchangeRate}) * {targetCurrencyUsdExchangeRate})) * {translationRate}+ ((5.5 / {usdExchangeRate}) * {targetCurrencyUsdExchangeRate})*{{drawingsPageCount}}",
+    "agencyFeeFormula": null
+  },
+  {
+    "country": "Portugal",
+    "deTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate} + ((5 / {usdExchangeRate}) * {targetCurrencyUsdExchangeRate})*{{drawingsPageCount}}",
+    "enTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate} + ((5 / {usdExchangeRate}) * {targetCurrencyUsdExchangeRate})*{{drawingsPageCount}}",
+    "frTranslationFormula": "({descriptionWordCount} + {claimsWordCount} + {drawingsWordCount})*{translationRate} + ((5 / {usdExchangeRate}) * {targetCurrencyUsdExchangeRate})*{{drawingsPageCount}}",
+    "agencyFeeFormula": null
+  },
+  {
+    "country": "Morocco",
+    "deTranslationFormula": "",
+    "enTranslationFormula": "",
+    "frTranslationFormula": "",
+    "agencyFeeFormula": "agencyFeeFixed + (numberOfClaims > 10 ? (numberOfClaims - 10) * ((25 / usdExchangeRate) * targetCurrencyUsdExchangeRate) : 0)"
+  }
+]

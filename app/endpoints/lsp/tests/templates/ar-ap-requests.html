@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR/AP test entities</title>
+  <style>
+    th, td {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body data-e2e-type="test-entities-body">
+  <h3>Companies</h3>
+  <table border="1" data-e2e-type="companies">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+    {{#each companies}}
+    <tr>
+      <td>{{this._id}}</td>
+      <td>{{this.name}}</td>
+    </tr>
+    {{/each}}
+  </table>
+  <h3>Users</h3>
+  <table border="1" data-e2e-type="users">
+    <tr>
+      <th>ID</th>
+      <th>Email</th>
+      <th>Name</th>
+    </tr>
+    {{#each users}}
+    <tr>
+      <td>{{this._id}}</td>
+      <td>{{this.email}}</td>
+      <td>{{this.firstName}} {{this.lastName}}</td>
+    </tr>
+    {{/each}}
+  </table>
+  <h3>Requests (type 1)</h3>
+  <table border="1" data-e2e-type="requests-type1">
+    <tr>
+      <th>ID</th>
+      <th>No</th>
+      <th>PO</th>
+    </tr>
+    {{#each requestsOfType1}}
+    <tr>
+      <td>{{this._id}}</td>
+      <td>{{this.no}}</td>
+      <td>{{this.purchaseOrder}}</td>
+    </tr>
+    {{/each}}
+  </table>
+  <h3>Requests (type 2)</h3>
+  <table border="1" data-e2e-type="requests-type2">
+    <tr>
+      <th>ID</th>
+      <th>No</th>
+      <th>PO</th>
+    </tr>
+    {{#each requestsOfType2}}
+    <tr>
+      <td>{{this._id}}</td>
+      <td>{{this.no}}</td>
+      <td>{{this.purchaseOrder}}</td>
+    </tr>
+    {{/each}}
+  </table>
+  <h3 data-e2e-type="bills-created">Bills created: {{numOfBillsCreated}}</h3>
+</body>
+</html>

@@ -1,0 +1,1269 @@
+[
+  {
+      "name": "Argentina",
+      "code": "AR",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Australia",
+      "code": "AU",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Bahrain",
+      "code": "BH",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Bangladesh",
+      "code": "BD",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Brazil",
+      "code": "BR",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "China",
+      "code": "CN",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "EPO",
+      "code": "EP",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "France",
+      "code": "FR",
+      "iq": true,
+      "inactive": false,
+      "entities": ["Small", "Large"]
+  },
+  {
+      "name": "Germany",
+      "code": "DE",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Indonesia",
+      "code": "ID",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Italy",
+      "code": "IT",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Japan",
+      "code": "JP",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Jordan",
+      "code": "JO",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Korea",
+      "code": "KR",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Kuwait",
+      "code": "KW",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Lebanon",
+      "code": "LB",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Oman",
+      "code": "OM",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Qatar",
+      "code": "QA",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Pakistan",
+      "code": "PK",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Russian Federation",
+      "code": "RU",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Saudi Arabia",
+      "code": "SA",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Taiwan",
+      "code": "TW",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Thailand",
+      "code": "TH",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Turkey",
+      "code": "TR",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "United Arab Emirates",
+      "code": "AE",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "United States",
+      "code": "US",
+      "iq": true,
+      "inactive": false,
+      "entities": ["Small", "Large"]
+  },
+  {
+      "name": "Uruguay",
+      "code": "UY",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Venezuela",
+      "code": "VE",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Vietnam",
+      "code": "VN",
+      "iq": true,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Andorra",
+      "code": "AD",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Afghanistan",
+      "code": "AF",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Antigua and Barbuda",
+      "code": "AG",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Albania",
+      "code": "AL",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Armenia",
+      "code": "AM",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Angola",
+      "code": "AO",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Austria",
+      "code": "AT",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Azerbaijan",
+      "code": "AZ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Bosnia and Herzegovina",
+      "code": "BA",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Barbados",
+      "code": "BB",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Belgium",
+      "code": "BE",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Burkina Faso",
+      "code": "BF",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Bulgaria",
+      "code": "BG",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Burundi",
+      "code": "BI",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Benin",
+      "code": "BJ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Brunei Darussalam",
+      "code": "BN",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Bolivia",
+      "code": "BO",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Bahamas",
+      "code": "BS",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Bhutan",
+      "code": "BT",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Botswana",
+      "code": "BW",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Belarus",
+      "code": "BY",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Belize",
+      "code": "BZ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Canada",
+      "code": "CA",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Democratic Republic of the Congo",
+      "code": "CD",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Central African Republic",
+      "code": "CF",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Congo",
+      "code": "CG",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Switzerland",
+      "code": "CH",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Côte d’Ivoire",
+      "code": "CI",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Chile",
+      "code": "CL",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Cameroon",
+      "code": "CM",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Colombia",
+      "code": "CO",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Costa Rica",
+      "code": "CR",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Cuba",
+      "code": "CU",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Cyprus",
+      "code": "CY",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Czechia",
+      "code": "CZ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Djibouti",
+      "code": "DJ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Denmark",
+      "code": "DK",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Dominica",
+      "code": "DM",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Dominican Republic",
+      "code": "DO",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Algeria",
+      "code": "DZ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Ecuador",
+      "code": "EC",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Estonia",
+      "code": "EE",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Egypt",
+      "code": "EG",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Spain",
+      "code": "ES",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Finland",
+      "code": "FI",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Gabon",
+      "code": "GA",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "United Kingdom",
+      "code": "GB",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Grenada",
+      "code": "GD",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Georgia",
+      "code": "GE",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Ghana",
+      "code": "GH",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Gambia",
+      "code": "GM",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Guinea",
+      "code": "GN",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Equatorial Guinea",
+      "code": "GQ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Greece",
+      "code": "GR",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Guatemala",
+      "code": "GT",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Guinea–Bissau",
+      "code": "GW",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Guyana",
+      "code": "GY",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Hong Kong, China",
+      "code": "HK",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Honduras",
+      "code": "HN",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Croatia",
+      "code": "HR",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Haiti",
+      "code": "HT",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Hungary",
+      "code": "HU",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Ireland",
+      "code": "IE",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Israel",
+      "code": "IL",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "India",
+      "code": "IN",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Iraq",
+      "code": "iq",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Iran (Islamic Republic of)",
+      "code": "IR",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Iceland",
+      "code": "IS",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Jamaica",
+      "code": "JM",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Kenya",
+      "code": "KE",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Kyrgyzstan",
+      "code": "KG",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Cambodia",
+      "code": "KH",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Comoros",
+      "code": "KM",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Saint Kitts and Nevis",
+      "code": "KN",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Democratic People’s Republic of Korea",
+      "code": "KP",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Kazakhstan",
+      "code": "KZ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Lao People’s Democratic Republic",
+      "code": "LA",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Saint Lucia",
+      "code": "LC",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Liechtenstein",
+      "code": "LI",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Sri Lanka",
+      "code": "LK",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Liberia",
+      "code": "LR",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Lesotho",
+      "code": "LS",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Lithuania",
+      "code": "LT",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Luxembourg",
+      "code": "LU",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Latvia",
+      "code": "LV",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Libya",
+      "code": "LY",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Morocco",
+      "code": "MA",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Monaco",
+      "code": "MC",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Republic of Moldova",
+      "code": "MD",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Montenegro",
+      "code": "ME",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Madagascar",
+      "code": "MG",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "North Macedonia",
+      "code": "MK",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Mali",
+      "code": "ML",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Mongolia",
+      "code": "MN",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Macao, China",
+      "code": "MO",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Mauritania",
+      "code": "MR",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Malta",
+      "code": "MT",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Mauritius",
+      "code": "MU",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Malawi",
+      "code": "MW",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Mexico",
+      "code": "MX",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Malaysia",
+      "code": "MY",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Mozambique",
+      "code": "MZ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Namibia",
+      "code": "NA",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Niger",
+      "code": "NE",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Nigeria",
+      "code": "NG",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Nicaragua",
+      "code": "NI",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Netherlands",
+      "code": "NL",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Norway",
+      "code": "NO",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Nepal",
+      "code": "NP",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "New Zealand",
+      "code": "NZ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Panama",
+      "code": "PA",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Peru",
+      "code": "PE",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Papua New Guinea",
+      "code": "PG",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Philippines",
+      "code": "PH",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Poland",
+      "code": "PL",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Portugal",
+      "code": "PT",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Paraguay",
+      "code": "PY",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Romania",
+      "code": "RO",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Serbia",
+      "code": "RS",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Rwanda",
+      "code": "RW",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Seychelles",
+      "code": "SC",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Sudan",
+      "code": "SD",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Sweden",
+      "code": "SE",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Singapore",
+      "code": "SG",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Slovenia",
+      "code": "SI",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Slovakia",
+      "code": "SK",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Sierra Leone",
+      "code": "SL",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "San Marino",
+      "code": "SM",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Senegal",
+      "code": "SN",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Suriname",
+      "code": "SR",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Sao Tome and Principe",
+      "code": "ST",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "El Salvador",
+      "code": "SV",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Syrian Arab Republic",
+      "code": "SY",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Eswatini",
+      "code": "SZ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Chad",
+      "code": "TD",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Togo",
+      "code": "TG",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Tajikistan",
+      "code": "TJ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Turkmenistan",
+      "code": "TM",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Tunisia",
+      "code": "TN",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Tonga",
+      "code": "TO",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Trinidad and Tobago",
+      "code": "TT",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "United Republic of Tanzania",
+      "code": "TZ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Ukraine",
+      "code": "UA",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Uganda",
+      "code": "UG",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Uzbekistan",
+      "code": "UZ",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Holy See",
+      "code": "VA",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Saint Vincent and the Grenadines",
+      "code": "VC",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Samoa",
+      "code": "WS",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Yemen",
+      "code": "YE",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "South Africa",
+      "code": "ZA",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Zambia",
+      "code": "ZM",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  },
+  {
+      "name": "Zimbabwe",
+      "code": "ZW",
+      "iq": false,
+      "inactive": false,
+      "entities": []
+  }
+]

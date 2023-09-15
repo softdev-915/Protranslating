@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+  <control>
+    <senderid>{{senderId}}</senderid>
+    <password>{{senderPassword}}</password>
+    <controlid>{{timestamp}}</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+    <includewhitespace>false</includewhitespace>
+  </control>
+  <operation>
+    <authentication>
+      <sessionid>{{sessionId}}</sessionid>
+    </authentication>
+    <content>
+      <function controlid="{{guid}}">
+        <create>
+          <VENDOR>
+            {{#if vendorDetails.vendorCompany}}
+            <NAME>{{vendorDetails.vendorCompany}}</NAME>
+            {{else}}
+            <NAME>{{username this}}</NAME>
+            {{/if}}
+            <TERMNAME>{{vendorDetails.billingInformation.billingTerms.name}}</TERMNAME>
+            <DISPLAYCONTACT>
+              <FIRSTNAME>{{firstName}}</FIRSTNAME>
+              <LASTNAME>{{lastName}}</LASTNAME>
+              <INITIAL>{{middleName}}</INITIAL>
+              {{#if vendorDetails.vendorCompany}}
+              <PRINTAS>{{vendorDetails.vendorCompany}}</PRINTAS>
+              {{else}}
+              <PRINTAS>{{username this}}</PRINTAS>
+              {{/if}}
+              <EMAIL1>{{email}}</EMAIL1>
+              <MAILADDRESS>
+                  <ADDRESS1>{{vendorDetails.address.line1}}</ADDRESS1>
+                  <ADDRESS2>{{vendorDetails.address.line2}}</ADDRESS2>
+                  <CITY>{{vendorDetails.address.city}}</CITY>
+                  <STATE>{{vendorDetails.address.state.name}}</STATE>
+                  <ZIP>{{vendorDetails.address.zip}}</ZIP>
+                  {{#siCountryInfo vendorDetails.address.country.name}}
+                  <COUNTRY>{{siCountry}}</COUNTRY>
+                  {{#if siCode}}
+                  <COUNTRYCODE>{{siCode}}</COUNTRYCODE>
+                  {{/if}}
+                  {{/siCountryInfo}}
+              </MAILADDRESS>
+            </DISPLAYCONTACT>
+            <STATUS>{{#if terminated}}inactive{{else}}active{{/if}}</STATUS>
+            {{#if vendorDetails.billingInformation.taxId}}
+            <taxid>{{decryptTax vendorDetails.billingInformation.taxId}}</taxid>
+            {{/if}}
+            <NAME1099>{{name1099}}</NAME1099>
+            <FORM1099TYPE>{{form1099Type}}</FORM1099TYPE>
+            <FORM1099BOX>{{form1099Box}}</FORM1099BOX>
+            <ONHOLD>{{vendorDetails.billingInformation.billsOnHold}}</ONHOLD>
+            <PAYMENTMETHOD>{{vendorDetails.billingInformation.paymentMethod.name}}</PAYMENTMETHOD>
+            <PAYMENTPRIORITY>{{#if vendorDetails.billingInformation.priorityPayment}}Urgent{{else}}Normal{{/if}}</PAYMENTPRIORITY>
+            <LSP_VENDORID>{{_id}}</LSP_VENDORID>
+            <LSP_VEEM>{{vendorDetails.billingInformation.ptPayOrPayPal}}</LSP_VEEM>
+            <PAYMETHODKEY>EFT</PAYMETHODKEY>
+            <COMMENTS>{{truncate vendorDetails.billingInformation.billPaymentNotes 200 '...'}}</COMMENTS>
+          </VENDOR>
+        </create>
+      </function>
+    </content>
+  </operation>
+</request>

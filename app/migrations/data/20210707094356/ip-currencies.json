@@ -1,0 +1,65 @@
+[
+  {
+    "database": "WIPO",
+    "isoCode": "USD",
+    "sign": "$",
+    "default": true,
+    "inactive": false
+  },
+  {
+    "database": "WIPO",
+    "isoCode": "EUR",
+    "sign": "€",
+    "default": false,
+    "inactive": false
+  },
+  {
+    "database": "WIPO",
+    "isoCode": "GBP",
+    "sign": "£",
+    "default": false,
+    "inactive": false
+  },
+  {
+    "database": "EPO",
+    "isoCode": "USD",
+    "sign": "$",
+    "default": false,
+    "inactive": false
+  },
+  {
+    "database": "EPO",
+    "isoCode": "EUR",
+    "sign": "€",
+    "default": true,
+    "inactive": false
+  },
+  {
+    "database": "EPO",
+    "isoCode": "GBP",
+    "sign": "£",
+    "default": false,
+    "inactive": false
+  },
+  {
+    "database": "No DB",
+    "isoCode": "USD",
+    "sign": "$",
+    "default": true,
+    "inactive": false
+  },
+  {
+    "database": "No DB",
+    "isoCode": "EUR",
+    "sign": "€",
+    "default": false,
+    "inactive": false
+  },
+  {
+    "database": "No DB",
+    "isoCode": "GBP",
+    "sign": "£",
+    "default": false,
+    "inactive": false
+  }
+]

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+  <control>
+    <senderid>{{senderId}}</senderid>
+    <password>{{senderPassword}}</password>
+    <controlid>{{timestamp}}</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+    <includewhitespace>false</includewhitespace>
+  </control>
+  <operation>
+    <authentication>
+      <sessionid>{{sessionId}}</sessionid>
+    </authentication>
+    <content>
+      <function controlid="{{guid}}">
+        <create>
+          <APPYMT>
+            <FINANCIALENTITY>{{bankAccount.no}}</FINANCIALENTITY>
+            <PAYMENTMETHOD>EFT</PAYMENTMETHOD>
+            <VENDORID>{{vendorId}}</VENDORID>
+            <PAYMENTDATE>{{toTimezone paymentDate lspId.timezone 'MM/DD/YYYY'}}</PAYMENTDATE>
+            <APPYMTDETAILS>{{{apPaymentDetailsTag}}}</APPYMTDETAILS>
+            <LSP_PAYMENTMETHOD>{{paymentMethod.name}}</LSP_PAYMENTMETHOD>
+            <LSP_TRANSACTIONID>{{_id}}</LSP_TRANSACTIONID>
+          </APPYMT>
+        </create>
+      </function>
+    </content>
+  </operation>
+</request>

@@ -1,0 +1,1002 @@
+[
+  {
+    "name": "ARIPO",
+    "code": "AP",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Algeria",
+    "code": "DZ",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Australia",
+    "code": "AU",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Brazil",
+    "code": "BR",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Cambodia",
+    "code": "KH",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Canada",
+    "code": "CA",
+    "iq": true,
+    "entity": true,
+    "entitySizes": ["Small", "Large"],
+    "inactive": false
+  },
+  {
+    "name": "Chile",
+    "code": "CL",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "China",
+    "code": "CN",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Colombia",
+    "code": "CO",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Dominican Republic",
+    "code": "DO",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Ecuador",
+    "code": "EC",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Egypt",
+    "code": "EG",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Eurasia",
+    "code": "EA",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Europe",
+    "code": "EP",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Germany",
+    "code": "DE",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Guatemala",
+    "code": "GT",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Hong Kong",
+    "code": "HK",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "India ",
+    "code": "IN",
+    "iq": true,
+    "entity": true,
+    "entitySizes": ["Small", "Large"],
+    "inactive": false
+  },
+  {
+    "name": "Indonesia",
+    "code": "ID",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Israel",
+    "code": "IL",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Japan",
+    "code": "JP",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Korea",
+    "code": "KR",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Kuwait",
+    "code": "KW",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Laos",
+    "code": "LA",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Malaysia",
+    "code": "MY",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Mexico",
+    "code": "MX",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Morocco",
+    "code": "MA",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "New Zealand",
+    "code": "NZ",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "OAPI",
+    "code": "OA",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Oman",
+    "code": "OM",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Panama",
+    "code": "PA",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Peru",
+    "code": "PE",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Philippines",
+    "code": "PH",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Qatar",
+    "code": "QA",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Russian Federation",
+    "code": "RU",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Saudi Arabia",
+    "code": "SA",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Singapore",
+    "code": "SG",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "South Africa",
+    "code": "ZA",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Thailand",
+    "code": "TH",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Tunisia",
+    "code": "TN",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "United Arab Emirates",
+    "code": "AE",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Ukraine",
+    "code": "UA",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "United States",
+    "code": "US",
+    "iq": true,
+    "entity": true,
+    "entitySizes": ["Small", "Large"],
+    "inactive": false
+  },
+  {
+    "name": "Vietnam",
+    "code": "VN",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Albania",
+    "code": "AL",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Angola",
+    "code": "AO",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "code": "AG",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Armenia",
+    "code": "AM",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Austria",
+    "code": "AT",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Azerbaijan",
+    "code": "AZ",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Bahrain",
+    "code": "BH",
+    "iq": true,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Barbados",
+    "code": "BB",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Belarus",
+    "code": "BY",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Belize",
+    "code": "BZ",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Bosnia & Herzegovina",
+    "code": "BA",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Botswana",
+    "code": "BW",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Brunei Darussalam",
+    "code": "BN",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Bulgaria",
+    "code": "BG",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Costa Rica",
+    "code": "CR",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Croatia",
+    "code": "HR",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Cuba",
+    "code": "CU",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Czech Republic",
+    "code": "CZ",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Denmark",
+    "code": "DK",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Djibouti",
+    "code": "DJ",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Dominica",
+    "code": "DM",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "El Salvador",
+    "code": "SV",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Estonia",
+    "code": "EE",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Finland",
+    "code": "FI",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Gabon",
+    "code": "GA",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Georgia",
+    "code": "GE",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Ghana",
+    "code": "GH",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Grenada",
+    "code": "GD",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Honduras",
+    "code": "HN",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Hungary",
+    "code": "HU",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Iran",
+    "code": "IR",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Italy",
+    "code": "IT",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Jordan",
+    "code": "JO",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Kazakhstan",
+    "code": "KZ",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Kenya",
+    "code": "KE",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Kyrgyzstan",
+    "code": "KG",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Lesotho",
+    "code": "LS",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Liberia",
+    "code": "LR",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Libya",
+    "code": "LY",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Luxembourg",
+    "code": "LU",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Macedonia",
+    "code": "MK",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Madagascar",
+    "code": "MG",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Malawi",
+    "code": "MW",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Moldova",
+    "code": "MD",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Mongolia",
+    "code": "MN",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Montenegro",
+    "code": "ME",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Mozambique",
+    "code": "MZ",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Namibia",
+    "code": "NA",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Nicaragua",
+    "code": "NI",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Nigeria",
+    "code": "NG",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Norway",
+    "code": false,
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Papua New Guinea",
+    "code": "PG",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Poland",
+    "code": "PL",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Portugal",
+    "code": "PT",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Romania",
+    "code": "RO",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Rwanda",
+    "code": "RW",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "code": "KN",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Saint Lucia",
+    "code": "LC",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "code": "VC",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Samoa",
+    "code": "WS",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "code": "ST",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Serbia",
+    "code": "RS",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Seychelles",
+    "code": "SC",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Sierra Leone",
+    "code": "SL",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Slovakia",
+    "code": "SK",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Spain",
+    "code": "ES",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Sri Lanka",
+    "code": "LK",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Sudan",
+    "code": "SD",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Sweden",
+    "code": "SE",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Switzerland",
+    "code": "CH",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Syria",
+    "code": "SY",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Tajikistan",
+    "code": "TJ",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Tanzania",
+    "code": "TZ",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "code": "TT",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Turkey",
+    "code": "TR",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Turkmenistan",
+    "code": "TM",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Uganda",
+    "code": "UG",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "United Kingdom",
+    "code": "GB",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Uzbekistan",
+    "code": "UZ",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Zambia",
+    "code": "ZM",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  },
+  {
+    "name": "Zimbabwe",
+    "code": "ZW",
+    "iq": false,
+    "entity": false,
+    "entitySizes": ["N/A"],
+    "inactive": false
+  }
+]

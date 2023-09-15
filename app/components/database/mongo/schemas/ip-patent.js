@@ -1,0 +1,73 @@
+const mongoose = require('mongoose');
+
+const { Schema } = mongoose;
+const IpPatentSchema = new Schema({
+  title: String,
+  service: String,
+  database: String,
+  patentApplicationNumber: String,
+  patentPublicationNumber: String,
+  thirtyMonthsDeadline: Date,
+  sourceLanguage: String,
+  applicantName: String,
+  abstractWordCount: Number,
+  drawingsWordCount: Number,
+  descriptionWordCount: Number,
+  numberOfDrawings: Number,
+  claimsWordCount: Number,
+  numberOfTotalPages: Number,
+  numberOfPriorityApplications: Number,
+  specificationWordCount: Number,
+  filingDeadline: Date,
+  drawingsPageCount: Number,
+  descriptionPageCount: Number,
+  claimsPageCount: Number,
+  numberOfClaims: Number,
+  isAnnuityQuotationRequired: {
+    type: Boolean,
+    default: false,
+  },
+  countries: [{
+    name: String,
+    sourceLanguage: String,
+    instantQuote: Boolean,
+    directTranslation: Boolean,
+    officialLanguage: String,
+    activeEntity: String,
+    translationFee: Number,
+    agencyFeeFixed: Number,
+    officialFee: Number,
+    agencyFee: Number,
+    memberState: Boolean,
+    validationState: Boolean,
+    extensionState: Boolean,
+    total: Number,
+    entitySize: {
+      type: String,
+      enum: ['Small', 'Medium', 'Large'],
+    },
+  }],
+  claimsTranslationFees: [{
+    language: String,
+    calculatedFee: {
+      type: Number,
+      min: 0,
+    },
+  }],
+  total: Number,
+  claimsTranslationGranted: Boolean,
+  requestedDeliveryDateClaimsTranslation: String,
+  otherLanguages: [{
+    name: String,
+    isoCode: String,
+  }],
+  statutoryDeadline: String,
+  numberOfIndependentClaims: Number,
+  totalNumberOfPages: Number,
+  claimPriority: Boolean,
+  disclaimers: [String],
+  kind: String,
+  validationDeadline: Date,
+});
+
+module.exports = IpPatentSchema;

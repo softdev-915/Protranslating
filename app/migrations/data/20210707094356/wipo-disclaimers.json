@@ -1,0 +1,155 @@
+[
+  {
+    "country": "ARIPO",
+    "codes": ["AP"],
+    "sameTranslation": false,
+    "disclaimer": "ARIPO: The official fee assumes all 18 states will be designated. For each state not designated, the official fee will be reduced by $98.",
+    "rule": "Show this disclaimer if ARIPO is selected",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "Brazil",
+    "codes": ["BR"],
+    "sameTranslation": false,
+    "disclaimer": "Brazil: If we require the 2-month extension for the Portuguese translation or if the necessary forms for national phase entry are not provided before the filing deadline, filing of the regularization petition will be necessary with complete translation and formal documents – $100.00 *Official fees relating to regularization petition - $30.00 (reduced fee for individual applicants is $12). The amount official fee will be charged for each late document.",
+    "rule": "Show this disclaimer if Brazil is selected",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "Canada",
+    "codes": ["CA"],
+    "sameTranslation": false,
+    "disclaimer": "Canada: The 2nd Maintenance Fee will be paid at the time of filing if the national phase entry is carried out within 6 months of the deadline unless otherwise instructed. This will incur an additional fee of $325 which includes the official fee and agency fee.",
+    "rule": "Show this disclaimer if Canada is selected",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "China",
+    "codes": ["CN"],
+    "sameTranslation": false,
+    "disclaimer": "China: If the 30-month deadline falls within 2 weeks of receiving filing instructions, we reserve the right to utilize the 2-month extension to complete the Chinese translation, which will incur an additional government fee of $162.",
+    "rule": "Show this disclaimer if China is selected",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "Eurasia",
+    "codes": ["EA"],
+    "sameTranslation": false,
+    "disclaimer": "Eurasia: The official fee includes the basic official fee and basic examination fee only. Excess claims fees and excess independent claims fees are not due at the time of regional phase entry.",
+    "rule": "Show this disclaimer if EAPO is selected",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "India",
+    "codes": ["IN"],
+    "sameTranslation": false,
+    "disclaimer": "India: The official fee assumes filing the patent application “as is”. Claims in excess of 10 incur a fee of $26/claim and can be reduced in order to lower the fee.",
+    "rule": "Show this disclaimer if India is selected",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "Korea",
+    "codes": ["KR"],
+    "sameTranslation": false,
+    "disclaimer": "Korea: If the 31-month deadline falls within 2 weeks of receiving filing instructions, we reserve the right to utilize the extension to complete the Korean translation, which will incur an additional government fee of $18.",
+    "rule": "Show this disclaimer if Korea is selected",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "South Africa",
+    "codes": ["ZA"],
+    "sameTranslation": false,
+    "disclaimer": "South Africa: South African patents are not examined and are automatically accepted. If you would like to delay acceptance, this will incur an additional fee of $120 (inclusive of official and agency fees).",
+    "rule": "Show this disclaimer if South Africa is selected",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "United States",
+    "codes": ["US"],
+    "sameTranslation": false,
+    "disclaimer": "United States: The official fee assumes the applicant is a large entity, the claims will be reduced to 20, and multiple claim dependencies will be removed.",
+    "rule": "Show this disclaimer if United States is selected",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "Israel",
+    "codes": ["IL"],
+    "sameTranslation": false,
+    "disclaimer": "Israel: The official fee assumes the claims will be reduced to 50.",
+    "rule": "Rule: Show this disclaimer if Israel is selected AND If application will be filed in Israel AND number of claims is over 50",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "Europe",
+    "codes": ["EP"],
+    "sameTranslation": false,
+    "disclaimer": "Europe:The official fee assumes the claims will be reduced to 15.",
+    "rule": "Rule: If application will be filed in Europe AND number of claims is over 15",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "LATAM (Chile, Colombia, Dominican Republic, Ecuador, Guatemala, Mexico, Panama, Peru)",
+    "codes": ["CO", "DO", "EC", "GT", "MX", "PA", "PE", "CL"],
+    "sameTranslation": true,
+    "disclaimer": "The same Spanish translation can be used for {{selected_countries}}. If you proceed in more than one of these countries, the translation fee will only be billed once.",
+    "rule": "If multiple LATAM Spanish countries are selected including Mexico, display the translation fee in the line for Mexico and $0 for the rest of the LATAM countries.",
+    "translationOnly": true,
+    "translationAndFilling": true
+  },
+  {
+    "country": "Cambodia",
+    "codes": ["KH"],
+    "sameTranslation": false,
+    "disclaimer": "Cambodia: A request for substantive examination is simultaneously filed along with the filing of the application.",
+    "rule": "Show this disclaimer if Cambodia is selected",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "Hong Kong",
+    "codes": ["HK"],
+    "sameTranslation": false,
+    "disclaimer": "Hong Kong: The fees listed above are for each filing stage. In total, there are two stages of filing that take place: one is after the Chinese application is published, and the other is after the Chinese patent is allowed.",
+    "rule": "Show this disclaimer if Hong Kong is selected",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "Laos",
+    "codes": ["LA"],
+    "sameTranslation": false,
+    "disclaimer": "Laos: The annuity fees for the first four years are paid along with the filing fee.",
+    "rule": "Show this disclaimer if Laos is selected",
+    "translationOnly": false,
+    "translationAndFilling": true
+  },
+  {
+    "country": "ALL",
+    "codes": [],
+    "sameTranslation": false,
+    "disclaimer": "The above estimate is subject to change. Should such a change arise, our team will contact you for approval in advance.",
+    "rule": "",
+    "translationOnly": true,
+    "translationAndFilling": true
+  },
+  {
+    "country": "ALL",
+    "codes": [],
+    "sameTranslation": false,
+    "disclaimer": "The above estimate does not include fees that may be incurred for extensions, late filing of formal documents, maintenance fees, amendments, or sequence listings.",
+    "rule": "",
+    "translationOnly": false,
+    "translationAndFilling": true
+  }
+]

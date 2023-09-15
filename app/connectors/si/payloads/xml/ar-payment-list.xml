@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+  <control>
+    <senderid>{{senderId}}</senderid>
+    <password>{{senderPassword}}</password>
+    <controlid>{{timestamp}}</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+    <includewhitespace>false</includewhitespace>
+  </control>
+  <operation>
+    <authentication>
+      <sessionid>{{sessionId}}</sessionid>
+    </authentication>
+    <content>
+      <function controlid="{{guid}}">
+        <readByQuery>
+		    <object>ARPAYMENT</object>
+		    <fields>RECORDNO, DOCNUMBER</fields>
+        <!-- Overpayment is not represented in Portal which causes two payments in SI to be mapped to one in portal. We need to exclude overpayment from the list -->
+        <!-- https://developer.intacct.com/api/accounts-receivable/ar-payments/#list-ar-payments-legacy-1 -->
+		    <query>DOCNUMBER = '{{_id}}' AND RECORDTYPE != 'ro'</query>
+		    <pagesize>100</pagesize>
+		</readByQuery>
+      </function>
+    </content>
+  </operation>
+</request>

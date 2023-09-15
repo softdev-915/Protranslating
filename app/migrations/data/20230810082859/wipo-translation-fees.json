@@ -1,0 +1,202 @@
+[
+    {
+        "country": "Algeria",
+        "deTranslationRate": "0.12",
+        "frTranslationRate": "0.12"
+    },
+    {
+        "country": "ARIPO",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "Australia",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "Bahrain",
+        "deTranslationRate": "0.12",
+        "frTranslationRate": "0.12"
+    },
+    {
+        "country": "Brazil",
+        "deTranslationRate": "0.12",
+        "frTranslationRate": "0.16"
+    },
+    {
+        "country": "Cambodia",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "Canada",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": ""
+    },
+    {
+        "country": "Chile",
+        "deTranslationRate": "0.14",
+        "frTranslationRate": "0.10"
+    },
+    {
+        "country": "China",
+        "deTranslationRate": "0.26",
+        "frTranslationRate": "0.13"
+    },
+    {
+        "country": "Colombia",
+        "deTranslationRate": "0.14",
+        "frTranslationRate": "0.10"
+    },
+    {
+        "country": "Ecuador",
+        "deTranslationRate": "0.14",
+        "frTranslationRate": "0.10"
+    },
+    {
+        "country": "Egypt",
+        "deTranslationRate": "0.12",
+        "frTranslationRate": "0.12"
+    },
+    {
+        "country": "Eurasia",
+        "deTranslationRate": "0.24",
+        "frTranslationRate": "0.24"
+    },
+    {
+        "country": "Europe",
+        "deTranslationRate": "",
+        "frTranslationRate": ""
+    },
+    {
+        "country": "Germany",
+        "deTranslationRate": "",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "India",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "Indonesia",
+        "deTranslationRate": "0.13",
+        "frTranslationRate": "0.13"
+    },
+    {
+        "country": "Israel",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "Japan",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "Korea",
+        "deTranslationRate": "0.14",
+        "frTranslationRate": "0.14"
+    },
+    {
+        "country": "Kuwait",
+        "deTranslationRate": "0.12",
+        "frTranslationRate": "0.12"
+    },
+    {
+        "country": "Laos",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "Malaysia",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "Mexico",
+        "deTranslationRate": "0.14",
+        "frTranslationRate": "0.10"
+    },
+    {
+        "country": "Morocco",
+        "deTranslationRate": "0.12",
+        "frTranslationRate": "0.12"
+    },
+    {
+        "country": "New Zealand",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "OAPI",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": ""
+    },
+    {
+        "country": "Oman",
+        "deTranslationRate": "0.12",
+        "frTranslationRate": "0.12"
+    },
+    {
+        "country": "Peru",
+        "deTranslationRate": "0.14",
+        "frTranslationRate": "0.10"
+    },
+    {
+        "country": "Philippines",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "Qatar",
+        "deTranslationRate": "0.12",
+        "frTranslationRate": "0.12"
+    },
+    {
+        "country": "Russian Federation",
+        "deTranslationRate": "0.24",
+        "frTranslationRate": "0.24"
+    },
+    {
+        "country": "Saudi Arabia",
+        "deTranslationRate": "0.12",
+        "frTranslationRate": "0.12"
+    },
+    {
+        "country": "Singapore",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "South Africa",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "Thailand",
+        "deTranslationRate": "0.16",
+        "frTranslationRate": "0.16"
+    },
+    {
+        "country": "United Arab Emirates",
+        "deTranslationRate": "0.12",
+        "frTranslationRate": "0.12"
+    },
+    {
+        "country": "Ukraine",
+        "deTranslationRate": "0.24",
+        "frTranslationRate": "0.24"
+    },
+    {
+        "country": "United States",
+        "deTranslationRate": "0.18",
+        "frTranslationRate": "0.18"
+    },
+    {
+        "country": "Vietnam",
+        "deTranslationRate": "0.14",
+        "frTranslationRate": "0.24"
+    }
+]

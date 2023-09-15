@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+  <control>
+    <senderid>{{senderId}}</senderid>
+    <password>{{senderPassword}}</password>
+    <controlid>{{timestamp}}</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+    <includewhitespace>false</includewhitespace>
+  </control>
+  <operation>
+    <authentication>
+      <sessionid>{{sessionId}}</sessionid>
+    </authentication>
+    <content>
+      <function controlid="{{guid}}">
+        <create_invoice>
+          <customerid>{{customerId}}</customerid>
+          <datecreated>
+            <year>{{toTimezone date lspId.timezone 'YYYY'}}</year>
+            <month>{{toTimezone date lspId.timezone 'M'}}</month>
+            <day>{{toTimezone date lspId.timezone 'DD'}}</day>
+          </datecreated>
+          <dateposted>
+            <year>{{toTimezone glPostingDate lspId.timezone 'YYYY'}}</year>
+            <month>{{toTimezone glPostingDate lspId.timezone 'M'}}</month>
+            <day>{{toTimezone glPostingDate lspId.timezone 'DD'}}</day>
+          </dateposted>
+          <datedue>
+            <year>{{toTimezone dueDate lspId.timezone 'YYYY'}}</year>
+            <month>{{toTimezone dueDate lspId.timezone 'M'}}</month>
+            <day>{{toTimezone dueDate lspId.timezone 'DD'}}</day>
+          </datedue>
+          <termname>{{billingTerm.name}}</termname>
+          <action>Submit</action>
+          <invoiceno>{{no}}</invoiceno>
+          <ponumber>{{truncate purchaseOrder 120 '...'}}</ponumber>
+          <billto>
+            <contactname>{{contact}}</contactname>
+          </billto>
+          <basecurr>{{accounting.localCurrency.isoCode}}</basecurr>
+          <currency>{{accounting.currency.isoCode}}</currency>
+          <exchrate>{{reverseExchangeRate accounting.exchangeRate 10}}</exchrate>
+          <invoiceitems>{{{invoiceCreateItems}}}</invoiceitems>
+        </create_invoice>
+      </function>
+    </content>
+  </operation>
+</request>

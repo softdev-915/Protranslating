@@ -1,0 +1,92 @@
+[
+  {
+    "countries": ["Greece", "Cyprus"],
+    "codes": ["GR", "CY"],
+    "filingLanguage": "Greek",
+    "sameTranslation": true,
+    "disclaimer": "The same Greek translation for Cyprus will be used in Greece.",
+    "rule": "- If both Cyprus and Greece are selected, show translation fee in Cyprus line and $0 in Greece line.  - If only Greece OR Cyprus are selected, display the translation fee and do not show any disclaimer.",
+    "translationOnly": true,
+    "translationAndFiling": true
+  },
+  {
+    "countries": ["Italy", "San Marino"],
+    "codes": ["IT", "SM"],
+    "filingLanguage": "Italian",
+    "sameTranslation": true,
+    "disclaimer": "The same Italian translation for Italy will be used in San Marino.",
+    "rule": "- If both Italy and San Marino are selected, show translation fee in Italy line and $0 in San Marino line.  - If only Italy OR San Marino are selected, display the translation fee and do not show any disclaimer.",
+    "translationOnly": true,
+    "translationAndFiling": true
+  },
+  {
+    "countries": ["Serbia", "Bosnia & Herzegovina", "Montenegro"],
+    "codes": ["RS", "BA", "ME"],
+    "filingLanguage": "Serbian",
+    "sameTranslation": true,
+    "disclaimer": "The same Serbian translation for Serbia will be used in Bosnia & Herzegovina and Montenegro.",
+    "rule": "Show this disclaimer if Serbia, Bosnia & Herzegovina and Montenegro are selected.  - If only one of them are selected, display the translation fee and do not show any disclaimer. - If all are selected, show translation fee in Serbia line and $0 in Bosnia and Montenegro lines.",
+    "translationOnly": true,
+    "translationAndFiling": true
+  },
+  {
+    "countries": ["Serbia", "Bosnia & Herzegovina"],
+    "codes": ["RS", "BA"],
+    "filingLanguage": "Serbian",
+    "sameTranslation": true,
+    "disclaimer": "The same Serbian translation for Serbia will be used in Bosnia & Herzegovina.",
+    "rule": "Show this disclaimer if Serbia and Bosnia & Herzegovina are selected.  - If both Serbia and Bosnia & Herzegovina are selected, show translation fee in Serbia line and $0 in Bosnia & Herzegovina line. ",
+    "translationOnly": true,
+    "translationAndFiling": true
+  },
+  {
+    "countries": ["Serbia", "Montenegro"],
+    "codes": ["RS", "ME"],
+    "filingLanguage": "Serbian",
+    "sameTranslation": true,
+    "disclaimer": "The same Serbian translation for Serbia will be used in Montenegro.",
+    "rule": "Show this disclaimer if Serbia and Montenegro are selected.  - If both Serbia and Montenegro are selected, show translation fee in Serbia line and $0 in Montenegro line. ",
+    "translationOnly": true,
+    "translationAndFiling": true
+  },
+  {
+    "countries": ["Bosnia & Herzegovina", "Montenegro"],
+    "codes": ["BA", "ME"],
+    "filingLanguage": "Serbian",
+    "sameTranslation": true,
+    "disclaimer": "The same Serbian translation will be used in Bosnia & Herzegovina and Montenegro.",
+    "rule": "Show this disclaimer if Bosnia & Herzegovina and Montenegro are selected.  - If both Bosnia & Herzegovina and Montenegro are selected, show translation fee in Bosnia & Herzegovina line and $0 in Montenegro line. ",
+    "translationOnly": true,
+    "translationAndFiling": true
+  },
+  {
+    "countries": ["Romania", "Moldova"],
+    "codes": ["RO", "MD"],
+    "filingLanguage": "Romanian",
+    "sameTranslation": true,
+    "disclaimer": "The same Romanian translation for Romania will be used in Moldova.",
+    "rule": "Show this disclaimer if Romania and Moldova are selected.  - If both Romania and Moldova are selected, show translation fee in Romania line and $0 in Moldova line.  - If only Romania OR Moldova are selected, display the translation fee and do not show any disclaimer.",
+    "translationOnly": true,
+    "translationAndFiling": true
+  },
+  {
+    "countries": ["ALL"],
+    "codes": [],
+    "filingLanguage": "",
+    "sameTranslation": false,
+    "disclaimer": "The above estimate is subject to change. Should such a change arise, our team will contact you for approval in advance.",
+    "rule": "",
+    "translationOnly": true,
+    "translationAndFiling": true
+  },
+  {
+    "countries": ["ALL"],
+    "codes": [],
+    "filingLanguage": "",
+    "sameTranslation": false,
+    "disclaimer": "The above estimate does not include fees that may be incurred for extensions, late filing of formal documents, maintenance fees, or sequence listings.",
+    "rule": "",
+    "translationOnly": false,
+    "translationAndFiling": true
+  }
+]

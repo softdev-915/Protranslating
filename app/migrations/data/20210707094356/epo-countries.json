@@ -1,0 +1,338 @@
+[
+  {
+    "name": "Albania",
+    "code": "AL",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Austria",
+    "code": "AT",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Belgium",
+    "code": "BE",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Bulgaria",
+    "code": "BG",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Croatia",
+    "code": "HR",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Cyprus",
+    "code": "CY",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Czech Republic",
+    "code": "CZ",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Denmark",
+    "code": "DK",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Estonia",
+    "code": "EE",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Finland",
+    "code": "FI",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "France",
+    "code": "FR",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Germany",
+    "code": "DE",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Greece",
+    "code": "GR",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Hungary",
+    "code": "HU",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Iceland",
+    "code": "IS",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Ireland",
+    "code": "IE",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Italy",
+    "code": "IT",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Latvia",
+    "code": "LV",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Lithuania",
+    "code": "LT",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Luxembourg",
+    "code": "LU",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Macedonia",
+    "code": "MK",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Malta",
+    "code": "MT",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Monaco",
+    "code": "MC",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Netherlands",
+    "code": "NL",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Norway",
+    "code": "NO",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Poland",
+    "code": "PL",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Portugal",
+    "code": "PT",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Romania",
+    "code": "RO",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "San Marino",
+    "code": "SM",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Serbia",
+    "code": "RS",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Slovakia",
+    "code": "SK",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Spain",
+    "code": "ES",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Sweden",
+    "code": "SE",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Switzerland/Liechtenstein",
+    "code": "CH",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Turkey",
+    "code": "TR",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "United Kingdom",
+    "code": "GB",
+    "memberState": true,
+    "validationState": false,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Bosnia & Herzegovina",
+    "code": "BA",
+    "memberState": false,
+    "validationState": false,
+    "extensionState": true,
+    "inactive": false
+  },
+  {
+    "name": "Montenegro",
+    "code": "ME",
+    "memberState": false,
+    "validationState": false,
+    "extensionState": true,
+    "inactive": false
+  },
+  {
+    "name": "Cambodia",
+    "code": "KH",
+    "memberState": false,
+    "validationState": true,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Morocco",
+    "code": "MA",
+    "memberState": false,
+    "validationState": true,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Moldova",
+    "code": "MD",
+    "memberState": false,
+    "validationState": true,
+    "extensionState": false,
+    "inactive": false
+  },
+  {
+    "name": "Tunisia",
+    "code": "TN",
+    "memberState": false,
+    "validationState": true,
+    "extensionState": false,
+    "inactive": false
+  }
+]

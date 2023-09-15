@@ -1,0 +1,116 @@
+[{
+  "country": "Australia",
+  "translationFormula": null
+},
+{
+  "country": "Japan",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "United Arab Emirates",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Uruguay",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "China",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Thailand",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Germany",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Kuwait",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Qatar",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Taiwan",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Saudi Arabia",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Argentina",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Venezuela",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "France",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Vietnam",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Turkey",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Russian Federation",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Oman",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Pakistan",
+  "translationFormula": null
+},
+{
+  "country": "Indonesia",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Lebanon",
+  "translationFormula": null
+},
+{
+  "country": "EPO",
+  "translationFormula": null
+},
+{
+  "country": "United States",
+  "translationFormula": null
+},
+{
+  "country": "Italy",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Jordan",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Bangladesh",
+  "translationFormula": null
+},
+{
+  "country": "Korea",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Bahrain",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+},
+{
+  "country": "Brazil",
+  "translationFormula": "translationRate * (specificationWordCount + drawingsWordCount)"
+}]

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+  <control>
+    <senderid>{{senderId}}</senderid>
+    <password>{{senderPassword}}</password>
+    <controlid>{{timestamp}}</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+    <includewhitespace>false</includewhitespace>
+  </control>
+  <operation>
+    <authentication>
+      <sessionid>{{sessionId}}</sessionid>
+    </authentication>
+    <content>
+      <function controlid="{{guid}}">
+        <create>
+        <CUSTOMER>
+            <NAME>{{name}}</NAME>
+            <CURRENCY>{{billingInformation.quoteCurrency.isoCode}}</CURRENCY>
+            <TERMNAME>{{billingInformation.billingTerm.name}}</TERMNAME>
+            <LSP_COMPANYID>{{_id}}</LSP_COMPANYID>
+            <PARENTID>{{parentCustomerId}}</PARENTID>
+          </CUSTOMER>
+        </create>
+      </function>
+    </content>
+  </operation>
+</request>

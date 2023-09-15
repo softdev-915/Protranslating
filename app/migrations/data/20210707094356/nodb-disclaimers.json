@@ -1,0 +1,40 @@
+[
+  {
+    "country": "ALL",
+    "codes": [],
+    "sameTranslation": false,
+    "disclaimer": "The above estimate is subject to change. Should such a change arise, our team will contact you for approval in advance.",
+    "translationOnly": true,
+    "translationAndFiling": true,
+    "filingLanguage": ""
+  },
+  {
+    "country": "ALL",
+    "codes": [],
+    "sameTranslation": false,
+    "disclaimer": "The above estimate does not include fees that may be incurred for extensions, late filing of formal documents, maintenance fees, amendments, or sequence listings.",
+    "translationOnly": false,
+    "translationAndFiling": true,
+    "filingLanguage": ""
+  },
+  {
+    "country": "LATAM (Argentina, Venezuela, Uruguay)",
+    "codes": ["AR", "VE", "UY"],
+    "sameTranslation": "Yes",
+    "disclaimer": "The same Spanish translation can be used for {{selected_countries}}. If you proceed in more than one of these countries, the translation fee will only be billed once.",
+    "rule": "If multiple LATAM Spanish countries are selected including Argentina, display the translation fee in the line for Argentina and $0 for the rest of the LATAM countries.",
+    "translationOnly": true,
+    "translationAndFiling": true,
+    "filingLanguage": "Spanish"
+  },
+  {
+    "country": "Middle Eastern countries (Jordan, Oman, Kuwait, Bahrain, Qatar, United Arab Emirates, Saudi Arabia)",
+    "codes": ["JO", "OM", "KW", "BH", "QA", "AE", "SA"],
+    "sameTranslation": "Yes",
+    "disclaimer": "The same Arabic translation can be used for {{selected_countries}}. If you proceed in more than one of these countries, the translation fee will only be billed once.",
+    "rule": "If multiple Arabic language countries are selected including Saudi Arabia, display the translation fee in the line for Saudi Arabia and $0 for the rest of the Arabic language countries.",
+    "translationOnly": true,
+    "translationAndFiling": true,
+    "filingLanguage": "Arabic"
+  }
+]

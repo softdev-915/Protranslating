@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<request>
+  <control>
+    <senderid>{{senderId}}</senderid>
+    <password>{{senderPassword}}</password>
+    <controlid>{{timestamp}}</controlid>
+    <uniqueid>false</uniqueid>
+    <dtdversion>3.0</dtdversion>
+    <includewhitespace>false</includewhitespace>
+  </control>
+  <operation>
+    <authentication>
+      <sessionid>{{sessionId}}</sessionid>
+    </authentication>
+    <content>
+      <function controlid="{{guid}}">
+        <create_aradjustment>
+          <customerid>{{customerId}}</customerid>
+          <datecreated>
+            <year>{{toTimezone date lspId.timezone 'YYYY'}}</year>
+            <month>{{toTimezone date lspId.timezone 'M'}}</month>
+            <day>{{toTimezone date lspId.timezone 'DD'}}</day>
+          </datecreated>
+          <dateposted>
+            <year>{{toTimezone glPostingDate lspId.timezone 'YYYY'}}</year>
+            <month>{{toTimezone glPostingDate lspId.timezone 'M'}}</month>
+            <day>{{toTimezone glPostingDate lspId.timezone 'DD'}}</day>
+          </dateposted>
+          <adjustmentno>{{no}}</adjustmentno>
+          <invoiceno>{{invoiceNo}}</invoiceno>
+          <description>{{description}}</description>
+          <basecurr>{{accounting.localCurrency.isoCode}}</basecurr>
+          <currency>{{accounting.currency.isoCode}}</currency>
+          <exchrate>{{reverseExchangeRate accounting.exchangeRate 10}}</exchrate>
+          <aradjustmentitems>{{{adjustmentItems}}}</aradjustmentitems>
+        </create_aradjustment>
+      </function>
+    </content>
+  </operation>
+</request>

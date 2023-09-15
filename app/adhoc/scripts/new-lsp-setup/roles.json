@@ -1,0 +1,907 @@
+{
+    "roles": [
+      {
+        "name": "USER_CREATE_ALL"
+      },
+      {
+        "name": "USER_READ_ALL"
+      },
+      {
+        "name": "USER_UPDATE_ALL"
+      },
+      {
+        "name": "USER_DELETE_ALL"
+      },
+      {
+        "name": "GROUP_CREATE_ALL"
+      },
+      {
+        "name": "GROUP_READ_ALL"
+      },
+      {
+        "name": "GROUP_UPDATE_ALL"
+      },
+      {
+        "name": "GROUP_DELETE_ALL"
+      },
+      {
+        "name": "ROLE_READ_ALL"
+      },
+      {
+        "name": "REQUEST_CREATE_ALL"
+      },
+      {
+        "name": "REQUEST_READ_ALL"
+      },
+      {
+        "name": "REQUEST_UPDATE_ALL"
+      },
+      {
+        "name": "REQUEST_DELETE_ALL"
+      },
+      {
+        "name": "REQUEST_CREATE_COMPANY"
+      },
+      {
+        "name": "REQUEST_READ_COMPANY"
+      },
+      {
+        "name": "REQUEST_UPDATE_COMPANY"
+      },
+      {
+        "name": "REQUEST_DELETE_COMPANY"
+      },
+      {
+        "name": "REQUEST_CREATE_OWN"
+      },
+      {
+        "name": "REQUEST_READ_OWN"
+      },
+      {
+        "name": "REQUEST_UPDATE_OWN"
+      },
+      {
+        "name": "COMPANY_CREATE_ALL"
+      },
+      {
+        "name": "COMPANY_READ_ALL"
+      },
+      {
+        "name": "COMPANY_UPDATE_ALL"
+      },
+      {
+        "name": "COMPANY_DELETE_ALL"
+      },
+      {
+        "name": "COMPANY_READ_OWN"
+      },
+      {
+        "name": "CONTACT_CREATE_ALL"
+      },
+      {
+        "name": "CONTACT_READ_ALL"
+      },
+      {
+        "name": "CONTACT_UPDATE_ALL"
+      },
+      {
+        "name": "CONTACT_DELETE_ALL"
+      },
+      {
+        "name": "CONTACT_READ_COMPANY"
+      },
+      {
+        "name": "CONTACT_READ_OWN"
+      },
+      {
+        "name": "SCHEDULER_READ_ALL"
+      },
+      {
+        "name": "SCHEDULER_CREATE_ALL"
+      },
+      {
+        "name": "SCHEDULER_UPDATE_ALL"
+      },
+      {
+        "name": "NOTIFICATION_READ_ALL"
+      },
+      {
+        "name": "NOTIFICATION_CREATE_ALL"
+      },
+      {
+        "name": "NOTIFICATION_UPDATE_ALL"
+      },
+      {
+        "name": "DOCUMENTATION_UPDATE_ALL"
+      },
+      {
+        "name": "INVOICE_UPDATE_COMPANY"
+      },
+      {
+        "name": "QUOTE_READ_COMPANY"
+      },
+      {
+        "name": "QUOTE_UPDATE_OWN"
+      },
+      {
+        "name": "INVOICE_READ_OWN"
+      },
+      {
+        "name": "INVOICE_READ_COMPANY"
+      },
+      {
+        "name": "COMPANY_READ_COMPANY"
+      },
+      {
+        "name": "QUOTE_UPDATE_COMPANY"
+      },
+      {
+        "name": "INVOICE_UPDATE_OWN"
+      },
+      {
+        "name": "QUOTE_READ_OWN"
+      },
+      {
+        "name": "CONTACT_CC_READ_COMPANY"
+      },
+      {
+        "name": "USER-EMAIL_UPDATE_ALL"
+      },
+      {
+        "name": "HTTP-HEADER_READ_ALL"
+      },
+      {
+        "name": "TASK_READ_OWN"
+      },
+      {
+        "name": "TASK_UPDATE_OWN"
+      },
+      {
+        "name": "TASK-FINAL-FILE_UPDATE_OWN"
+      },
+      {
+        "name": "WORKFLOW_CREATE_OWN"
+      },
+      {
+        "name": "WORKFLOW_CREATE_ALL"
+      },
+      {
+        "name": "WORKFLOW_UPDATE_OWN"
+      },
+      {
+        "name": "WORKFLOW_UPDATE_ALL"
+      },
+      {
+        "name": "WORKFLOW_READ_OWN"
+      },
+      {
+        "name": "WORKFLOW_READ_ALL"
+      },
+      {
+        "name": "STAFF_CREATE_ALL"
+      },
+      {
+        "name": "VENDOR_CREATE_ALL"
+      },
+      {
+        "name": "QUOTE_READ_ALL"
+      },
+      {
+        "name": "AUDIT_READ_ALL"
+      },
+      {
+        "name": "RESTORE_UPDATE_ALL"
+      },
+      {
+        "name": "REQUEST_READ_ASSIGNED-TASK"
+      },
+      {
+        "name": "TASK_READ_ALL"
+      },
+      {
+        "name": "PM-USER_READ_ALL"
+      },
+      {
+        "name": "PROVIDER-USER_READ_ALL"
+      },
+      {
+        "name": "ABILITY_READ_ALL"
+      },
+      {
+        "name": "HEADER-NOTIFICATION_READ_ALL"
+      },
+      {
+        "name": "HEADER-NOTIFICATION_CREATE_ALL"
+      },
+      {
+        "name": "HEADER-NOTIFICATION_UPDATE_ALL"
+      },
+      {
+        "name": "DOCUMENTATION_READ_ALL"
+      },
+      {
+        "name": "LANGUAGE_CREATE_ALL"
+      },
+      {
+        "name": "COMPANY-DOC-RET-TIME_UPDATE_ALL"
+      },
+      {
+        "name": "CAT_UPDATE_OWN"
+      },
+      {
+        "name": "REQUEST-DOCUMENT_READ_COMPANY"
+      },
+      {
+        "name": "REQUEST-DOCUMENT_READ_OWN"
+      },
+      {
+        "name": "STAFF-FILE-MANAGEMENT_UPDATE_ALL"
+      },
+      {
+        "name": "COMPANY-BILLING_READ_OWN"
+      },
+      {
+        "name": "COMPANY-BILLING_UPDATE_OWN"
+      },
+      {
+        "name": "COMPANY-BILLING_UPDATE_ALL"
+      },
+      {
+        "name": "BILLING-TERM_CREATE_ALL"
+      },
+      {
+        "name": "TRANSLATION-UNIT_CREATE_ALL"
+      },
+      {
+        "name": "TRANSLATION-UNIT_UPDATE_ALL"
+      },
+      {
+        "name": "INTERNAL-DEPARTMENT_CREATE_ALL"
+      },
+      {
+        "name": "INTERNAL-DEPARTMENT_READ_ALL"
+      },
+      {
+        "name": "INTERNAL-DEPARTMENT_UPDATE_ALL"
+      },
+      {
+        "name": "PAYMENT-METHOD_READ_ALL"
+      },
+      {
+        "name": "PAYMENT-METHOD_CREATE_ALL"
+      },
+      {
+        "name": "PAYMENT-METHOD_UPDATE_ALL"
+      },
+      {
+        "name": "BILLING-TERM_READ_ALL"
+      },
+      {
+        "name": "TRANSLATION-UNIT_READ_ALL"
+      },
+      {
+        "name": "BILLING-TERM_UPDATE_ALL"
+      },
+      {
+        "name": "FUZZY-MATCH_CREATE_ALL"
+      },
+      {
+        "name": "FUZZY-MATCH_READ_ALL"
+      },
+      {
+        "name": "FUZZY-MATCH_UPDATE_ALL"
+      },
+      {
+        "name": "CURRENCY_CREATE_ALL"
+      },
+      {
+        "name": "CURRENCY_UPDATE_ALL"
+      },
+      {
+        "name": "EXTERNAL-RESOURCES_UPDATE_ALL"
+      },
+      {
+        "name": "EXTERNAL-RESOURCES_READ_ALL"
+      },
+      {
+        "name": "LEAD-SOURCE_READ_ALL"
+      },
+      {
+        "name": "LEAD-SOURCE_UPDATE_ALL"
+      },
+      {
+        "name": "LEAD-SOURCE_CREATE_ALL"
+      },
+      {
+        "name": "LEAD-SOURCE_DELETE_ALL"
+      },
+      {
+        "name": "COMPANY-SECURITY_UPDATE_ALL"
+      },
+      {
+        "name": "CAT_CREATE_ALL"
+      },
+      {
+        "name": "CAT_READ_ALL"
+      },
+      {
+        "name": "CAT_UPDATE_ALL"
+      },
+      {
+        "name": "OPPORTUNITY_READ_OWN"
+      },
+      {
+        "name": "OPPORTUNITY_UPDATE_OWN"
+      },
+      {
+        "name": "OPPORTUNITY_CREATE_OWN"
+      },
+      {
+        "name": "OPPORTUNITY_READ_ALL"
+      },
+      {
+        "name": "OPPORTUNITY_UPDATE_ALL"
+      },
+      {
+        "name": "OPPORTUNITY_CREATE_ALL"
+      },
+      {
+        "name": "TAXID_READ_ALL"
+      },
+      {
+        "name": "TAXID_CREATE_ALL"
+      },
+      {
+        "name": "VENDOR_UPDATE_ALL"
+      },
+      {
+        "name": "LSP-SETTINGS_UPDATE_OWN"
+      },
+      {
+        "name": "LSP-SETTINGS_READ_OWN"
+      },
+      {
+        "name": "COMPETENCE-LEVEL_READ_ALL"
+      },
+      {
+        "name": "ACTIVITY-EMAIL_READ_ALL"
+      },
+      {
+        "name": "ACTIVITY-EMAIL_READ_OWN"
+      },
+      {
+        "name": "ACTIVITY-EMAIL_CREATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-EMAIL_UPDATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-EMAIL_CREATE_OWN"
+      },
+      {
+        "name": "ACTIVITY-EMAIL_UPDATE_OWN"
+      },
+      {
+        "name": "INTERNAL-DEPARTMENT_READ_OWN"
+      },
+      {
+        "name": "ACTIVITY-USER-NOTE_READ_ALL"
+      },
+      {
+        "name": "ACTIVITY-USER-NOTE_CREATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-USER-NOTE_UPDATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-NC-CC_CREATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-NC-CC_UPDATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-NC-CC_READ_ALL"
+      },
+      {
+        "name": "ACTIVITY-VES1_READ_ALL"
+      },
+      {
+        "name": "ACTIVITY-VES1_CREATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-VES1_UPDATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-VES2_CREATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-VES-T_READ_ALL"
+      },
+      {
+        "name": "ACTIVITY-VES-T_CREATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-VES-B_READ_ALL"
+      },
+      {
+        "name": "ACTIVITY-VES-B_CREATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-VES-B_UPDATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-CA_READ_ALL"
+      },
+      {
+        "name": "ACTIVITY-CA_UPDATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-FR_READ_ALL"
+      },
+      {
+        "name": "ACTIVITY-FR_CREATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-FR_UPDATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-NC-CC_READ_OWN"
+      },
+      {
+        "name": "ACTIVITY-NC-CC_UPDATE_OWN"
+      },
+      {
+        "name": "ACTIVITY-NC-CC_CREATE_DEPARTMENT"
+      },
+      {
+        "name": "ACTIVITY-NC-CC_READ_DEPARTMENT"
+      },
+      {
+        "name": "ACTIVITY-TAG_CREATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-TAG_READ_ALL"
+      },
+      {
+        "name": "ACTIVITY-TAG_UPDATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-VES2_READ_ALL"
+      },
+      {
+        "name": "ACTIVITY-VES2_UPDATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-VES-T_UPDATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-CA_CREATE_ALL"
+      },
+      {
+        "name": "ACTIVITY-NC-CC_CREATE_OWN"
+      },
+      {
+        "name": "ACTIVITY-NC-CC_UPDATE_DEPARTMENT"
+      },
+      {
+        "name": "LOCATION_READ_ALL"
+      },
+      {
+        "name": "LOCATION_CREATE_ALL"
+      },
+      {
+        "name": "LOCATION_UPDATE_ALL"
+      },
+      {
+        "name": "INTERNAL-DOCUMENT_READ_ALL"
+      },
+      {
+        "name": "INTERNAL-DOCUMENT_CREATE_ALL"
+      },
+      {
+        "name": "INTERNAL-DOCUMENT_DELETE_ALL"
+      },
+      {
+        "name": "INTERNAL-DOCUMENT_UPDATE_ALL"
+      },
+      {
+        "name": "DOCUMENT-TYPE_CREATE_ALL"
+      },
+      {
+        "name": "DELIVERY-METHOD_UPDATE_ALL"
+      },
+      {
+        "name": "PROJECTED-RATE_UPDATE_ALL"
+      },
+      {
+        "name": "VENDOR-RATES_READ_ALL"
+      },
+      {
+        "name": "QUOTE-TEMPLATE_UPDATE_ALL"
+      },
+      {
+        "name": "DELIVERY-METHOD_READ_ALL"
+      },
+      {
+        "name": "SOFTWARE-REQUIREMENT_CREATE_ALL"
+      },
+      {
+        "name": "STAFF-RATES_CREATE_ALL"
+      },
+      {
+        "name": "VENDOR-RATES_UPDATE_ALL"
+      },
+      {
+        "name": "DOCUMENT-TYPE_READ_ALL"
+      },
+      {
+        "name": "SOFTWARE-REQUIREMENT_READ_ALL"
+      },
+      {
+        "name": "STAFF-RATES_READ_ALL"
+      },
+      {
+        "name": "INVOICE-RATE_UPDATE_ALL"
+      },
+      {
+        "name": "DOCUMENT-TYPE_UPDATE_ALL"
+      },
+      {
+        "name": "PROJECTED-RATE_READ_ALL"
+      },
+      {
+        "name": "VENDOR-RATES_CREATE_ALL"
+      },
+      {
+        "name": "QUOTE-TEMPLATE_CREATE_ALL"
+      },
+      {
+        "name": "DELIVERY-METHOD_CREATE_ALL"
+      },
+      {
+        "name": "SOFTWARE-REQUIREMENT_UPDATE_ALL"
+      },
+      {
+        "name": "STAFF-RATES_UPDATE_ALL"
+      },
+      {
+        "name": "QUOTE-TEMPLATE_READ_ALL"
+      },
+      {
+        "name": "BILL_UPDATE_ALL"
+      },
+      {
+        "name": "BILL_UPDATE_OWN"
+      },
+      {
+        "name": "COMPANY_UPDATE_OWN"
+      },
+      {
+        "name": "USER_UPDATE_COMPANY"
+      },
+      {
+        "name": "TASK-NOTES_UPDATE_ALL"
+      },
+      {
+        "name": "TASK-STATUS_UPDATE_ALL"
+      },
+      {
+        "name": "PIPELINE-PANEL_UPDATE_ALL"
+      },
+      {
+        "name": "RESOURCES-PANEL_UPDATE_ALL"
+      },
+      {
+        "name": "PIPELINE-PANEL_READ_ALL"
+      },
+      {
+        "name": "EDITOR-PANEL_READ_ALL"
+      },
+      {
+        "name": "FILES-PANEL_READ_ALL"
+      },
+      {
+        "name": "FILES-PANEL_UPDATE_ALL"
+      },
+      {
+        "name": "MT-SETTINGS_READ_ALL"
+      },
+      {
+        "name": "PREVIEW-PANEL_READ_ALL"
+      },
+      {
+        "name": "EDITOR-PANEL_UPDATE_ALL"
+      },
+      {
+        "name": "MT-SETTINGS_UPDATE_ALL"
+      },
+      {
+        "name": "PREVIEW-PANEL_UPDATE_ALL"
+      },
+      {
+        "name": "MT-SETTINGS_CREATE_ALL"
+      },
+      {
+        "name": "RESOURCES-PANEL_READ_ALL"
+      },
+      {
+        "name": "CUSTOM-QUERY_READ_OWN"
+      },
+      {
+        "name": "CUSTOM-QUERY_CREATE_OWN"
+      },
+      {
+        "name": "CUSTOM-QUERY_READ_ALL"
+      },
+      {
+        "name": "CUSTOM-QUERY_UPDATE_OWN"
+      },
+      {
+        "name": "CUSTOM-QUERY_UPDATE_ALL"
+      },
+      {
+        "name": "TEMPLATE_UPDATE_ALL"
+      },
+      {
+        "name": "COMPANY-MIN-CHARGE_CREATE_ALL"
+      },
+      {
+        "name": "TEMPLATE_CREATE_ALL"
+      },
+      {
+        "name": "COMPANY-MIN-CHARGE_UPDATE_ALL"
+      },
+      {
+        "name": "TEMPLATE_READ_ALL"
+      },
+      {
+        "name": "BREAKDOWN_UPDATE_ALL"
+      },
+      {
+        "name": "QUOTE_UPDATE_ALL"
+      },
+      {
+        "name": "COMPANY-MIN-CHARGE_READ_ALL"
+      },
+      {
+        "name": "ASSIGNMENT-STATUS_READ_ALL"
+      },
+      {
+        "name": "BREAKDOWN_CREATE_ALL"
+      },
+      {
+        "name": "BREAKDOWN_READ_ALL"
+      },
+      {
+        "name": "ASSIGNMENT-STATUS_CREATE_ALL"
+      },
+      {
+        "name": "ASSIGNMENT-STATUS_UPDATE_ALL"
+      },
+      {
+        "name": "TASK-FINANCIAL_READ_ALL"
+      },
+      {
+        "name": "LSP-SETTINGS-ACCT_UPDATE_OWN"
+      },
+      {
+        "name": "VENDOR-MIN-CHARGE_CREATE_ALL"
+      },
+      {
+        "name": "VENDOR-MIN-CHARGE_READ_ALL"
+      },
+      {
+        "name": "VENDOR-MIN-CHARGE_UPDATE_ALL"
+      },
+      {
+        "name": "EXPENSE-ACCOUNT_UPDATE_ALL"
+      },
+      {
+        "name": "EXPENSE-ACCOUNT_READ_ALL"
+      },
+      {
+        "name": "COMPANY-DEPT-RELATIONSHIP_READ_ALL"
+      },
+      {
+        "name": "TASK-FINANCIAL_UPDATE_ALL"
+      },
+      {
+        "name": "TASK-FINANCIAL_READ_OWN"
+      },
+      {
+        "name": "TASK-APPROVAL_UPDATE_ALL"
+      },
+      {
+        "name": "BILL-PRIORITY_UPDATE_ALL"
+      },
+      {
+        "name": "AP-PAYMENT_READ_OWN"
+      },
+      {
+        "name": "BILL-ADJUSTMENT_READ_OWN"
+      },
+      {
+        "name": "EXPENSE-ACCOUNT_CREATE_ALL"
+      },
+      {
+        "name": "GL-DATE_UPDATE_ALL"
+      },
+      {
+        "name": "BILL-ON-HOLD_READ_ALL"
+      },
+      {
+        "name": "COMPANY-DEPT-RELATIONSHIP_CREATE_ALL"
+      },
+      {
+        "name": "BILL-ADJUSTMENT_UPDATE_ALL"
+      },
+      {
+        "name": "BILL-PRIORITY_READ_ALL"
+      },
+      {
+        "name": "BILL-ACCT_UPDATE_ALL"
+      },
+      {
+        "name": "BILL-ON-HOLD_UPDATE_ALL"
+      },
+      {
+        "name": "AP-PAYMENT_READ_ALL"
+      },
+      {
+        "name": "BILL-ADJUSTMENT_READ_ALL"
+      },
+      {
+        "name": "TASK_READ_WORKFLOW"
+      },
+      {
+        "name": "COMPANY-DEPT-RELATIONSHIP_UPDATE_ALL"
+      },
+      {
+        "name": "BILL-RATE_UPDATE_ALL"
+      },
+      {
+        "name": "BILL_READ_OWN"
+      },
+      {
+        "name": "TASK-APPROVAL_UPDATE_OWN"
+      },
+      {
+        "name": "BILL_READ_ALL"
+      },
+      {
+        "name": "CONNECTOR_READ_ALL"
+      },
+      {
+        "name": "ABILITY_UPDATE_ALL"
+      },
+      {
+        "name": "CONNECTOR_UPDATE_ALL"
+      },
+      {
+        "name": "ABILITY-ACCT_UPDATE_ALL"
+      },
+      {
+        "name": "AP-PAYMENT_UPDATE_ALL"
+      },
+      {
+        "name": "AP-PAYMENT_CREATE_ALL"
+      },
+      {
+        "name": "BILL-ADJUSTMENT_UPDATE_OWN"
+      },
+      {
+        "name": "BILL-ADJUSTMENT_CREATE_ALL"
+      },
+      {
+        "name": "BILL-ADJUSTMENT_CREATE_OWN"
+      },
+      {
+        "name": "BANK-ACCOUNT_READ_ALL"
+      },
+      {
+        "name": "BANK-ACCOUNT_CREATE_ALL"
+      },
+      {
+        "name": "BANK-ACCOUNT_UPDATE_ALL"
+      },
+      {
+        "name": "REVENUE-ACCOUNT_UPDATE_ALL"
+      },
+      {
+        "name": "REVENUE-ACCOUNT_READ_ALL"
+      },
+      {
+        "name": "REVENUE-ACCOUNT_CREATE_ALL"
+      },
+      {
+        "name": "BILL-ADJUSTMENT-ACCT_UPDATE_ALL"
+      },
+      {
+        "name": "INVOICE_READ_ALL"
+      },
+      {
+        "name": "INVOICE_UPDATE_ALL"
+      },
+      {
+        "name": "INVOICE_CREATE_ALL"
+      },
+      {
+        "name": "AR-PAYMENT_CREATE_OWN"
+      },
+      {
+        "name": "AR-ADJUSTMENT_READ_COMPANY"
+      },
+      {
+        "name": "AR-ADJUSTMENT_READ_ALL"
+      },
+      {
+        "name": "AR-ADJUSTMENT-ACCT_READ_ALL"
+      },
+      {
+        "name": "AR-PAYMENT_UPDATE_OWN"
+      },
+      {
+        "name": "AR-ADJUSTMENT_READ_OWN"
+      },
+      {
+        "name": "INVOICE-ACCT_READ_ALL"
+      },
+      {
+        "name": "AR-PAYMENT_READ_ALL"
+      },
+      {
+        "name": "AR-PAYMENT_READ_COMPANY"
+      },
+      {
+        "name": "AR-ADJUSTMENT_CREATE_ALL"
+      },
+      {
+        "name": "AR-PAYMENT_CREATE_COMPANY"
+      },
+      {
+        "name": "AR-ADJUSTMENT_UPDATE_OWN"
+      },
+      {
+        "name": "AR-ADJUSTMENT_UPDATE_ALL"
+      },
+      {
+        "name": "AR-PAYMENT_CREATE_ALL"
+      },
+      {
+        "name": "AR-PAYMENT-ACCT_READ_ALL"
+      },
+      {
+        "name": "CC-PAYMENT_READ_ALL"
+      },
+      {
+        "name": "AR-PAYMENT_UPDATE_ALL"
+      },
+      {
+        "name": "AR-PAYMENT_READ_OWN"
+      },
+      {
+        "name": "REQUEST-PO_UPDATE_ALL"
+      },
+      {
+        "name": "IP-ORDER_READ_OWN"
+      },
+      {
+        "name": "IP-QUOTE_READ_OWN"
+      },
+      {
+        "name": "IP-ORDER_CREATE_OWN"
+      },
+      {
+        "name": "IP-QUOTE_CREATE_OWN"
+      },
+      {
+        "name": "AP-PAYMENT_UPDATE_OWN"
+      },
+      {
+        "name": "MONTHLY-API-QUOTA_READ_ALL"
+      },
+      {
+        "name": "MONTHLY-API-QUOTA_UPDATE_ALL"
+      }
+    ]
+  }
