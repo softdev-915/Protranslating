@@ -1,0 +1,56 @@
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+  },
+  extends: [
+    'plugin:vue/essential',
+    'airbnb-base',
+  ],
+  root: true,
+  parserOptions: {
+    ecmaVersion: 12,
+    sourceType: 'module',
+  },
+  plugins: [
+    'vue',
+  ],
+  rules: {
+    'no-return-assign': 'off',
+    'no-underscore-dangle': 'off',
+    'no-param-reassign': 'off',
+    'no-continue': 'off',
+    'class-methods-use-this': 'off',
+    'consistent-return': 'off',
+    'func-names': 'off',
+    'object-shorthand': 'off',
+    'no-new': 'off',
+    'no-plusplus': 'off',
+    'require-yield': 'off',
+    'no-await-in-loop': 'error',
+    'vue/multi-word-component-names': 'off',
+    // don't require .vue extension when importing
+    'import/extensions': 'off',
+    'import/prefer-default-export': 'off',
+    'import/export': 'off',
+    // allow debugger during development
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    'no-multi-assign': 'off',
+    'no-multiple-empty-lines': [2, { max: 1 }],
+    'padding-line-between-statements': ['error',
+      { blankLine: 'never', prev: ['const', 'let', 'var'], next: ['const', 'let', 'var'] },
+      { blankLine: 'any', prev: ['multiline-const', 'multiline-let'], next: ['multiline-const', 'multiline-let'] },
+      { blankLine: 'any', prev: ['const', 'let', 'var'], next: ['cjs-import'] },
+      { blankLine: 'never', prev: ['*'], next: ['return'] },
+      { blankLine: 'always', prev: ['cjs-import'], next: ['*'] },
+      { blankLine: 'never', prev: ['cjs-import'], next: ['cjs-import'] },
+    ],
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'vue/html-closing-bracket-newline': ['error', {
+      singleline: 'never',
+      multiline: 'always',
+    }],
+    'max-len': ['error', { code: 159 }],
+    'vue/max-len': ['error', { code: 159, template: 159 }],
+  },
+};
