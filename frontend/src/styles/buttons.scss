@@ -1,0 +1,142 @@
+@import './colors.scss';
+
+button,
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.btn {
+  height: 30px;
+  max-height: 30px;
+  line-height: 15px;
+  padding: 0.4em .5em;
+}
+
+.btn-primary,
+.btn-primary.disabeld,
+.btn-primary:disabled {
+  background-color: $button-primary-background;
+  border-color: $button-primary-border;
+  color: $button-primary-color;
+}
+
+.btn-primary.dark {
+  background-color: $color-navy-blue;
+  border-color: $button-default-color;
+  color: $button-primary-color;
+}
+
+.btn-default {
+  background-color: $button-default-background;
+  border-color: $button-default-border;
+  color: $button-default-color;
+}
+
+.btn-primary:hover {
+  background-color: $button-primary-hover-background;
+  border-color: $button-primary-hover-border;
+}
+
+.btn-default:hover {
+  border-color: $button-default-hover-border;
+  color: $button-default-hover-color;
+}
+
+@mixin button-new {
+  @include font-family-default;
+  font-size: 14px;
+  height: 36px;
+  max-height: 36px;
+  padding: 8px 12px;
+}
+
+.btn-new-default {
+  @include button-new;
+  background-color: $button-new-default-background;
+  border-color: $button-new-default-border;
+  color: $button-new-default-color;
+
+  &:disabled {
+    color: $button-new-disabled-color;
+    opacity: 1;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $button-new-default-hover-background;
+  }
+
+  &:active {
+    background-color: $button-new-default-active-background;
+  }
+}
+
+.btn-new-primary {
+  @include button-new;
+  background-color: $button-new-primary-background;
+  border-color: $button-new-primary-border;
+  color: $button-new-primary-color;
+
+  &:disabled {
+    background-color: $button-new-disabled-background-color;
+    border-color: $button-new-disabled-background-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $button-new-primary-hover-background;
+    border-color: $button-new-primary-hover-border;
+  }
+
+  &:active {
+    background-color: $button-new-primary-active-background;
+    border-color: $button-new-primary-active-border;
+  }
+}
+
+.btn-new-optional {
+  @include button-new;
+  background-color: $button-new-optional-background;
+  border-color: $button-new-optional-border;
+  color: $button-new-optional-color;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  &:disabled {
+    border-color: $button-new-disabled-border-color;
+    color: $button-new-disabled-color;
+    opacity: 1;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $button-new-optional-hover-background;
+  }
+
+  &:active {
+    background-color: $button-new-optional-active-background;
+  }
+}
+
+.btn-new-removal {
+  @include button-new;
+  background-color: $button-new-removal-background;
+  border-color: $button-new-removal-border;
+  color: $button-new-removal-color;
+
+  &:disabled {
+    background-color: $button-new-disabled-background-color;
+    border-color: $button-new-disabled-background-color;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: $button-new-removal-hover-background;
+  }
+
+  &:active {
+    background-color: $button-new-removal-active-background;
+  }
+}

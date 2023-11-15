@@ -1,0 +1,13 @@
+export const MEMORY_EDITOR_RESET = 'reset';
+export const MEMORY_EDITOR_SET_IS_LOADING = 'setIsLoading';
+export const MEMORY_EDITOR_SET_TM_INFO = 'setTmInfo';
+export const MEMORY_EDITOR_SET_SEGMENTS = 'setSegments';
+export const MEMORY_EDITOR_SET_SEARCHED_SEGMENTS = 'setSearchedSegments';
+export const MEMORY_EDITOR_APPEND_SEGMENT = 'appendSegment';
+export const MEMORY_EDITOR_SET_SEGMENT_TO_CREATE = 'setSegmentToCreate';
+export const MEMORY_EDITOR_SET_COMPANY = 'setCompany';
+export const MEMORY_EDITOR_SET_ACTIVE_SEGMENTS_ARRAY = 'setActiveSegmentsArray';
+export const MEMORY_EDITOR_SET_IS_SEGMENT_CREATION_IN_PROGRESS = 'setIsSegmentCreationInProgress';
+export const MEMORY_EDITOR_SET_IS_SEGMENT_DELETION_IN_PROGRESS = 'setIsSegmentDeletionInProgress';
+export const MEMORY_EDITOR_SET_SEGMENT = 'setSegment';
+export const MEMORY_EDITOR_SET_SEGMENT_IS_LOADING = 'setSegmentIsLoading';

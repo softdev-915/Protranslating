@@ -1,0 +1,205 @@
+$loginBlue: #069;
+
+// header
+
+$color-white: #fff;
+$color-black: #000;
+$color-bright: #f7f9fa;
+$color-navy-blue: #34495e;
+$color-violet: #9b59b6;
+$color-blue: #3498db;
+$color-light-blue: #76A3CA;
+$color-warmer-blue: #96cbed;
+$color-warm-blue: #4ea5e0;
+$color-darker-blue: #016191;
+$color-nearly-blue: #62a4cd;
+$color-celestial-blue: #408dca;
+$color-lightblue: #D9EDF7;
+$color-yellow: #ffb606;
+$color-light-yellow: #ffff00;
+$color-orange: #e67e22;
+$color-red: #e74c3c;
+$color-red-deep: #c0392b;
+$color-reg-bigip: #ED1C24;
+$color-nearly-white: #e4e5e7;
+$color-text: #6a6c6f;
+$color-text-darker: #56595B;
+$color-grey: #cccccc;
+$color-warm-grey: #a59d97;
+$color-light-grey: #e0e0e0;
+$color-heavy-grey: #A49D98;
+$border-color: #a9a9a9;
+$border-blue-color: #016191;
+$color-green: #B0D476;
+$background-color: #f5f5f5;
+$color-magenta: #886789;
+$color-cyan-blue: #1b75bc;
+$color-danger: #a94442;
+// buttons
+
+$button-outline-color: #FFF;
+
+$button-primary-background: $color-celestial-blue;
+$button-primary-border: $button-primary-background;
+$button-primary-color: #FFF;
+$button-primary-hover-background: $color-warm-blue;
+$button-primary-hover-border: $color-warm-blue;
+
+$button-default-background: #FFF;
+$button-default-border: $color-nearly-white;
+$button-default-color: $color-text;
+$button-default-hover-border: #d9dbdd;
+$button-default-hover-color: #606265;
+
+$button-new-disabled-color: #6A6C6F;
+$button-new-disabled-border-color: #D4D4D4;
+$button-new-disabled-background-color: #A0A1A3;
+$button-new-default-background: $color-white;
+$button-new-darker-background: #f3f3f3;
+$button-new-hover-background: #EEEEEE;
+$button-new-default-border: #D4D4D4;
+$button-new-default-color: $color-black;
+$button-new-default-hover-background: #DEDEDF66;
+$button-new-default-active-background: #DEDEDFA3;
+$button-new-primary-background: #408DCA;
+$button-new-primary-border: $button-new-primary-background;
+$button-new-primary-color: $color-white;
+$button-new-primary-hover-background: #5D96C3;
+$button-new-primary-hover-border: $button-new-primary-hover-background;
+$button-new-primary-active-background: #5589B3;
+$button-new-primary-active-border: $button-new-primary-active-background;
+$button-new-optional-color: $button-new-primary-background;
+$button-new-optional-background: $color-white;
+$button-new-optional-border: $button-new-optional-color;
+$button-new-optional-hover-background: #F3F8FC;
+$button-new-optional-active-background: #E6F0F8;
+$button-new-removal-background: #D92D20;
+$button-new-removal-border: $button-new-removal-background;
+$button-new-removal-color: $color-white;
+$button-new-removal-hover-background: #B42318;
+$button-new-removal-active-background: #B42318;
+
+// headers
+
+$header-main-background: #fff;
+$header-border: $color-nearly-white;
+$header-text: $color-nearly-white;
+$header-background: $color-bright;
+$header-icons-color: $color-text;
+
+$muted-text: #777;
+
+// side-bar
+
+$side-bar-main-background: $header-main-background;
+$side-bar-border: $header-border;
+$side-bar-text: $color-text;
+$side-bar-background: $color-bright;
+$side-bar-list-item-active: $color-celestial-blue;
+$side-bar-active-border: $color-celestial-blue;
+
+// advanced search
+$advanced-search-background: $color-bright;
+$advanced-search-title: $color-nearly-blue;
+$advanced-search-title-color: #fff;
+$advanced-search-border: $header-border;
+$advanced-search-label: $color-nearly-white;
+$advanced-search-placeholder: #555;
+$advanced-search-input-background: $header-main-background;
+$advanced-search-button-color: $color-nearly-blue;
+$advanced-search-button-danger-color: #e43321;
+
+// home
+
+$home-background: #f1f3f6;
+$home-title: #dadbdb;
+$home-footer-background: $header-main-background;
+$home-footer-border-color: $header-border;
+
+// grid
+
+$table-container-background: $header-border;
+$table-background: $header-main-background;
+$table-hover-background: rgba(52, 152, 219, .3);
+$table-border: #ddd;
+$table-header-color: $color-text;
+$table-stripped-background: #f9f9f9;
+$table-show-more-color: $color-nearly-blue;
+
+// grid configuration dropdown
+
+$grid-config-dropdown-section-title-border: $border-color;
+$grid-config-dropdown-section-title-color: $border-color;
+
+// grid btn
+$grid-btn-green: #19a175;
+$grid-btn-disabled: lightgrey;
+$grid-border-color: #eceeef;
+$grid-highlight-background: #FAE632;
+$grid-highlight-text: #615A1F;
+
+// view search
+$view-search-link-active: $color-nearly-blue;
+$view-search-link-hover: #f3f4f5;
+
+//section
+$section-title-color: lightgrey;
+
+// request
+
+$request-section-title-color: $color-text;
+$request-drop-file-color: $color-text;
+$request-drop-file-background-color: transparent;
+$request-drag-description-color: $color-heavy-grey;
+// rates
+
+$rate-grid-header-background-color: $color-nearly-blue;
+
+// ip-detail
+$counts-header: #ebebeb;
+$harp: #e9f3e8;
+$lavender-blush: #ffebee;
+$ocean-green: #47B881;
+$ip-warm-gray: #7f8185;
+$ip-danger-color: #e02826;
+$punch: #DB3732;
+$tundora: #444444;
+$tuna: #3A3B3F;
+$wild-sand: #F6F6F6;
+$rolling-stone: #7f8185;
+$ip-default-gray: #aaabae;
+$dodge-blue: #2196F3;
+$silver-chalice: #adadad;
+$athens-gray: #E4E7EB;
+$royal-blue: #3F6AD8;
+$hippie-blue: #548BAD;
+$mid-gray: #626366;
+$alto: #d5d5d5;
+$dark-yellow: #526723;
+$cool-gray: #F9FAFB;
+$medium-dark: #121212;
+$star-map-gray: #dde3ea;
+
+// templates
+$template-font-color: #231F20;
+$template-smoky-color: #565E71;
+$template-light-gray: #fafafa;
+$template-lighter-gray: #F7F8FA;
+$template-bg-color-dark: #D4D4D4;
+$template-bg-ghost-white: #F8F9FC;
+$template-background-grey: #FAFAFA;
+$template-subtotal-grey: #F8F9FC;
+
+// contact-view
+$color-periwinkle-gray: #DEE3F1;
+
+// common
+$color-black: #000;
+$color-darkred: #922519;
+
+// text editor colors
+$text-editor-disabled-background: #A0A1A3;
+$editor-segment-text-highlight: #cfe2f3;
+
+// modal
+$overlay-color: rgba(0, 0, 0, 0.5);

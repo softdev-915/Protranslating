@@ -1,0 +1,59 @@
+@import './colors.scss';
+
+.drop-zone-container {
+  border: 1px dotted #DDD;
+  min-height: 100px;
+}
+
+.drop-zone {
+  text-align: center;
+  color: #DDD;
+}
+
+.drop-zone-row {
+  height: 100%;
+}
+
+.drop-zone-col {
+  text-align: center;
+}
+
+.drop-zone-trigger {
+  position: relative;
+}
+
+.drop-zone-container.drop-zone-inactive {
+  display: none;
+}
+
+.drop-zone-container.drop-zone-dragging {
+  display: block;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  height: 100%;
+  padding: 50% 0;
+  width: 100%;
+  font-size: 50px;
+  border: 2px dotted $request-drop-file-color;
+  background-color: $request-drop-file-background-color;
+  opacity: 1;
+}
+
+.full.drop-zone-container.drop-zone-dragging {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  padding: 50% 0;
+  border: none;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+.full.drop-zone-container * {
+  text-align: center !important;
+  color: $color-text !important;
+  text-shadow: none !important;
+}

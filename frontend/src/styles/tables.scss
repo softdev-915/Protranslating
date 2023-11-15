@@ -1,0 +1,206 @@
+@import 'bootstrap/scss/mixins';
+// @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+@import './colors.scss';
+
+table.pts-data-table {
+  border-color: $table-border;
+}
+
+div.pts-data-table-container div.table-responsive {
+  height: calc(100vh - 205px);
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+table.pts-data-table td, table.pts-data-table th {
+  vertical-align: middle;
+  padding: 0 5px;
+}
+
+table.pts-data-table.filter-table th {
+  vertical-align: bottom;
+}
+
+table.pts-data-table thead, table.pts-data-table tbody, table.pts-data-table tr {
+  width: 100%;
+  line-height: 1.5;
+  height: 30px;
+}
+
+table.pts-data-table th {
+  color: $table-header-color;
+  cursor: pointer;
+  position: relative;
+  font-size: .95em;
+  padding: 8px;
+  min-width: 100px;
+}
+
+table.pts-data-table > tbody > tr:hover {
+  background-color: $table-hover-background;
+}
+
+table.pts-data-table.table-striped > tbody > tr:hover > td {
+   background-color: $table-hover-background !important;
+}
+
+table.pts-data-table.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: $table-stripped-background;
+}
+
+table.fixed-header {
+  width: 100% !important;
+  border-spacing: 0;
+
+  tbody {
+    height: 480px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 64px;
+  }
+  tbody, thead tr { display: block; }
+
+  td, th {
+    width: 140px;
+  }
+
+  th:last-child {
+    width: 156px;
+  }
+}
+
+h2.pts-data-table-name {
+  font-size: 36px;
+  font-weight: bolder;
+  color: lightgrey;
+  padding-bottom: 10px;
+}
+
+table.pts-data-table th span.pts-sort-icon {
+  color: $table-header-color;
+  padding-left: 5px;
+}
+
+.pts-grid-edit-modal {
+  padding: 0px 0px 42px 0px;
+}
+
+.pts-grid-edit-modal .modal-dialog {
+  max-width: 95%;
+}
+
+.pts-grid-edit-modal .container-fluid .row {
+  padding: 5px;
+}
+
+.pts-grid-edit-modal .pts-grid-edit-text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+/* blur special override */
+.blur-loading th span {
+  color: transparent !important;
+  text-shadow: 0 0 6px rgba(0,0,0,0.5);
+}
+
+.pts-grid-edit-modal .checkbox-container div:nth-child(n+1) {
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+.pts-grid-edit-modal .checkbox-container div[class^='col'] {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.pts-grid-edit-modal .checkbox-container input[type='checkbox'] {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 15px;
+}
+
+@include media-breakpoint-up(md) {
+  .pts-grid-edit-modal .pts-grid-edit-text {
+    width: 66.66666664%;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .pts-grid-edit-modal .chckbox-container input[type='checkbox'] {
+    top: -5px;
+    right: -10px;
+    left: auto;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .pts-grid-edit-modal .container-fluid .row {
+    padding: 10px;
+  }
+
+  table.table-stacked {
+    box-shadow: none;
+    overflow-x: hidden;
+  }
+
+  table.table-stacked thead{
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  table.table-stacked tbody tr {
+    height: auto !important;
+    border-top: 1px solid $table-border;
+  }
+
+  table.table-stacked thead tr th{
+    display: block;
+    float:left;
+    width: 100%;
+  }
+
+  table.table-stacked thead tr th input {
+    width: 100%;
+  }
+
+  table.table-stacked th,
+  table.table-stacked td{
+    padding: .5em;
+  }
+
+  table.table-stacked tr,
+  table.table-stacked td{
+    display: block;
+    border: 0;
+  }
+
+  table.table-stacked tbody td {
+    border: 0;
+    text-align: left !important;
+  }
+
+  table.table-stacked td a.fa {
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  table.table-stacked td a.fas {
+    display: inline-block;
+    font-size: 18px;
+  }
+
+  .pts-grid-edit-modal .checkbox-container div:first-child {
+    padding-left: 0px;
+  }
+
+  .pts-grid-edit-modal {
+    padding: 0px 5px 42px 5px;
+  }
+}

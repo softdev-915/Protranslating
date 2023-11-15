@@ -1,0 +1,91 @@
+// // @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/variables';
+
+@import './styles/colors.scss';
+@import './styles/mixins.scss';
+
+@media print {
+  .bordered-left {
+    border: none !important;
+  }
+}
+
+.bordered-left {
+  border-left: 1px solid $header-border;
+}
+
+#app,.private-app {
+  height: 100%;
+}
+
+.main-container {
+  height: 100%;
+}
+
+.main-and-sidebar {
+  padding: 0;
+  height: 100%;
+  @include transition(all 1s ease);
+}
+
+.main-and-sidebar.toggled {
+  padding-left: 180px;
+}
+
+.main-view {
+  height: calc(100% - 58px);
+  overflow: hidden;
+}
+
+.side-bar {
+  height: 100%;
+  z-index: 100;
+  width: 180px;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  margin-left: 0;
+  @include transition(all 1s ease);
+}
+
+.main-slot {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: $home-background;
+  height: calc(100% - 40px);
+  position: relative;
+}
+
+.splash {
+  position: absolute;
+  z-index: 2000;
+  background: #fff !important;
+  color: black;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.splash-title {
+  text-align: center;
+  margin: 15% auto;
+  padding: 20px;
+
+  .red {
+    color: $color-reg-bigip;
+  }
+}
+
+.notification-manager {
+  top: 10px;
+  left: 25%;
+  width: 50%;
+  z-index: 15000;
+  position: fixed;
+}
+
+.footer-col {
+  padding-left: 14px;
+}

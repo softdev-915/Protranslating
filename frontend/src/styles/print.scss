@@ -1,0 +1,16 @@
+.print-prepare {
+  overflow: visible !important;
+  height: auto !important;
+}
+
+.modal-body.print-prepare {
+  width: 100%;
+}
+
+.side-bar.print-prepare {
+  display: none;
+}
+
+.main-and-sidebar.print-prepare {
+  padding: 0 !important;
+}
