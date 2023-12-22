@@ -1,0 +1,34 @@
+@import 'bootstrap/scss/mixins';
+// @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+.action-message {
+  white-space: pre-wrap;
+}
+
+.error-detail-btn {
+  margin-top: -5px;
+}
+
+.stack-trace {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.remove-notification-icon {
+  margin-top: 3px;
+}
+
+.remove-notification-icon:hover {
+  font-weight: bold;
+}
+
+@include media-breakpoint-down(xs) {
+  .alert-danger {
+    overflow: hidden;
+  }
+
+  .error-detail-btn {
+    margin: 20px -10px 0 0;
+  }
+}
