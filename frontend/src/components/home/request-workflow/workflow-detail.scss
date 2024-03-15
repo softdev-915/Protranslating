@@ -1,0 +1,141 @@
+@import 'bootstrap/scss/mixins';
+// @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import '../../../styles/colors.scss';
+
+.workflow-language-container {
+  padding-right: 0;
+  max-width: 205px;
+}
+
+.workflow-container {
+  margin-top: -8px;
+}
+
+#workflows .workflow-detail .row:first-child {
+  padding-bottom: 2px;
+}
+
+#workflows .workflow-detail:nth-child(even) {
+  background-color: $table-stripped-background;
+}
+
+// Scroll in workflows grid
+.workflow-detail {
+  overflow-x: auto;
+  margin: 0px;
+}
+
+#workflows .workflow-detail .workflow-main-container {
+  border: 1px solid transparent;
+  overflow-x: auto;
+}
+
+#workflows .workflow-detail .workflow-main-container:hover {
+  border: 1px solid;
+  border-color: $color-warm-blue !important;
+}
+
+#workflows .workflow-detail .red-border.workflow-main-container:hover {
+  margin: 0px;
+}
+
+#workflows .workflow-detail-grand-total .workflow-main-container:hover {
+  border: 0px;
+  margin: 0px;
+}
+
+
+.toggle-actions label {
+  position: relative;
+  padding: 10px 13px;
+}
+
+#workflows input[type="checkbox"] {
+  width: 20px;
+}
+
+.toggle-actions input[type="checkbox"] {
+  top: 13px;
+  left: -6px;
+  position: absolute !important;
+}
+
+#select-all-workflows {
+  width: 14px;
+}
+.active {
+  border: solid 1px $color-warm-blue;
+}
+.flatpickr-input {
+  padding: 6px;
+}
+
+.quantity-input {
+  padding: 5px;
+}
+
+.action-buttons {
+  padding: 0 !important;
+  justify-content: space-between;
+}
+
+#workflows .dropdown {
+  line-height: 1.3;
+}
+
+// Font size
+#workflows,
+#workflows input,
+#workflows .dropdown,
+#workflows .dropdown .item,
+#workflows select,
+#workflows textarea {
+  font-size: 12px !important;
+}
+
+#workflows .workflow-provider-container .menu.visible {
+  overflow-y: scroll;
+}
+
+#workflows .dropdown,
+#workflows .dropdown .item,
+#workflows input.form-control-sm {
+  padding: 5px !important;
+  margin-bottom: 2px;
+}
+
+#workflows input.form-control-sm {
+  margin: 0 0 4px 0;
+  min-height: 33px;
+}
+
+.row.flex-nowrap,
+#workflows .workflow-detail .row .row {
+  padding-top: 0;
+}
+
+.read-only-field {
+  min-height: 34px !important;
+}
+
+.read-only-field {
+  padding: 0 0 5px 0;
+}
+
+#workflows .ui.selection.dropdown .menu.visible {
+  min-width: 150px !important;
+}
+
+textarea::placeholder,
+textarea {
+  font-size: 1em !important;
+}
+
+.workflow-files-container {
+  margin: 5px 7px;
+}
+
+.workflows-button {
+  font-size: 13px;
+}

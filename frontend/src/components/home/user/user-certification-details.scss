@@ -1,0 +1,18 @@
+.certification-list .col-12:nth-child(odd) .row {
+  .certification-name, .certification-expiration-date {
+    background-clip: content-box;
+    background-color: rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.certification-name, .certification-expiration-date {
+  span {
+    min-height: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+  }
+}

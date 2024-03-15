@@ -1,0 +1,5 @@
+@import '../../portalcat-variables';
+
+.portalcat-pipeline + .portalcat-pipeline {
+  margin-top: $padding;
+}

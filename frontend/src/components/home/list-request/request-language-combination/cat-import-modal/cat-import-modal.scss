@@ -1,0 +1,31 @@
+@import '../../../../../styles/colors.scss';
+
+.modal-actions{
+  width: 100%;
+}
+
+.destination-label{
+  font-size: 0.8rem;
+}
+
+.radio-button{
+  text-align: left;
+  border: 1px solid $color-grey;
+  line-height: 15px;
+  padding: 1em;
+  border-radius: 0.25rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:not(.pts-not-allowed){
+    cursor: pointer;
+  }
+  &.active{
+    border-color: $button-new-primary-background;
+  }
+}
+
+.cancel{
+  color: $color-black;
+}

@@ -1,0 +1,123 @@
+@import '../../../../styles/colors.scss';
+
+.instant-quote-container{
+  position: relative;
+}
+.instant-quote-table{
+  width: 100%;
+  th,
+  td {
+    height: 56px;
+  }
+  th {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: right;
+    &:first-child{
+      text-align: left;
+    }
+  }
+  td {
+    color: $tuna;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    border-top: 1px solid $athens-gray;
+    &:first-child{
+      text-align: left;
+    }
+    text-align: right;
+    > span {
+      display: inline-block;
+    }
+    > .currency {
+      width: 50px;
+    }
+    > .price {
+      width: calc(100% - 60px);      
+      text-align: right;
+    }
+  }
+}
+.currency-switcher {
+  width: 100px;
+  margin-right: 12px;
+}
+.instant-quote-table-translation-only{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  th,
+  td {
+    height: 56px;
+  }
+  th {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: right;
+    &:first-child{
+      text-align: left;
+    }
+  }
+  td {
+    color: $tuna;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    border-top: 1px solid $athens-gray;
+    text-align: right;
+    &:first-child{
+      text-align: left;
+    }
+    > span {
+      display: inline-block;
+    }
+    > .currency {
+      width: 50px;
+    }
+    > .price {
+      width: calc(100% - 60px);      
+      text-align: right;
+    }
+  }
+}
+
+table {
+  tbody {
+    tr {
+      &:last-child {
+        border-bottom: 1px solid $athens-gray;
+      }
+    }
+  }
+}
+
+.price {
+  &__total {
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    span:first-child {
+      color: $tundora;
+      font-weight: 500;
+    }
+    span:last-child {
+      font-size: 17px;
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+@media (max-width: 1366px){
+  .instant-quote-table, .instant-quote-table-translation-only {
+    th,td {
+      font-size: 14px;
+    }
+  }
+}

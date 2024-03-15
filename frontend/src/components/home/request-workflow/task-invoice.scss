@@ -1,0 +1,41 @@
+@import '../../../styles/colors.scss';
+
+@media (min-width: 1280px) {
+  .invoice-container {
+    max-width: 450px;
+  }
+}
+
+.invoice-container {
+  border-right: 1px solid $color-grey;
+  padding-right: 30px;
+}
+
+#workflows .read-only .read-only-currency input.form-control-sm {
+  min-height: 20px;
+  margin: -3px;
+  color: $color-text
+}
+
+#workflows .read-only div {
+  color: $color-text;
+}
+
+.invoiced div,
+.invoiced input {
+  color: $dark-yellow !important;
+  font-style: italic;
+}
+
+.read-only-unit-price {
+  position: absolute;
+  bottom: 0;
+}
+
+.read-only-translation-unit {
+  min-height: 20px;
+}
+
+.invoice-total {
+  word-break: break-word;
+}

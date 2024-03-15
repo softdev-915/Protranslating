@@ -1,0 +1,113 @@
+@import '../../styles/colors.scss';
+
+nav {
+  background-color: $side-bar-main-background;
+  height: 100%;
+  padding-left:0;
+  padding-right:0;
+  font-size: 13px;
+  color: $color-navy-blue;
+}
+
+.lsp-settings {
+  border-bottom: 1px solid $color-nearly-white;
+}
+
+.stats-label div:last-child {
+  font-size: .93em;
+}
+
+.stats-label {
+  margin-top: 70px;
+}
+
+.profile-picture {
+  padding: 20px 1px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.profile-picture img {
+  max-height: 56px;
+}
+
+#image-edit-icon {
+  display: none;
+}
+
+.profile-picture:hover #image-edit-icon {
+  display: block;
+}
+
+.text-muted {
+  color: $muted-text;
+}
+
+.logout-dropdown {
+  margin-top: 5px;
+  padding-top: 5px;
+  border-top: 1px solid $side-bar-border;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+  background-color: $side-bar-background;
+}
+
+li {
+  width: 100%;
+  border-top: 1px solid $side-bar-border;
+  display: block;
+  font-weight: 700;
+  padding: 15px 20px;
+}
+
+li:last-child {
+  border-bottom: 1px solid $side-bar-border;
+}
+
+li.active {
+  background-color: $side-bar-main-background;
+  border-right: 5px solid $side-bar-active-border;
+  color: $color-navy-blue;
+}
+
+li.active-override {
+  border-right: 0 none !important;
+}
+
+li > a {
+  text-decoration: none;
+  color: $side-bar-text;
+}
+
+#sidebar-navigator li {
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: $side-bar-main-background;
+}
+
+li:hover > a, li.active > a {
+  color: $side-bar-list-item-active;
+
+}
+
+.change-profile-image-pencil {
+  text-decoration: none;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+#image-edit-icon {
+  position: absolute;
+  top: 52px;
+  right: 56px;
+}
+
+.portal-translator-link.active{
+  padding-right: 16px;
+}

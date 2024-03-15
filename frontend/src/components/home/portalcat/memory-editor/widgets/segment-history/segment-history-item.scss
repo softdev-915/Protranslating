@@ -1,0 +1,11 @@
+@import '../../../portalcat-variables';
+
+.segment-history-item {
+  padding: $padding;
+  border: $border-width solid $border-color-light;
+  overflow-wrap: break-word;
+
+  & + & {
+    margin-top: $padding;
+  }
+}

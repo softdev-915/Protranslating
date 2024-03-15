@@ -1,0 +1,30 @@
+@import './../../../styles/colors.scss';
+
+.btn-group {
+    display: flex;
+}
+
+.btn-group-option {
+    background-color: $template-lighter-gray;
+    color: $color-text;
+    border: 1px solid $template-bg-color-dark;
+    padding: 8px 0 25px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Open Sans';
+    line-height: 18px;
+    outline: 0;
+    flex: 1;
+    box-sizing: border-box
+}
+
+.btn-group-option:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-group-option.selected {
+    font-weight: 600;
+    background-color: $color-white;
+    color: $color-black;
+}

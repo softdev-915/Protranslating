@@ -1,0 +1,24 @@
+@import '../../styles/colors.scss';
+
+.current-router-view {
+  height: 100%;
+}
+
+div.full-width > div {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.main-section-container {
+  background-color: $home-background;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.responsive-grid-container {
+  height: 100%;
+}

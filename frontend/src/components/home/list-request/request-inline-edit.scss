@@ -1,0 +1,231 @@
+@import 'bootstrap/scss/mixins';
+// // @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import '../../../styles/colors.scss';
+
+label {
+  font-weight: bold !important;
+}
+
+hr {
+  margin: 10px 0;
+}
+
+#requestDeliveryDatePicker {
+  background-color: #FFF;
+}
+
+button {
+  cursor: pointer;
+}
+
+.row p {
+  padding-left: 20px;
+}
+
+.language-section .row div {
+  padding: 5px 0 0 20px;
+}
+
+h4 {
+  color: $request-section-title-color;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  font-size: 24px;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.request-upload-document-button {
+  background-color: $color-warm-grey;
+  color: #FFF;
+}
+
+.no-contact {
+  padding-top: 15px !important;
+  padding-bottom: 30px !important;
+}
+
+#status select {
+  text-transform: capitalize;
+}
+
+textarea {
+  height: 70px;
+  font-size: 14px;
+}
+
+.saving-spinner {
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.checkboxContainer label {
+  display: block;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+
+.checkboxContainer input {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -3px;
+  right: 0;
+  *overflow: hidden;
+}
+
+.final-files {
+  align-items: center;
+  line-height: 45px;
+  height: 45px;
+}
+
+a.anchor-button {
+  background-color: $color-warm-grey;
+  color: #FFF;
+  text-decoration: none;
+  margin-top: 7px;
+}
+
+#internalCommentsContainer > div, #commentsContainer > div {
+  max-width: 97vw;
+}
+
+.service-type > label, .delivery-type > label {
+  margin-top: 8px;
+}
+
+.service-delivery-types-required {
+  margin-top: 40px;
+}
+
+@include media-breakpoint-down(xs) {
+  #companyContactInfo,
+  .language-section .container .col-12,
+  .language-section label,
+  .form-section .container,
+  #otherContactsInfo .container {
+    padding: 0;
+  }
+
+  #otherContactsInfo .container {
+    text-align: left;
+  }
+
+  #requireQuotation {
+    padding-top: 15px;
+  }
+
+  #requireQuotation label {
+    margin-right: 20px;
+  }
+
+  #requireQuotation input {
+    top: -5px;
+  }
+
+  .final-files {
+    height: 60px;
+  }
+
+  .request-upload-document-button {
+    margin: 5px 0;
+  }
+}
+
+.language-combination-container {
+  border: 1px solid;
+}
+
+.language-combination-container:nth-child(even) {
+  border-color: $color-warm-grey;
+}
+
+.language-combination-container:nth-child(n+1) {
+  border-color: $border-color;
+}
+
+.progress-circle {
+  z-index: 1;
+}
+
+label.time-to-deliver {
+  margin-top: 0.5em;
+}
+
+.converging-arrows {
+  transform: rotate(45deg);
+  margin-top: 2em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.target-date-container {
+  border: 1px solid $border-color;
+  border-radius: 4px;
+}
+
+.arrow {
+  text-align: center;
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: medium;
+}
+
+.accordion-arrow {
+  transition: 0.3s;
+}
+h6 span {
+  font-weight: normal;
+}
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-item.active-accordion .accordion-content {
+  max-height: 500px;
+}
+
+.accordion-item.active-accordion .accordion-arrow {
+  transform: rotate(180deg);
+}
+
+.ip-edit-button {
+  background-color: $button-new-primary-background;
+  border-color: $button-new-primary-border;
+  color: $button-new-primary-color;
+  &:disabled {
+    background-color: $button-new-disabled-background-color;
+    border-color: $button-new-disabled-background-color;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $button-new-primary-hover-background;
+    border-color: $button-new-primary-hover-border;
+  }
+  &:active {
+    background-color: $button-new-primary-active-background;
+    border-color: $button-new-primary-active-border;
+  }
+}
+
+.ip-details-title {
+  margin-bottom: 0px;
+}

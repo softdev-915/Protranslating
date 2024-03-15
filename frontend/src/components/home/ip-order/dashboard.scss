@@ -1,0 +1,77 @@
+@import '../../../styles/colors.scss';
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  &__header {
+    font-weight: 600;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 72px;
+    color: $medium-dark;
+  }
+  &__body {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+.card {
+  width: 430px;
+  padding: 24px;
+  height: fit-content;
+  border: 1px solid $star-map-gray;
+
+  &__image-holder {
+    display: flex;
+    flex-direction: row;
+  }
+  &__image {
+    height: 56px;
+    object-fit: cover;
+    margin-right: 16px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 22px;
+    text-align: left;
+    color: $medium-dark;
+  }
+}
+
+.database-button {
+  width: 100%;
+  border: 1px solid $color-celestial-blue;
+  border-radius: 4px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px 10px 16px;
+  user-select: none;
+  span {
+    color: $medium-dark;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  i {
+    font-size: 14px;
+    color: $color-celestial-blue;
+  }
+  &:hover {
+    background-color: $color-celestial-blue;
+    cursor: pointer;
+    transition: 0.25s;
+    span,
+    i {
+      color: white !important;
+    }
+  }
+}
+
+.unclickable {
+  pointer-events: none;
+}

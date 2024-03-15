@@ -1,0 +1,63 @@
+@import '../../../../styles/colors.scss';
+
+.ip-card {
+  height: min-content;
+  border-radius: 15px;
+  background-color: $color-white;
+  box-shadow: 0 2px 6px 0 rgba(47, 83, 151, 0.1);
+  &__wizard-header {
+    width: 100%;
+    position: relative;
+    padding: 36px 30px 25px;
+  }
+  &__header {
+    width: 100%;
+    padding: 12px 30px;
+    background-color: $color-celestial-blue;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    span {
+      color: $color-white;
+      font-size: 22px;
+      letter-spacing: 0;
+      line-height: 30px;
+    }
+  }
+  &__divider {
+    height: 1px;
+    width: 100%;
+    background-color: $alto;
+  }
+  &__body {
+    padding: 20px 30px 26px;
+  }
+  &__detail {
+    padding: 28px 30px 80px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .ip-card__detail {
+    padding: 15px 10px 50px !important;
+  }
+  .record {
+    width: 145px !important;
+    font-size: 12px !important;
+    padding-left: 5px;
+  }
+  .record-wide span:last-child{
+    font-size: 12px !important;
+  }
+  .record-header { 
+    font-size: 14px !important;
+  }
+  .record__header { 
+    font-size: 12px;
+  }
+  .record-wide__header { 
+    font-size: 12px;
+  }
+  .ip-card__header span {
+    font-size: 18px;
+  }
+  
+}

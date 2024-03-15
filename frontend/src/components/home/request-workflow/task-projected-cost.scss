@@ -1,0 +1,25 @@
+
+@media (min-width: 1280px) {
+  .projected-cost-container {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .projected-cost-container {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .projected-cost-container {
+    max-width: 350px;
+  }
+}
+.projected-cost-row {
+  min-height: 73px;
+}
+
+.projected-cost-container {
+  border-right: 1px solid #ccc;
+}

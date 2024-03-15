@@ -1,0 +1,35 @@
+@import '../../../styles/colors.scss';
+
+.text-editor-custom-field {
+  .note-editor {
+    border: 1px solid $button-new-default-border;
+    border-radius: 4px;
+  }
+  .dropdown-toggle::after {
+    display: none;
+  }
+  div.note-editor.note-frame > div.note-toolbar > div.note-btn-group.note-fontname > div > button {
+    padding-right: 0;
+    padding-left: 5px;
+    width: 126px;
+    text-align: left;
+  }
+  .note-editable {
+    font-family: 'Barlow Regular';
+    & * {
+      font-size: 11pt !important;
+    }
+  }
+  .note-editor.note-frame .note-editing-area .note-editable[contenteditable="false"] {
+    background-color: $color-white !important;
+  }
+  .note-editor.note-frame .note-editing-area .note-editable[contenteditable="false"] * {
+    color: $text-editor-disabled-background !important;
+  }
+  ::-webkit-scrollbar {
+    width: 8px !important;
+  }
+}
+.custom-field-label {
+  white-space: nowrap;
+}

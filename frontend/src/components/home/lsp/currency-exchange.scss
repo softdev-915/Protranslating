@@ -1,0 +1,38 @@
+@import 'bootstrap/scss/mixins';
+// @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import '../../../styles/colors.scss';
+
+input.disabled {
+  background: none;
+  color: $color-text;
+}
+
+.exchange-details .header {
+  background: $color-nearly-blue;
+  color: $color-navy-blue;
+}
+
+.exchange-details .exchange-row {
+  border: 1px solid $border-color;
+}
+
+.exchange-details .exchange-row div {
+  border-right: 1px solid $border-color;
+}
+
+.exchange-details .exchange-row div:last-child {
+  border-right: 0;
+}
+
+.exchange-details .exchange-actions button {
+  line-height: 1;
+}
+
+.quotation input,
+.quotation input:active {
+  border: 0;
+  padding-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}

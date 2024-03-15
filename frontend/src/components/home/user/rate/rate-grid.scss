@@ -1,0 +1,50 @@
+@import 'bootstrap/scss/mixins';
+// @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+@import '../../../../styles/colors.scss';
+
+input, select {
+  font-size: 14px;
+}
+
+.entity-manage {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.entity-manage p {
+  min-height: 36px;
+}
+
+.rate-header-container {
+  flex-wrap: nowrap;
+}
+
+.ui.selection.dropdown .menu.visible {
+  min-width: 170px !important;
+}
+
+.rates-header {
+  background: $rate-grid-header-background-color;
+  color: white;
+}
+
+.rates-error {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border: 1px solid #FECDCA;
+  background-color: #FEF3F2;
+  color: #D92D20;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  & > i {
+    font-size: 16px;
+  }
+  & :last-child {
+    margin-left: 6px;
+  }
+}

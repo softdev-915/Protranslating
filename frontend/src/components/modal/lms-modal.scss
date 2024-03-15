@@ -1,0 +1,26 @@
+@import '../../styles/colors.scss';
+
+.lms-modal {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100;
+
+  &_overlay {
+    background-color: $overlay-color;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  &_body {
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem 2rem 1rem;
+    width: 90%;
+    max-width: 600px;
+  }
+}

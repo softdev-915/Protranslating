@@ -1,0 +1,13 @@
+@import '../../../portalcat-variables';
+
+.memory-editor-dockbar {
+  border: $border-width solid $border-color;
+  background-color: $bg-color;
+  padding: $padding;
+
+  .dockbar-actions {
+    button + button {
+      margin-left: $padding / 2;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.item[data-vss-custom-attr="entity-deleted"] {
+  color: gray !important;
+}
+.ui div.text[data-vss-custom-attr="entity-deleted"] {
+  color: gray !important;
+}
+.item[data-vss-custom-attr="entity-terminated"] {
+  color: red !important;
+}
+.ui div.text[data-vss-custom-attr="entity-terminated"] {
+  color: red !important;
+}
+.item[data-vss-custom-attr="provider-confirmed"] {
+  background-color: #7bb872 !important;
+}
+.ui.dropdown .menu>.item.current[data-vss-custom-attr="provider-confirmed"] {
+  background-color: #93ce8a !important;
+  background: rgb(147, 206, 138) !important;
+}
+.ui div.text[data-vss-custom-attr="provider-confirmed"] {
+  color: green !important;
+}

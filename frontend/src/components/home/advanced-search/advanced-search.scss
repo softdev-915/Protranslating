@@ -1,0 +1,67 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/mixins.scss';
+
+.advanced-search-container {
+  font-size: 13px;
+}
+
+.arrow {
+  cursor: pointer;
+}
+
+.advanced-search-title {
+  background-color: $advanced-search-title;
+  color: $advanced-search-title-color;
+  border: 1px solid $advanced-search-border;
+  border-radius: 2px;
+}
+
+div.advanced-search-title > h5 {
+  font-weight: 500;
+  padding: 15px;
+  font-size: 14px;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-bottom: 0;
+}
+
+div.advanced-search-title > h5 > i:first-child {
+  padding-right: 5px;
+}
+
+.advanced-search-option {
+  padding-top: 10px;
+}
+
+.advanced-search-form {
+  background-color: $advanced-search-background;
+  @include placeholder {
+    color: $advanced-search-placeholder;
+  }
+}
+
+.advanced-search-form label {
+  color: $advanced-search-label;
+  font-weight: 700;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+}
+
+.advanced-search-input {
+  margin-top: 10px;
+}
+
+.advanced-search-input .input-group-addon {
+  background-color: $advanced-search-input-background;
+}
+
+.search-button {
+  background-color: $advanced-search-button-color;
+  border-color: $advanced-search-button-color;
+}
+
+.remove-filters-button {
+ background-color: $advanced-search-button-danger-color;
+ border-color: $advanced-search-button-danger-color;
+ margin-right: 10px;
+}

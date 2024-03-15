@@ -1,0 +1,48 @@
+@import 'bootstrap/scss/mixins';
+// @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+@import '../../../../../styles/colors.scss';
+
+.grid-config-dropdown-section {
+  width: 325px;
+  margin: 5px;
+}
+
+.grid-config-dropdown-section h4 {
+  color: $grid-config-dropdown-section-title-color;
+  border-bottom: 1px solid $grid-config-dropdown-section-title-border;
+}
+
+.grid-config-selected {
+  font-weight: bold;
+}
+
+.grid-config-dropdown-section .dropdown-item {
+  padding: 3px 1.5rem .5rem 1.5rem;
+  font-size: 13px;
+}
+
+.dropdown-item-action {
+  font-size: 17px;
+  margin-right: 8px;
+  margin-left: 10px;
+}
+a.select-all-button {
+  color: $color-celestial-blue;
+  font-weight: normal;
+}
+
+a.select-all-button:hover {
+  color: $color-celestial-blue;
+  text-decoration: underline;
+}
+@include media-breakpoint-down(xs) {
+  .grid-config-dropdown-section .dropdown-item {
+    margin-bottom: 20px;
+  }
+
+  .grid-config-dropdown-section .dropdown-item span span {
+    margin-right: 30px;
+  }
+}

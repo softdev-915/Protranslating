@@ -1,0 +1,110 @@
+@import '../../styles/colors.scss';
+
+.progress-steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.step {
+  text-align: center;
+  color: $ip-warm-gray;
+  border: 0;
+  &__bullet {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    position: relative;
+    background-color: $ip-warm-gray;
+    border-radius: 100%;
+    color: $color-white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 27px;
+    text-align: center;
+    z-index: 2;
+    transition: background-color 500ms;
+  }
+  &__bullet::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    border: 1px solid $ip-warm-gray;
+    bottom: 13px;
+    z-index: -1;
+    transition: border-color 500ms;
+  }
+  &__text {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 27px;
+    text-align: center;
+    transition: color 500ms;
+  }
+}
+
+.completed {
+  color: $ocean-green;
+  .step {
+    &__bullet {
+      background-color: $ocean-green;
+    }
+    &__bullet::before {
+      border-color: $ocean-green;
+    }
+  }
+}
+.active {
+  color: $color-celestial-blue;
+  .step {
+    &__bullet {
+      background-color: $color-celestial-blue;
+    }
+    &__bullet::before {
+      border-color: $color-celestial-blue;
+    }
+  }
+}
+
+.step-three {
+  $width: 315px;
+
+  max-width: $width;
+  width: $width;
+
+  .step__bullet::before {
+    max-width: $width;
+    width: $width;
+    left: -143px;
+  }
+}
+
+.step-four {
+  $width: 245px;
+  max-width: $width;
+  width: $width;
+
+  .step__bullet::before {
+    max-width: $width;
+    width: $width;
+    left: -108px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .step {
+    width: 200px;
+    &__text, &__bullet {
+      font-size: 14px;
+    }
+  }
+  .step-three{
+    width: 270px
+  }
+}

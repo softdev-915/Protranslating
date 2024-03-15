@@ -1,0 +1,34 @@
+@import '../../../../styles/colors.scss';
+
+.language-combination-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  label {
+    border: 2px solid $color-light-grey;
+    border-radius: 7px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    color: $color-blue;
+  }
+}
+
+.providers{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  button{
+    min-width: 50%;
+    margin-bottom: 10px;
+    max-height: unset;
+    height: unset;
+    white-space: break-spaces;
+  }
+}
+
+.statistics-container{
+  padding: 15px;
+  background-color: $color-light-grey;
+}

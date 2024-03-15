@@ -1,0 +1,15 @@
+@import '../../portalcat-variables';
+
+.portalcat-files-list-row {
+  cursor: pointer;
+  padding: $padding / 2;
+  margin-bottom: $padding;
+  border: $border-width solid $border-color;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
+  &.active, &:hover {
+    background-color: $bg-color-light;
+  }
+}

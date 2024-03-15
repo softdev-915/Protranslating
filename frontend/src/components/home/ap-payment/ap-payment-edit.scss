@@ -1,0 +1,10 @@
+@import '../../../styles/colors.scss';
+
+.bill-info-section {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+}
+
+.bill-payment-notes{
+  background: $color-grey;
+}

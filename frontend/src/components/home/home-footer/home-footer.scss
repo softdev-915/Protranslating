@@ -1,0 +1,27 @@
+@import '../../../styles/colors.scss';
+
+.mocked {
+  color: crimson;
+  font-weight: bold;
+}
+
+footer {
+  padding: 10px 18px;
+  background: $home-footer-background;
+  border-top: 1px solid $home-footer-border-color;
+  border-left: 1px solid $home-footer-border-color;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 10;
+}
+
+footer a, footer a:visited {
+  color: $color-text;
+  text-decoration: underline;
+}
+
+footer .inactive-time {
+  float: right;
+  margin-right: 20px;
+}

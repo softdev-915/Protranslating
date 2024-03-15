@@ -1,0 +1,490 @@
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../../styles/colors.scss';
+
+$template-base-font-size: 11pt;
+
+@page {
+	@bottom-right {
+		font-family: 'Barlow Semi Condensed';
+		font-weight: 400;
+		font-size: 10pt;
+		line-height: 14px;
+		color: $template-smoky-color;
+		margin-right: 32px;
+	}
+
+	@bottom-left {
+		font-family: 'Barlow Semi Condensed';
+		font-weight: 400;
+		font-size: 10pt;
+		line-height: 14px;
+		color: $template-smoky-color;
+		margin-left: 32px;
+	}
+}
+
+#billTemplate {
+	margin: 0 !important;
+
+	.bill-full-width {
+		width: 100%;
+	}
+}
+
+.pti .logo img {
+	margin: 0 17px 0 0;
+	width: 180px;
+}
+
+.row:first-child img {
+	width: 180px;
+}
+
+.mb-0 {
+	margin-bottom: 0;
+}
+
+#billTemplate {
+	.bill-result-total {
+		margin-right: 80px;
+	}
+
+	table {
+		margin-bottom: 0 !important;
+	}
+
+	.table tr td {
+		padding: 0.15rem 0.25rem 1rem 0.8rem;
+	}
+
+	.lsp-info {
+		line-height: 1.3;
+	}
+
+	.lsp-logo {
+		margin-top: -37px;
+	}
+
+	.billToDate {
+		padding: 5px 5px 5px 15px !important;
+
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	pre,
+	p,
+	div {
+		font-family: "Helvetica", "Arial", normal !important;
+		color: $template-font-color !important;
+	}
+
+	.print-prepare {
+		position: relative;
+		padding: 35px;
+		max-width: 790px;
+		background-color: #fff;
+
+		.quoteTable {
+			padding: 5px;
+		}
+	}
+
+	.divTable {
+		display: table;
+		width: 100%;
+	}
+
+	.divTableRow {
+		border: 0;
+		display: table-row;
+	}
+
+	.divTableHeading {
+		background-color: $color-grey;
+		display: table-header-group;
+	}
+
+	#billTemplate .divTableHeader .divTableCell {
+		color: #0c547b !important;
+	}
+
+	.divTableCell,
+	.divTableHead {
+		display: table-cell;
+		padding: 3px 6px;
+	}
+
+	.divTableHeading {
+		background-color: #EEE;
+		display: table-header-group;
+		font-weight: bold;
+	}
+
+	.divTableFoot {
+		background-color: $color-grey;
+		display: table-footer-group;
+		font-weight: bold;
+	}
+
+	.divTableBody {
+		display: table-row-group;
+	}
+
+	.bordered .divTableCell {
+		border-top: 1px solid $color-grey !important;
+	}
+
+	div.auto-width-table {
+		display: table;
+		width: 100%;
+		max-width: 720px;
+		table-layout: auto;
+	}
+
+	.middle-size-header {
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.big-size-header {
+		font-size: 21px;
+	}
+
+	.extra-big-size-header {
+		font-size: 29px;
+	}
+
+	table th {
+		line-height: 1px;
+	}
+
+	table thead tr th,
+	table thead tr td {
+		min-width: 120px;
+	}
+
+	table th,
+	.divTableHeader>.divTableCell {
+		color: #0c547b !important;
+	}
+
+	table tbody {
+		color: #2D292A;
+	}
+
+	.blue {
+		color: #0c547b !important;
+	}
+
+	.local-header {
+		color: #0c547b !important;
+		font-weight: bold;
+	}
+
+	.bill-total-box p {
+		margin-bottom: 2px;
+		font-weight: bold;
+		color: black;
+	}
+
+	.horizontal-line {
+		border-bottom: medium none;
+		border-left: medium none;
+		background-color: #cfdde7;
+		height: 3px;
+		color: #cfdde7;
+		border-top: medium none;
+		border-right: medium none;
+	}
+
+	.blue-light-bg {
+		background-color: #cfdde7;
+	}
+}
+
+#newBillTemplate {
+	color: $color-black;
+	display: table;
+	width: 100%;
+
+	#page-header {
+		display: table-header-group;
+	}
+
+	#page-header-bar {
+		height: 10pt;
+		background-color: $color-reg-bigip;
+	}
+
+	#header {
+		display: flex;
+		justify-content: space-between;
+		margin: 32pt;
+
+		div img {
+			max-width: 200px;
+		}
+	}
+
+	#header .header-info {
+		text-align: right;
+	}
+
+	#header .header-info h4 {
+		font-size: 24pt;
+		font-family: 'Barlow';
+		letter-spacing: -0.24pt;
+		margin: 0px 0px 14px 0px;
+		line-height: 29px;
+		font-weight: 600;
+	}
+
+	#header .header-info span {
+		font-weight: 400;
+		font-family: 'Barlow';
+		letter-spacing: -0.24pt;
+		line-height: 22px;
+		font-size: 18pt;
+	}
+
+	.bill-address-container {
+		display: flex;
+		flex-direction: column;
+		background: $template-light-gray;
+		border-radius: 6px;
+		padding: 14pt 16pt;
+		margin: 0 32pt 0 32pt;
+		font-style: normal;
+		font-size: $template-base-font-size;
+		font-weight: 400;
+		line-height: 16pt;
+		font-family: 'Barlow';
+		letter-spacing: -0.24pt;
+	}
+
+	.bill-address {
+		display: flex;
+	}
+
+	.bill-address div:nth-child(1) {
+		text-align: left;
+		flex: 0 0 8.5em;
+		font-family: 'Barlow Semi Condensed';
+		font-weight: 500;
+		color: $template-smoky-color;
+	}
+
+	.bill-address div:nth-child(2) {
+		flex: 40px;
+	}
+
+	.bill-address div:nth-child(2) div {
+		font-family: 'Barlow';
+		font-weight: 400;
+		color: $color-black;
+	}
+
+	.bill-address div:nth-child(3) div {
+		font-family: 'Barlow';
+		letter-spacing: -0.24px;
+		font-weight: 400;
+		color: $color-black;
+	}
+
+	.bill-address div:nth-child(3) div span.bill-title {
+		font-family: 'Barlow Semi Condensed';
+		color: $template-smoky-color;
+		font-weight: 500;
+	}
+
+	.bill-address div {
+		padding-bottom: 6pt;
+	}
+
+	.bill-address div:last-child {
+		padding-bottom: 0;
+	}
+
+	.bill-address div.bill-company {
+		padding-top: 0;
+	}
+
+	#bill-details {
+		background-color: $template-light-gray;
+		border-radius: 6px;
+		margin: 15px 32pt 0 32pt;
+		padding: 14pt 16pt;
+		display: flex;
+		flex-direction: column;
+		font-style: normal;
+		font-size: $template-base-font-size;
+		font-weight: 500;
+		line-height: 16px;
+		letter-spacing: -0.24pt;
+	}
+
+	#bill-details .bill-detail-item {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 3px;
+	}
+
+	#bill-details .bill-detail-item div:nth-child(1) {
+		font-family: 'Barlow Semi Condensed';
+		font-weight: 500;
+		color: $template-smoky-color;
+		flex: 0 0 8.5em;
+		letter-spacing: -0.24pt;
+		padding-bottom: 6pt;
+	}
+
+	#bill-details .bill-detail-item div:nth-child(2) {
+		font-family: 'Barlow';
+		letter-spacing: -0.24pt;
+		font-weight: 400;
+		font-size: $template-base-font-size;
+		color: $color-black;
+	}
+
+	#bill-details .bill-detail-item:last-child div:nth-child(1) {
+		padding-bottom: 0;
+	}
+
+	.bill-address div:nth-child(2) div.text-bold {
+		font-weight: 500;
+	}
+
+	.bill-table {
+		margin-left: 32pt;
+		margin-top: 30pt;
+		width: 88.5%;
+		font-size: $template-base-font-size;
+	}
+
+	.bill-table thead th {
+		font-family: 'Barlow Semi Condensed';
+		font-weight: 600;
+		line-height: 16px;
+		color: $template-smoky-color;
+		padding: 10px 0px;
+	}
+
+	.bill-table thead th.item-header {
+		width: 400px;
+	}
+
+	.bill-table thead th.total-header {
+		width: 100px;
+	}
+
+	.bill-table thead th.rate-header {
+		width: 60px;
+	}
+
+	.bill-table tbody tr {
+		page-break-inside: avoid;
+	}
+
+	.bill-table thead th,
+	.bill-table tbody tr td {
+		padding: 7px 0px;
+		border-bottom: 1px solid $color-periwinkle-gray !important;
+	}
+
+	.bill-table tbody tr td,
+	.bill-table tbody tr td div {
+		font-family: 'Barlow';
+		letter-spacing: -0.24pt;
+	}
+
+	.bill-table thead th:not(:first-child) {
+		text-align: right;
+	}
+
+	.bill-table thead th:not(:first-child) {
+		padding-right: 6pt;
+	}
+
+	.bill-table thead th:last-child {
+		padding-right: 0;
+	}
+
+	.bill-table tbody tr td:not(:first-child) {
+		text-align: right;
+	}
+
+	.bill-table tbody tr td.no-border {
+		border: 0 !important;
+	}
+
+	.bill-table tbody tr td.total {
+		padding-top: 13pt;
+	}
+
+	.blacken,
+	.bill-table tbody tr td div.blacken,
+	.bill-table tbody tr td.blacken {
+		color: $color-black;
+		font-weight: 500;
+	}
+
+	.payment-details {
+		margin: 32px 32pt 0pt 32pt;
+	}
+
+	.payment-details-title {
+		font-weight: 600;
+		font-size: $template-base-font-size;
+		line-height: 16px;
+		text-transform: uppercase;
+		color: $template-smoky-color;
+		margin: 0;
+		margin-bottom: 8pt;
+		font-family: 'Barlow Semi Condensed';
+	}
+
+	.payment-details-container {
+		display: flex;
+		justify-content: space-between;
+		font-size: 10pt;
+		letter-spacing: -0.24pt;
+		line-height: 14px;
+	}
+
+	.payment-details-item {
+		margin-top: 8pt;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.payment-details-item h4 {
+		font-weight: 600;
+		font-size: 10pt;
+		margin-bottom: 5px;
+		font-family: 'Barlow';
+		letter-spacing: -0.24pt;
+	}
+
+	.payment-details span,
+	.payment-details-item span {
+		font-weight: 400;
+		font-family: 'Barlow';
+		letter-spacing: -0.24pt;
+		display: inline-block;
+		font-size: 10pt;
+	}
+
+	.payment-details-item>span {
+		padding-bottom: 6px;
+	}
+
+	.payment-details span.bolder,
+	.payment-details-item span.bolder {
+		font-weight: 500;
+		font-family: 'Barlow';
+		letter-spacing: -0.24pt;
+	}
+}

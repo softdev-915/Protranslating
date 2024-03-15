@@ -1,0 +1,12 @@
+@import 'bootstrap/scss/mixins';
+// @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import '../../../styles/colors.scss';
+
+.readOnly .workflow-detail {
+  overflow-x: hidden;
+}
+
+.readOnly {
+  font-size: 12px !important;
+}

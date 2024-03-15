@@ -1,0 +1,47 @@
+@import '../../../../styles/colors.scss';
+
+.ip-details {
+  .blue {
+    color: $color-nearly-blue;
+  }
+  .financial-field{
+    border: 1px solid grey;
+    border-radius: 4px;
+    display: inline-block;
+    > * {
+      padding: 5px;
+    }
+    >span{
+      background-color: lightgray;
+      display: inline-block;
+    }
+    >input{
+      outline: none;
+    }
+  }
+  .counts-header {
+    background-color: $counts-header;
+  }
+  .counts-match-badge{
+    border: none;
+    width: auto;
+    color: $color-red;
+    background-color: $lavender-blush;
+    &.match{
+      background-color: $harp;
+      color: $ocean-green;
+    }
+  }
+  .annuity-quotation-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    input {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+@import '../../styles/colors.scss';
+
+.main-content {
+  .logo-container {
+    margin-top: 20px;
+
+    .main-logo {
+      min-width: 130px;
+      width: 175px;
+      margin: 0 auto;
+    }
+    
+    .sub-logo {
+      max-width: 120px;
+      margin: 0 auto;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .info-text {
+    font-size: 15px;
+    color: #464648;
+
+    a {
+      color: #464648;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+  .email-entered {
+    font-size: 20px;
+  }
+
+  .main-form-container {
+    .password {
+      .main-input {
+        padding: .5em 1.5em .5em .8em;
+      }
+      
+      .input-group-append {
+        position: relative;
+        z-index: 9;
+
+        .show-password {
+          font-size: 15px;
+          max-width: 15px;
+          position: absolute;
+          left: -30px;
+          top: calc(50% - 0.5em);
+        }
+      }
+    }
+  }
+}
+
+.main-input, .input-group .main-button {
+  font-size: 1.5em;
+}
+
+.main-input {
+  font-family: 'Barlow';
+  padding: .5em .8em;
+  color: #858585;
+  border-color: #707070;
+  border-radius: 20px;
+  line-height: 1;
+
+  &:-webkit-autofill {
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+}
+
+.main-button {
+  font-family: 'Barlow';
+  color: $color-white;
+  background-color: $color-reg-bigip;
+  border: none;
+  width: 100%;
+  font-size: 1.5em;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: .7;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+.input-group {
+  .main-button {
+    padding: .5em 1.5em;
+    border-radius: 20px;
+    font-weight: bold;
+    line-height: 1;
+    height: 100%;
+  }
+
+  .input-group-append {
+    .main-button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+}
+
+.center {
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  p, i.pts-clickable {
+    font-size: 1.2em;
+  }
+
+  .main-input, .input-group .main-button {
+    font-size: 1.231em;
+  }
+  
+  .main-content {
+    .logo-container {
+      .main-logo {
+        width: 12em;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  h3 {
+    font-size: 2em;
+  }
+
+  p, i.pts-clickable {
+    font-size: 1.3em;
+  }
+
+  .main-content {
+    .logo-container {
+      .main-logo {
+        width: 14em;
+      }
+    }
+  }
+}
