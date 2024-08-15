@@ -1,0 +1,90 @@
+@import '../../../styles/colors.scss';
+.ip-contact-select {
+  width: 100%;
+  height: 50px;
+}
+.countries-container {
+   max-width: 980px;
+}
+.order-detail-button {
+  > div {
+    height: 35px !important;
+  }
+}
+
+.ip-modal__overlay{
+  display: flex;
+  align-items: center;
+}
+
+.window .__body{
+  padding-bottom: 16px; 
+}
+.approve-modal-body{
+  .ip-modal-body__controls{
+    justify-content: space-between;
+    .ip-button:first-child{
+      width: 150px;
+    }
+    .ip-button:last-child{
+      width: 265px;
+    }
+  }
+  .ip-modal-body__subheader{
+    width: 100%;
+    font-size: 18px;
+    color: $color-celestial-blue;
+  }
+}
+.ip-modal-body {
+  &-icon {
+    height: 50px;
+    width: 50px;
+    font-family: 'Font Awesome 6 Free';
+    font-size: 50px;
+    letter-spacing: 0;
+    line-height: 50px;
+    text-align: center;
+
+    &__success {
+      color: $ocean-green;
+    }
+    &__warning {
+      color: $ip-danger-color;
+    }
+  }
+  
+  &__controls {
+    display: flex;
+    margin-top: 30px;
+  }
+  &__message{
+    font-size: 18px;
+  }
+  &__file{
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border: 1px dashed $rolling-stone;
+    border-radius: 4px;
+    u {
+      color: $color-celestial-blue;
+      cursor: pointer;
+    }
+  }
+  .ip-button{
+    font-size: 16px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1366px) {
+  h4.body__header{
+    font-size: 18px;
+  }
+  .body__text{
+    font-size: 14px;
+  }
+}

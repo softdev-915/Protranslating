@@ -1,0 +1,14 @@
+@import '../../../../styles/colors.scss';
+
+.item[data-vss-custom-attr="option-disabled"] {
+  color: $color-grey !important;
+}
+.ui div.text[data-vss-custom-attr="option-disabled"] {
+  color: $color-grey !important;
+}
+.item[data-vss-custom-attr="option-terminated"] {
+  color: $color-red !important;
+}
+.ui div.text[data-vss-custom-attr="option-terminated"] {
+  color: $color-red !important;
+}

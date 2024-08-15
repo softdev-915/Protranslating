@@ -1,0 +1,23 @@
+@import '../../../styles/colors.scss';
+
+$border-color: #c5c5c5;
+$border-color-light: #ededed;
+$border-color-dark: #000;
+$border-width: 1px;
+$border-width-thick: 2px;
+
+$bg-color: #ededed;
+$bg-color-light: #f1f1f1;
+$bg-color-dark: #d4d4d4;
+$bg-mt: #6e5172;
+$bg-ht: #d8efee;
+$bg-rt: #adcb69;
+
+$color-confirmed-translator: $color-warm-blue;
+$color-confirmed-editor: $color-darker-blue;
+$color-confirmed-qa: #19a175;
+$color-locked: $color-darker-blue;
+
+$padding: .5rem;
+
+$widget-header-height: 2.5rem;

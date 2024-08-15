@@ -1,0 +1,413 @@
+@import '../../../../../../frontend/src/styles/colors.scss';
+$base-font-size: 11pt;
+#new-quote-template {
+  display: table;
+  width: 100%;
+  div {
+    font-family: "Barlow Semi Condensed" !important;
+  }
+  .barlow {
+    font-family: "Barlow" !important;
+    color: $color-black !important;
+    letter-spacing: -0.24pt !important;
+  }
+  #page-header {
+    display: table-header-group;
+    .page-header-bar {
+      height: 10pt;
+      background-color: $color-reg-bigip;
+    }
+  }
+  div.header-container img {
+    transform: translate(25pt, 20pt) scaleX(1.3333) scaleY(1.3191);
+  }
+  .header-container > div:first-child img {
+    object-fit: cover;
+    transform: translate(20pt, 6pt) scaleX(1.3333) scaleY(1.3191);
+  }
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 32pt;
+    div img {
+      max-width: 200pt;
+    }
+  }
+  .quote-header {
+    font-style: normal;
+    font-family: 'Barlow';
+    text-align: right;
+  }
+  .quote-header h4 {
+    font-size: 24pt;
+    margin: 0pt 0pt 4pt 0pt;
+    line-height: 29pt;
+    font-weight: 600;
+    text-align: right;
+    font-family: 'Barlow';
+    color: $color-black;
+  }
+  .quote-header span {
+    font-size: 18pt;
+    line-height: 22pt;
+    font-weight: 400;
+    font-family: 'Barlow';
+    color: $color-black;
+  }
+  .divTableHeader > div {
+    background-color: $color-white;
+  }
+  .address-date-container, .address-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .address-assignment-container {
+    margin: 8pt 32pt 0;
+  }
+  .address-title {
+    font-weight: 500;
+    font-size: $base-font-size;
+    line-height: 16pt;
+  }
+  .address-container div:first-child {
+    text-align: left;
+    flex: 0 0 90pt;
+  }
+  .address-date-container {
+    padding: 14pt 16pt;
+    background-color: $template-background-grey !important;
+    border-radius: 6pt;
+  }
+  .grey {
+    color: $template-smoky-color !important;
+  }
+  .black {
+    color: $color-black !important;
+  }
+  .address-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: $base-font-size;
+    line-height: 16pt;
+  }
+  .address-text {
+    display: block;
+  }
+  .address-text span, .address-text.barlow span:nth-of-type(2) {
+    letter-spacing: -0.24pt;
+    display: inline-block !important;
+  }
+  .address-text.barlow span:nth-of-type(2) {
+    font-weight: 500;
+    padding-bottom: 6pt;
+    padding-top: 6pt;
+  }
+  .address-text span:last-of-type {
+    display: block;
+  }
+  .info {
+    color: $template-smoky-color;
+    font-size: $base-font-size;
+    line-height: 16pt;
+  }
+  .info div {
+    padding-top: 6pt;
+  }
+  .info div:first-child {
+    padding-top: 0pt;
+  }
+  .info div span:first-child {
+    font-weight: 500;
+  }
+  .info div span:last-child {
+    font-family: "Barlow" !important;
+    color: $color-black;
+    font-weight: 400;
+    letter-spacing: -0.24pt;
+  }
+  #date span {
+    font-family: "Barlow" !important;
+    font-weight: 400;
+    color:$color-black;
+  }
+  // Table styles
+  .ii-table-container {
+    margin: 0 32pt;
+  }
+  .ii-table {
+    display: table;
+    table-layout: auto;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .ii-table th:nth-child(2),
+  .ii-table th:nth-child(3),
+  .ii-table th:nth-child(4) {
+    padding: 6pt 0 6pt 12pt !important;
+    text-align: right !important;
+  }
+  .ii-table th,  .ii-table td {
+    font-size: $base-font-size;
+    line-height: 16pt;
+    background-color: $color-white !important;
+    text-align: left;
+  }
+  .ii-table th {
+    padding-left: 0;
+  }
+  .ii-table tbody td {
+    width: 100%;
+    table-layout: fixed;
+  }
+  .ii-table tbody tr {
+    page-break-inside: avoid;
+  }
+  .ii-table tbody tr:not(.ii-total-row) {
+    border-top: 1pt $color-periwinkle-gray solid !important;
+  }
+  .ii-table th {
+    page-break-inside: avoid;
+    font-weight: 600;
+    color:$template-smoky-color;
+    text-transform: uppercase;
+    border-bottom: 1pt $color-periwinkle-gray solid !important;
+  }
+  .ii-table tbody tr:last-of-type:not(.ii-total-row) {
+    border-bottom: 1pt $color-periwinkle-gray solid !important;
+  }
+  .ii-table tbody tr:nth-last-child(4) {
+    border-bottom: 1pt $color-periwinkle-gray solid !important;
+  }
+  .ii-table td:first-child div:first-child {
+    font-weight: 500;
+  }
+  .ii-table tbody tr div:nth-child(2) {
+    font-size: 10pt;
+    line-height: 14pt;
+    color: $template-smoky-color !important;
+  }
+  .ii-table td,  .ii-table td div {
+    font-weight: 400;
+    color: $color-black;
+    font-family: 'Barlow' !important;
+    letter-spacing: -0.24pt;
+  }
+  .ii-table tr:not(.ii-total-row) td:nth-child(1) {
+    padding: 6pt 12pt 6pt 0 !important;
+    text-align: left;
+  }
+  .ii-table tr:not(.ii-total-row) td:nth-child(2),
+  .ii-table tr:not(.ii-total-row) td:nth-child(3),
+  .ii-table tr:not(.ii-total-row) td:nth-child(4) {
+    padding: 6pt 0 6pt 12pt !important;
+    text-align: right;
+  }
+  .ii-total-row td:first-child {
+    font-weight: 600;
+    font-size: $base-font-size;
+    line-height: 16pt;
+    letter-spacing: -0.24pt;
+  }
+  .ii-total-row td {
+    padding: 5pt 0 5pt 12pt;
+    text-align: right;
+  }
+  .ii-table tbody tr:nth-last-child(3).ii-total-row td {
+    padding-top: 14pt;
+  }
+  .ii-table tbody tr:nth-last-child(3).ii-total-row td:last-child {
+    font-weight: 500;
+  }
+  // Table Styles End
+  .thanks {
+    margin: 12pt 32pt 24pt;
+    color: $template-smoky-color !important;
+    text-align: right;
+    letter-spacing: -0.24pt;
+    font-weight: 400;
+    font-size: $base-font-size;
+    line-height: 16pt;
+  }
+  .notes {
+    margin: 0 32pt;
+  }
+  .notes-title {
+    font-weight: 600;
+    font-size: $base-font-size;
+    line-height: 16pt;
+    text-transform: uppercase;
+    color: $template-smoky-color !important;
+    margin-bottom: 8pt;
+  }
+  .notes-content {
+    font-weight: 500;
+    font-size: 10pt;
+    line-height: 14pt;
+    color: $color-black;
+  }
+  .payment-details-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10pt;
+    letter-spacing: -0.24pt;
+    line-height: 14pt;
+    color: $color-black;
+  }
+  .payment-details {
+    margin: 0 32pt;
+    page-break-inside: avoid;
+  }
+  .payment-details-title {
+    font-weight: 600;
+    font-size: $base-font-size;
+    line-height: 16pt;
+    text-transform: uppercase;
+    color: $template-smoky-color;
+    margin: 0 !important;
+    font-family: 'Barlow Semi Condensed';
+  }
+  .payment-details-item {
+    margin-top: 8pt;
+    display: flex;
+    flex-direction: column;
+    b {
+      font-weight: 500;
+    }
+  }
+  .payment-details-item h4 {
+    font-weight: 500;
+    font-size: 10pt;
+    line-height: 14pt;
+    margin-bottom: 3pt;
+    font-family: 'Barlow';
+    letter-spacing: -0.24pt;
+  }
+  .payment-details-item span {
+    font-weight: 400;
+    font-family: 'Barlow';
+  }
+  .ii-assignment-container {
+    background-color: $template-background-grey !important;
+    border-radius: 6pt;
+    display: flex;
+    margin: 12pt 0pt 24pt 0;
+    padding: 14pt 16pt;
+  }
+  .ii-assignment-label-container, .ii-assignment-text {
+    font-size: $base-font-size;
+    line-height: 16pt;
+  }
+  .ii-assignment-label-container {
+    font-weight: 500;
+    color: $template-smoky-color !important;
+  }
+  .ii-assignment-container span {
+    display: inline-block;
+    padding: 0 0 6pt 0;
+  }
+  .ii-assignment-label-container span:last-of-type {
+    padding: 0;
+  }
+  .ii-assignment-text span:last-of-type {
+    padding: 0;
+  }
+  .ii-assignment-container div:first-child {
+    flex: 0 0 90pt;
+  }
+  .ii-assignment-text {
+    color: $color-black !important;
+    font-weight: 400;
+    letter-spacing: -0.24pt !important;
+  }
+  .invoice-address {
+		display: flex;
+		background: $template-light-gray;
+		border-radius: 6px;
+		padding: 14pt 16pt;
+		margin: 0 32pt 0 32pt;
+		font-style: normal;
+		font-size: $base-font-size;
+		font-weight: 400;
+		line-height: 16pt;
+		font-family: 'Barlow';
+		letter-spacing: -0.24pt;
+	}
+ .invoice-address div:nth-child(1) {
+		text-align: left;
+		flex: 0 0 8.8em;
+		font-family: 'Barlow Semi Condensed';
+		font-weight: 500;
+		color: $template-smoky-color;
+	}
+	.invoice-address div:nth-child(2) {
+		flex: 40px;
+	}
+	.invoice-address div:nth-child(2) div {
+		font-family: 'Barlow';
+		font-weight: 400;
+		color: $color-black;
+	}
+	.invoice-address div:nth-child(3) div {
+		font-family: 'Barlow';
+		letter-spacing: -0.24pt;
+		font-weight: 400;
+		color: $color-black;
+	}
+	.invoice-address div:nth-child(3) div span.invoice-title {
+		font-family: 'Barlow Semi Condensed';
+		color: $template-smoky-color;
+		font-weight: 500;
+	}
+	.invoice-company {
+		padding: 6pt 0px;
+	}
+	.invoice-address :nth-child(3) div {
+		padding-bottom: 2.5pt;
+	}
+	.invoice-address :nth-child(3) div:last-child {
+		padding-bottom: 0;
+	}
+  #invoice-details {
+		background-color: $template-light-gray;
+		border-radius: 6pt;
+    margin: 12pt 32pt 24pt 32pt;
+		padding: 14pt 16pt;
+		display: flex;
+		flex-direction: column;
+		font-style: normal;
+		font-size: $base-font-size;
+		font-weight: 500;
+		line-height: 16px;
+		letter-spacing: -0.24pt;
+	}
+	#invoice-details .invoice-detail-item {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 3px;
+	}
+	#invoice-details .invoice-detail-item div:nth-child(1) {
+		font-family: 'Barlow Semi Condensed';
+		font-weight: 500;
+		color: $template-smoky-color;
+		flex: 0 0 8.8em;
+		letter-spacing: -0.24pt;
+		padding-bottom: 8pt;
+	}
+	#invoice-details.lawlinguist-invoice-details .invoice-detail-item div:nth-child(1) {
+		flex: 0 0 11em;
+	}
+	#invoice-details .invoice-detail-item div:nth-child(2) {
+		font-family: 'Barlow';
+		letter-spacing: -0.24pt;
+		font-weight: 400;
+		font-size: $base-font-size;
+		color: $color-black;
+	}
+	#invoice-details .invoice-detail-item:last-child div:nth-child(1) {
+		padding-bottom: 0;
+	}
+	.invoice-address .home-depot .text-bold,
+	.invoice-address div:nth-child(2) div.text-bold {
+		font-weight: 500;
+	}
+}

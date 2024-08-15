@@ -1,0 +1,65 @@
+<template>
+  <div>
+    <url-based-breadcrumb :breadcrumb-items-factory="buildBreadcrumbItems"></url-based-breadcrumb>
+    <div class="sections">
+      <router-view
+        @cat-tool-manage="onCatToolManage"
+        @cat-tool-edition="onCatToolEdit"
+        @cat-tool-creation="onCatToolCreate"
+        @language-manage="onLanguageManage"
+        @language-edition="onLanguageEdit"
+        @language-creation="onLanguageCreate"
+        @ability-manage="onAbilityManage"
+        @ability-edition="onAbilityEdit"
+        @ability-creation="onAbilityCreate"
+        @user-manage="onUserManage"
+        @user-edition="onUserEdit"
+        @user-creation="onUserCreate"
+        @competence-level-manage="onCompetenceLevelManage"
+        @competence-level-edition="onCompetenceLevelEdit"
+        @competence-level-creation="onCompetenceLevelCreate"
+        @activity-manage="onActivityManage"
+        @activity-edition="onActivityEdit"
+        @activity-creation="onActivityCreate"
+        @activity-tag-manage="onActivityTagManage"
+        @activity-tag-edition="onActivityTagEdit"
+        @activity-tag-creation="onActivityTagCreate"
+        @billing-term-manage="onBillingTermManage"
+        @billing-term-edition="onBillingTermEdit"
+        @billing-term-creation="onBillingTermCreate"
+        @payment-method-manage="onPaymentMethodManage"
+        @payment-method-edition="onPaymentMethodEdit"
+        @payment-method-creation="onPaymentMethodCreate"
+        @currency-manage="onCurrencyManage"
+        @currency-edition="onCurrencyEdit"
+        @currency-creation="onCurrencyCreate"
+        @internal-department-manage="onInternalDepartmentManage"
+        @internal-department-edition="onInternalDepartmentEdit"
+        @internal-department-creation="onInternalDepartmentCreate"
+        @location-manage="onLocationManage"
+        @location-edition="onLocationEdit"
+        @location-creation="onLocationCreate"
+        @translation-unit-manage="onTranslationUnitManage"
+        @translation-unit-edition="onTranslationUnitEdit"
+        @translation-unit-creation="onTranslationUnitCreate"
+        @breakdown-manage="onBreakdownManage"
+        @breakdown-edition="onBreakdownEdit"
+        @breakdown-creation="onBreakdownCreate"
+        @lead-source-manage="onLeadSourceManage"
+        @lead-source-edition="onLeadSourceEdit"
+        @lead-source-creation="onLeadSourceCreate"
+        @entity-managed-save="manageSave(this)"
+        @company-manage="onCompanyManage"
+        @company-edition="onCompanyEdit"
+        @company-creation="onCompanyCreate"
+        @company-minimum-charge-edition="onCompanyMinChargeEdit"
+        @company-minimum-charge-creation="onCompanyMinChargeCreate"
+        @company-minimum-charge-creation-clone="onCompanyMinChargeCreateClone"
+        @company-minimum-charge-list="onCompanyMinChargeManage"
+        @section-navigate-previous="navigatePrevious">
+      </router-view>
+    </div>
+  </div>
+</template>
+
+<script src="./company-section.js"></script>

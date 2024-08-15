@@ -1,0 +1,88 @@
+@import 'bootstrap/scss/mixins';
+// @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+@import '../../../../styles/colors.scss';
+
+input, select, 
+.ui.dropdown, 
+.ui.dropdown .menu > .item {
+  font-size: 13px;
+  padding: 9px 6px !important;
+  color: $color-navy-blue !important;
+}
+
+.ui.disabled.dropdown,
+input[disabled="disabled"] {
+  opacity: .8;
+}
+
+.rate-sub-detail-row {
+  padding: 5px 0px 0 5px !important;
+}
+
+.rate-detail-row .col {
+  margin: 0;
+  padding: 0 4px;
+}
+
+.rate-sub-detail-container {
+  flex-wrap: nowrap;
+}
+
+.number-col {
+  min-width: 70px;
+  max-width: 70px;
+}
+
+.icons-container button {
+  width: 25px;
+  padding: 0;
+}
+
+@include media-breakpoint-down(md) {
+  .row rate-sub-detail-row .col {
+    max-width: 20px;
+  }
+}
+
+.rate-action-button {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #D4D4D4;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  transition: 0.25s linear background-color;
+  &:disabled {
+    color: #A0A1A3 !important;
+    background-color: #F3F4F5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+  &:hover {
+    background-color: #F3F4F5;
+  }
+  &.primary {
+    color: $button-new-primary-background;
+  }
+  &.secondary {
+    color: $color-text-darker;
+  }
+}
+
+.action-text {
+  color: $color-text;
+}
+
+.is-draft {
+  color: #A0A1A3;
+}
+
+.is-duplicate {
+  color: #D92D20;
+}
+
+.ability-read-only {
+  min-width: 200px;
+  min-height: 20px;
+}

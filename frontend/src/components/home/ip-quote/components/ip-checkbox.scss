@@ -1,0 +1,57 @@
+@import '../../../../styles/colors.scss';
+
+.checkbox {
+  position: relative;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  user-select: none;
+
+  &__input {
+    height: 18px;
+    width: 18px;
+    margin: 0;
+    cursor: pointer;
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    img {
+      width: 30px;
+      height: 22px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-left: 10px;
+    }
+    span {
+      max-width: 144px;
+      color: $tuna;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 18px;
+      margin-left: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .checkbox span {
+    font-size: 12px;
+  }
+  > * {
+    margin-top: 5px;
+    width: 190px;
+  }
+  input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+  }
+  img {
+    width: 20px;
+    height: 15px;
+    margin-left: 5px;
+  }
+}

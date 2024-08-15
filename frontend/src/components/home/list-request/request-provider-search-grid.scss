@@ -1,0 +1,21 @@
+@import '../../../styles/colors.scss';
+
+.container-fluid .request-provider-pooling-container .row.responsive-border.real-table-row.table-responsive {
+  height: auto;
+  max-height: 500px !important;
+}
+
+tr.highlighted-provider {
+  background-color: $grid-highlight-background  !important;
+  color: $grid-highlight-text;
+  td {
+    background-color: transparent !important;
+  }
+}
+
+.label-container {
+  height: 40px!important;
+}
+.has-error {
+  font-size: 11px;
+}

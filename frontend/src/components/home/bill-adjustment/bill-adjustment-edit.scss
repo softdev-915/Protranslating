@@ -1,0 +1,35 @@
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/variables';
+@import '../../../styles/colors.scss';
+@import '../../../styles/dragdrop.scss';
+
+.dropfiles-modal.dropzone-dragging,.dropfiles-modal.dropzone-drag-over {
+  display: block;
+  top: 0px;
+  left: 0px;
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 50px;
+  border: 2px dotted $request-drop-file-color;
+  background-color: $request-drop-file-background-color;
+  opacity: 1;
+  color: $request-drop-file-color;
+}
+
+.currency-input-read-only {
+  background: none;
+  font-size: 13px;
+  color: $color-text;
+}
+
+.section-header{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.disabled {
+  background-color: $grid-border-color !important;
+  cursor: not-allowed;
+}

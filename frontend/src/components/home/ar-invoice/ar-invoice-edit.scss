@@ -1,0 +1,17 @@
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+
+@import '../../../../src/styles/colors.scss';
+@import '../../../../src/styles/mixins.scss';
+
+.ar-invoice-entries-grid div.table-responsive {
+    height: 600px !important;
+}
+
+.pts-grid-edit-modal .modal-dialog {
+    width: 670px;
+}
+
+.red {
+    color: $color-red;
+}

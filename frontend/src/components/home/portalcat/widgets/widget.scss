@@ -1,0 +1,44 @@
+@import '../../../../styles/colors.scss';
+@import '../portalcat-variables';
+
+.portalcat-widget {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .widget-header {
+    display: flex;
+    flex: 0 0 $widget-header-height;
+    max-height: $widget-header-height;
+    border: $border-width solid $border-color;
+    background-color: $bg-color-light;
+    overflow-y: auto;
+
+    .header-content {
+      padding: 0 $padding;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      flex: 1 0 auto;
+
+      .widget-controls {
+        button {
+          font-size: .625rem;
+        }
+      }
+
+      .widget-menubar {
+        margin-left: auto;
+        height: 100%;
+        display: flex;
+      }
+    }
+  }
+
+  .widget-content {
+    background-color: $color-white;
+    padding: $padding;
+    flex: 1;
+    overflow-y: auto;
+  }
+}

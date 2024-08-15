@@ -1,0 +1,13 @@
+@import 'bootstrap/scss/mixins';
+// @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+.company-col {
+  padding-left: 5px;
+}
+
+@include media-breakpoint-down(sm) {
+  #projectManagers {
+    margin-bottom: 15px;
+  }
+}

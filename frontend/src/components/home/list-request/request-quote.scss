@@ -1,0 +1,240 @@
+@import 'bootstrap/scss/mixins';
+// // @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import '../../../styles/colors.scss';
+@import './request-quote-pti.scss';
+
+#quote {
+
+	pre,
+	p,
+	div {
+		font-family: "Helvetica", "Arial", normal;
+		color: $template-font-color;
+	}
+}
+
+table:first-child td img {
+	width: 180px;
+}
+
+.lsp-logo img {
+	width: 180px;
+}
+
+#quote p,
+#quote pre {
+	text-align: justify !important;
+}
+
+.quoteContainer,
+#quote.print-prepare {
+	background-color: #fff;
+}
+
+#quote.print-prepare.quote-centered {
+	margin: 0 auto;
+}
+
+#quote.print-prepare {
+	position: relative;
+}
+
+.quoteTable {
+	display: table;
+	width: 100%;
+}
+
+#quote.print-prepare .quoteTable {
+	padding: 5px;
+}
+
+.quoteTableRow {
+	display: table-row;
+}
+
+.quoteTableRow.full-width div:last-child {
+	position: absolute;
+	right: 15px;
+}
+
+table,
+div.divTable {
+	font-size: 10pt;
+	margin-top: 10px;
+	table-layout: fixed;
+	width: 100%;
+}
+
+
+table.fluid {
+	table-layout: auto;
+}
+
+th,
+.divTableHeader>div {
+	font-weight: bold;
+	vertical-align: middle;
+	padding-right: 6px;
+	padding-left: 6px;
+	padding-bottom: 3px;
+	padding-top: 5px;
+	color: $color-navy-blue;
+}
+
+#quote {
+
+	& th,
+	& .divTableHeader>div {
+		background-color: $color-lightblue;
+	}
+}
+
+td {
+	padding: 4px 6px;
+}
+
+b {
+	font-weight: bold;
+}
+
+table.header td {
+	padding: 0px;
+	font-size: 10pt;
+}
+
+table.footer td {
+	padding: 0px;
+}
+
+table.itemtable th {
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+table.body td {
+	padding-top: 2px;
+}
+
+table.total {
+	page-break-inside: avoid;
+}
+
+tr.totalrow {
+	background-color: $color-lightblue;
+	line-height: 200%;
+}
+
+td.addressheader {
+	padding-bottom: 2px;
+	vertical-align: top;
+}
+
+td.address {
+	padding-top: 0px;
+}
+
+span.title {
+	font-size: 18pt;
+}
+
+span.number {
+	font-size: 16pt;
+}
+
+span.itemname {
+	font-weight: bold;
+	line-height: 150%;
+}
+
+hr {
+	width: 100%;
+	color: $color-grey;
+	background-color: $color-grey;
+	height: 1px;
+}
+
+.divTable {
+	display: table;
+	width: 100%;
+}
+
+.divTableRow {
+	border: 0;
+	display: table-row;
+}
+
+.divTableHeading {
+	background-color: $color-grey;
+	display: table-header-group;
+}
+
+.divTableCell,
+.divTableHead {
+	display: table-cell;
+	padding: 3px 6px;
+}
+
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+
+.divTableFoot {
+	background-color: $color-grey;
+	display: table-footer-group;
+	font-weight: bold;
+}
+
+.divTableBody {
+	display: table-row-group;
+}
+
+.blue-background,
+.grey-background,
+.grey-background * {
+	background: $color-light-grey !important;
+	color: $color-text !important;
+	padding: 10px;
+}
+
+.blue-background {
+	background: $color-lightblue !important;
+	padding: 6px !important;
+}
+
+.total {
+	width: 200px;
+}
+
+.bordered .divTableCell {
+	border-top: 1px solid $color-grey !important;
+}
+
+input[type="checkbox"] {
+	width: 14px;
+}
+
+div.auto-width-table {
+	display: table;
+	width: 100%;
+	table-layout: auto;
+}
+
+.approve-quote-disabled {
+	cursor: not-allowed !important;
+	background-color: $button-new-disabled-background-color !important;
+	border-color: $button-new-disabled-border-color !important;
+}
+
+.csv-export-container {
+	position: relative;
+
+	&:hover {
+		.tooltip {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}

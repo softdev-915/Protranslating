@@ -1,0 +1,326 @@
+@import '../../../styles/colors.scss';
+$template-base-font-size: 11pt;
+
+.pdf-container {
+  position: absolute;
+  z-index: -1;
+  width: 720px;
+}
+.bigip-pdf {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  width: 100%;
+  color: black;
+  .bigip-pdf-footer {
+    height: 58px !important;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 25px;
+    margin-top: 20px;
+    & > span {
+      font-size: 8pt !important;
+    }
+  }
+}
+
+#epo-pdf,
+#nodb-pdf,
+#wipo-pdf {
+  .bigip-pdf-content {
+    pre,
+    p,
+    div {
+      font-family: 'Barlow';
+      color: $color-black;
+    }
+
+    color: $color-black;
+    display: table;
+    width: 100%;
+    .bigip-pdf-country-table-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .no-filing {
+      width: 530px;
+    }
+    .bigip-pdf-main-info {
+      background-color: $template-light-gray;
+      border-radius: 6px;
+      margin-bottom: 24pt;
+      margin-left: 32pt;
+      margin-right: 32pt;
+      padding: 14pt 16pt;
+      display: flex;
+      flex-direction: row;
+      font-style: normal;
+      font-size: $template-base-font-size;
+      font-weight: 400;
+      line-height: 16pt;
+      font-family: 'Barlow';
+
+      table {
+        margin-top: 0;
+        table-layout: auto;
+        width: 100%;
+        font-size: $template-base-font-size;
+        td {
+          padding: 0 0 8pt 0;
+        }
+      }
+
+      .bigip-quote-detail-item {
+        .quote-title {
+          font-family: 'Barlow Semi Condensed';
+          font-style: normal;
+          font-weight: 500;
+          color: $template-smoky-color;
+          white-space: nowrap;
+          width: 0;
+          display: table-cell;
+          padding: 0 16pt 0 0;
+        }
+        padding-bottom: 6pt;
+        vertical-align: top;
+      }
+    }
+    #bigip-pdf-header{
+      display: table-header-group;
+      .bigip-pdf-header-bar {
+        height: 10pt;
+        background-color: $color-reg-bigip;
+      }
+    }
+    .bigip-header-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 32pt;
+      div img {
+        max-width: 200px;
+      }
+    }
+    .bigip-quote-header {
+      font-style: normal;
+      font-family: 'Barlow';
+      text-align: right;
+    }
+    .bigip-quote-header h4 {
+      font-size: 24pt;
+      margin: 0px 0px 14px 0px;
+      line-height: 29px;
+      font-weight: 600;
+      text-align: right;
+      font-family: 'Barlow';
+    }
+    .bigip-quote-header span {
+      font-size: 18pt;
+      line-height: 22px;
+      font-weight: 400;
+      font-family: 'Barlow';
+      letter-spacing: -0.24pt;
+    }
+    .divTable {
+      display: table;
+      margin-left: 32pt;
+      margin-right: 32pt;
+      width: 89.2%;
+      font-size: $template-base-font-size;
+    }
+    .divTableCell,
+    .divTableHead {
+      display: table-cell;
+      padding: 3px 0px;
+    }
+    .divTotalRow {
+      margin-right: 32pt;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .divTableRow {
+      border: 0;
+      display: table-row;
+    }
+    .divTable .divTableRow .divTableCell.abbr-cell {
+      font-family: 'Barlow';
+      width: 400px;
+    }
+    .divTable .divTableRow #uhg-item-col {
+      width: 280pt;
+    }
+    .divTableRow .task-ability {
+      font-weight: 500;
+      font-family: 'Barlow';
+    }
+    .divTableRow .task-description {
+      font-weight: 400;
+      font-family: 'Barlow';
+      font-size: 10pt;
+      color: $template-smoky-color;
+    }
+    .divTableRow {
+      page-break-inside: avoid;
+    }
+    .divTableRow .divTableCell.subtotal {
+      font-weight: 600;
+    }
+    .divTableHeader {
+      display: table-header-group;
+    }
+    .divTableHeader, .divTableRow, .divTableCell {
+      border-bottom: 1px solid $color-periwinkle-gray !important;
+    }
+    .divTotalRow .divTableCell {
+      display: block;
+      padding: 13pt 0 5pt 12pt !important;
+    }
+    .divTotalRow .divTableCell.currency {
+      font-weight: 500;
+    }
+    .divTableRow.divTotalRow .divTableCell {
+      display: table-cell;
+    }
+    .subCountryRow {
+      position: absolute;
+      width: 89.2%;
+      display: flex;
+      & div {
+        display: block;
+      }
+      & div:nth-child(1) {
+        width: 100%;
+        padding: 5px 12px 5px 0;
+      }
+      & div:nth-child(2) {
+        width: inherit;
+        padding: 5px 0 5px 12px;
+      }
+    }
+    .divTableRow .divTableCell{
+      vertical-align: middle;
+      padding: 13pt 0 5pt 12pt;
+    }
+    .emptyRow {
+      height: 32px;
+    }
+    div.divTableHeader .divTableCell {
+      font-family: 'Barlow Semi Condensed';
+      color: $template-smoky-color;
+      font-weight: 600;
+      padding-bottom: 6px;
+    }
+
+    .divTableHeader {
+      .divTableCell:nth-child(1) {
+        padding: 5px 12pt 5px 0px;
+        width: max-content;
+      }
+
+      .divTableCell:nth-child(2),
+      .divTableCell:nth-child(3),
+		  .divTableCell:nth-child(4),
+      .divTableCell:nth-child(5) {
+        padding: 5px 0px 5px 12pt;
+        width: 0;
+        white-space: nowrap;
+      }
+
+      .divTableCell:last-child {
+        padding-right: 0;
+      }
+    }
+    .divTableBody {
+      display: table-row-group;
+    }
+    .divTableBody .divTableRow {
+      .divTableCell:nth-child(1) {
+        padding: 5px 12pt 5px 0px;
+        width: max-content;
+      }
+
+      .divTableCell:nth-child(2),
+      .divTableCell:nth-child(3),
+		  .divTableCell:nth-child(4),
+      .divTableCell:nth-child(5) {
+        padding: 5px 0px 5px 12pt;
+        width: 0;
+        white-space: nowrap;
+      }
+
+      .divTableCell:last-child {
+        padding-right: 0;
+      }
+    }
+
+    .divTotalRow .divTableCell {
+      font-family: 'Barlow';
+      letter-spacing: -0.24pt;
+      font-weight: 600;
+      font-size: $template-base-font-size;
+      line-height: 16px;
+      padding-top: 13pt;
+    }
+
+    .divTableHeader > div {
+			background-color: $color-white;
+	  }
+
+    div.divTable {
+      font-size: 11pt;
+      margin-top: 0;
+    }
+
+    div.no-border,
+    div.no-border .divTableCell {
+      border: 0 !important;
+    }
+    div.thank-you {
+      text-align: right;
+      padding-top: 12pt;
+      color: $template-smoky-color;
+      font-weight: 400;
+      font-family: 'Barlow';
+      letter-spacing: -0.24pt;
+      font-size: $template-base-font-size;
+      margin-right: 32pt;
+    }
+    div.terms,
+    div.payment-details,
+    div.notes-container {
+		  page-break-inside: avoid;
+      margin-top: 24pt;
+      margin-left: 32pt;
+      margin-right: 32pt;
+    }
+    div.thank-you + div:first {
+      margin-top: 50px;
+    }
+    div.terms h4,
+    div.notes-container h4 {
+      margin-bottom: 8pt;
+      font-size: $template-base-font-size;
+      font-weight: 600;
+      line-height: 16px;
+      color: $template-smoky-color;
+      font-family: 'Barlow Semi Condensed';
+    }
+    div.notes-container > span {
+      display: block;
+    }
+    div.notes-container span {
+      font-size: 10pt;
+      letter-spacing: -0.24pt;
+      font-family: 'Barlow';
+      line-height: 14pt;
+    }
+  }
+}
+
+#quote {
+  #nodb-pdf-footer, #epo-pdf-footer, #wipo-pdf-footer {
+    display: none;
+  }
+}

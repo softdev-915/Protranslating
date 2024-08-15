@@ -1,0 +1,92 @@
+@import '../../../../styles/colors.scss';
+
+.ip-select {
+  height: 30px;
+  position: relative;
+  outline: none;
+  text-align: left;
+  line-height: 30px;
+  color: $rolling-stone;
+  font-size: 16px;
+  letter-spacing: 0;
+  .selected {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border: 1px solid $silver-chalice;
+    border-radius: 15px;
+    background-color: $color-white;
+    &.disabled{
+      cursor: not-allowed;
+    }
+    cursor: pointer;
+    user-select: none;
+    z-index: 11;
+  }
+  .items {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+    padding-top: 36px;
+    border-radius: 15px;
+    background-color: $color-white;
+    box-shadow: 0 2px 6px 0 rgba(47, 83, 151, 0.1);
+    div {
+      padding-left: 16px;
+      cursor: pointer;
+      user-select: none;
+      z-index: 1;
+      &:hover {
+        background-color: $silver-chalice;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.ip-select-rectangle {
+  height: 50px;
+  
+  .selected {
+    border-radius: 4px;
+    color: black;
+
+  }
+
+  .items {
+    padding-top: 50px;
+    max-height: 325px;
+    overflow-y: hidden;
+    color: black;
+
+    div:hover {
+      background-color: $wild-sand;
+      color: black;
+    }
+
+    div:active {
+      background-color: $silver-chalice;
+    }
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@media (max-width: 1366px){
+  .ip-select{
+    font-size: 14px;
+  }
+}

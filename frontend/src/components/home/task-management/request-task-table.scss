@@ -1,0 +1,42 @@
+@import 'bootstrap/scss/mixins';
+// @import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+@import '../../../styles/colors.scss';
+
+#tasks {
+  padding: 0 20px;
+}
+
+#tasks .table-header {
+  background: $color-celestial-blue;
+  color: #fff;
+  padding: 5px;
+  width: 20%;
+  border-radius: 4px 4px 0px 0px;
+}
+
+#tasks table tbody td:last-child{
+  text-transform: capitalize;
+}
+
+#tasks table tbody td:first-child{
+  cursor: pointer;
+}
+
+@include media-breakpoint-down(xs) {
+  .table-header {
+    width: 100% !important;
+  }
+}
+
+.td-link {
+  color: inherit;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.selection-row {
+  width: 75px
+}

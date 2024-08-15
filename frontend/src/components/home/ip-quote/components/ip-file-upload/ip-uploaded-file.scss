@@ -1,0 +1,30 @@
+@import '../../../../../styles/colors.scss';
+
+.ip-uploaded-file {
+  background-color: $wild-sand;
+  padding: 6px 10px;
+  display: inline-block;
+  font-size: 16px;
+}
+.ip-uploaded-file i {
+  &.pdf {
+    color: $ip-danger-color;
+  }
+  &.doc {
+    color: $color-celestial-blue;
+  }
+  &.txt {
+    color: $tuna;
+  }
+  &.img {
+    color: $ocean-green;
+  }
+}
+.fa-download, .fa-times{
+  cursor: pointer;
+}
+@media (max-width: 1366px){
+  .ip-uploaded-file {
+    font-size: 12px;
+  }
+}

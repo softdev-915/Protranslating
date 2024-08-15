@@ -1,0 +1,52 @@
+.preview {
+  height: calc(100vh - 250px);
+  overflow: hidden;
+}
+
+div.preview-container {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.left-panel {
+  width: 20%;
+}
+
+.horizontal-resize-zone {
+  border-top: 1px dotted #FAFAFA;
+  min-width: 10px;
+}
+
+.vertical-resize-zone {
+  position: absolute;
+  right: 0;
+  border-left: 1px dotted #FAFAFA;
+  min-height: 10px;
+}
+
+.vertical-resize-zone:hover {
+  cursor: ew-resize;
+}
+
+.horizontal-resize-zone:hover {
+  cursor: ns-resize;
+}
+
+.resize-zone.horizontal-resize-zone:hover {
+  border-top: 1px dotted grey;
+}
+
+.resize-zone.vertical-resize-zone:hover {
+  border-left: 1px dotted grey;
+}
+
+.vertical-resizable-container {
+  position: relative;
+}
+
+.component-selector {
+  padding-right: 0 !important;
+  text-align: right;
+}

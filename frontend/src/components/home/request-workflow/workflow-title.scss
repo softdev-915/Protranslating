@@ -1,0 +1,22 @@
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '../../../styles/colors.scss';
+
+i.pts-clickable {
+  font-size: 14px;
+}
+
+.workflow-title {
+  padding-bottom: 15px;
+  font-size: 14px;
+  line-height: 26px;
+
+  & span {
+    color: #0275D8;
+    margin-right: 8px;
+  }
+}
+
+.workflow-title-collapsed {
+  border-bottom: 1px solid $athens-gray;
+}

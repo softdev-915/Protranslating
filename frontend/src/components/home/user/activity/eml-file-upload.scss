@@ -1,0 +1,21 @@
+@import '../../../../styles/colors.scss';
+
+.header-link {
+  display: inline-block;
+}
+
+label {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+#eml-upload-button.dropzone-dragging {
+  outline: 2px dashed;
+  outline-offset: -2px;
+  background: darken($color-bright, 2%);
+}
+
+.dropzone-dragging > label {
+  pointer-events: none;
+}
+

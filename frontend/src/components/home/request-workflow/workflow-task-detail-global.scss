@@ -1,0 +1,24 @@
+@import '../../../styles/colors.scss';
+
+#task-description .modal-content textarea {
+  min-height: 400px;
+}
+#provider-instructions .modal-content textarea {
+  min-height: 400px;
+}
+
+.memoq-invoice-button {
+  color: $color-cyan-blue;
+
+  &:disabled {
+    color: lightgrey;
+  }
+}
+
+.memoq-bill-button {
+  color: $color-magenta;
+
+  &:disabled {
+    color: lightgrey;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../../styles/colors.scss';
+
+.history-show {
+  color: $table-hover-background;
+}
+
+.history-show:hover {
+  font-weight: bold;
+}
+
+.bill-scheduler-modal .modal-dialog {
+  max-width: 640px;
+}

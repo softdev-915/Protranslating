@@ -1,0 +1,24 @@
+@import '../../../styles/colors.scss';
+
+.settings-con {
+  overflow: auto;
+}
+
+.auditsGrid tr td:last-child {
+  text-align: center;
+}
+
+
+
+#modal-approved .icon-container span {
+  border-radius: 50%;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+}
+
+#modal-approved .icon-container span i {
+  color: $grid-btn-green;
+  font-size: 40px;
+  line-height: 60px;
+}

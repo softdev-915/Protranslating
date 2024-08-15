@@ -1,0 +1,43 @@
+.contact-dashboard {
+  min-height: 1000px;
+  .period-to-apply {
+    position: relative;
+    height: 60px;
+    label, .date-filter {
+      width: 200px;
+    }
+    label {
+      display: block;
+      text-align: left;
+    }
+    .date-filter {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 200px;
+      input {
+        width: 100%;
+        background-color: #fff !important;
+      }
+      .date-picker {
+         position: relative;
+         z-index: 1;
+         top: 4px;
+         width: 555px;
+         max-width: 80vw;
+         background-color: #fff;
+         padding: 5px 15px 15px;
+         box-shadow: 5px 5px 15px 1px #888888;
+         .apply-button {
+           float: right;
+           margin-right: 5px;
+         }
+         .list-group {
+           font-weight: 700;
+           cursor: pointer;
+         }
+      }
+    }
+  }
+}
